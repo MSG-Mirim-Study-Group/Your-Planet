@@ -1,8 +1,10 @@
 * {
+  margin: 0%;
+  padding: 0%;
   box-sizing: border-box;
 }
 body {
-  font-size: 14px;
+  font-size: 14em;
 }
 .v22_215 {
   width: 100%;
@@ -17,7 +19,7 @@ body {
 .v22_216 {
   width: 411px;
   height: 586px;
-  background: url("../images/v22_216.png");
+  background: url("../images/Earth.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -34,8 +36,8 @@ body {
   background: rgba(255,255,255,0.30000001192092896);
   opacity: 1;
   position: absolute;
-  top: 458px;
-  left: 68px;
+  top: 458%;
+  left: 68%;
   transform: rotate(-10deg);
 }
 .v23_77 {
