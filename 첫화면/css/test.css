@@ -1,0 +1,48 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(33, 23, 80);
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    /* overflow: hidden; */
+    background-color: rgba(255,255,255,0); 
+}
+
+p {
+    z-index: 2;
+    position: relative;
+    left: 40%;
+    top: 210px;
+    /* 글씨 배경 색 투명하게 */
+    background-color: rgba(255,255,255,0); 
+    color: white;
+    rotate: 45deg;
+}
+
+.planet .earth img {
+    z-index: 3;
+    width: 300px;
+    height: 300px;
+    transform: translate(-30%, 60%);
+    rotate: 10deg;
+}
+
+.planet .earth img:hover {
+    z-index: 1;
+    margin: 150px auto;
+    rotate: 30deg;
+    transition: 0.5s;
+    transform: scale( 1.2 )
+}
+
+.main_title {
+    position: relative;
+    left: 4%;
+    top: 0%;
+    width: 10%;
+    height: 10px;
+}
