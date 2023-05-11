@@ -2,6 +2,18 @@
   padding: 0%;
   margin: 0%;
   width: fit-content;
-  height: fit-content;
-  background-color: rgb(33, 23, 80);
+  height: fit-content; 
+  border: none;
+  background: rgb(0, 0, 0, 0);
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
+  background-color: rgb(21, 9, 76);
+}
+
+hr {
+  
+  size: 10%;
 }
