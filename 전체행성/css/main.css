@@ -16,107 +16,96 @@ body {
 
 #sun {
   position: absolute;
-  width: 500px;
-  height: 500px;
+  right: 78%;
   left: -10%;
-  top: -10%;
-  filter: drop-shadow(0px 0px 15px #AA1D1D);
+  top: -18%;
+  filter: drop-shadow(0px 0px 20px #aa1d1dc0);
   transform: rotate(-160deg);
 }
 
 #mercury {
   transform: rotate(90deg);
   position: absolute;
-  width: 100px;
-  height: 100px;
+  right: 65%;
   left: 30%;
-  filter: drop-shadow(0px 0px -25px #FF714E);
   top: 10%;
+  filter: drop-shadow(0px 0px 10px #ff714ec3);
 }
 
 #venus  {
   position: absolute;
-  width: 120px;
-  height: 120px;
+  right: 53%;
   left: 40%;
   top: 17%;
-  filter: drop-shadow(0px 0px 25px #87B570);
+  filter: drop-shadow(0px 0px 20px #ffb84eaf);
   transform: rotate(90deg);
 }
 
 #earth  {
   position: absolute;
-  width: 140px;
-  height: 140px;
+  right: 48%;
   left: 43%;
   top: 50%;
-  filter: drop-shadow(0px 0px 25px #B6925D);
+  filter: drop-shadow(0px 0px 20px #87b570ba);
   transform: rotate(90deg);
 }
 
 #mars {
   position: absolute;
-  width: 130px;
-  height: 130px;
+  right: 38%;
   left: 54%;
   top: 70%;
-  filter: drop-shadow(0px 0px 25px #C1431D);
+  filter: drop-shadow(0px 0px 20px #c1431dc9);
   transform: rotate(90deg);
 }
 
 #saturn {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  right: 22%;
   left: 60%;
   top: 30%;
-  filter: drop-shadow(0px 0px 25px #B6925D);
+  filter: drop-shadow(0px 0px 20px #b6925dc1);
   transform: rotate(-90deg);
 }
 
 #jupiter {
   position: absolute;
-  width: 210px;
-  height: 210px;
+  right: 12.5%;
   left: 75%;
   top: 65%;
-  filter: drop-shadow(0px 0px 25px #B6925D);
+  filter: drop-shadow(0px 0px 20px #b6925db7);
   transform: rotate(90deg);
 }
 
 #uranus {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  right:7%;
   left: 87%;
   top: 30%;
-  filter: drop-shadow(0px 0px 25px #6DACD4);
+  filter: drop-shadow(0px 0px 20px #6dacd4be);
   transform: rotate(90deg);
 }
 
 #neptune {
   position: absolute;
-  width: 90px;
-  height: 90px;
+  right:4%;
   left: 91%;
   top: 9%;
-  filter: drop-shadow(0px 0px 25px #1448D4);
+  filter: drop-shadow(0px 0px 20px #1448D4);
 }
 
 #blackhole {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  right:77%;
   left: 5%;
   top: 55%;
-  filter: drop-shadow(0px 0px 25px rgba(255, 255, 255, 0.50));
+  filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.50));
   transform: rotate(-90deg);
 }
 
 #pluto {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  right:64%;
   left: 30%;
   top: 82%;
   filter: drop-shadow(0px 0px 20px #FFC9A0);
