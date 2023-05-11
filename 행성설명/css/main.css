@@ -1,270 +1,45 @@
 * {
-  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(33, 23, 80);
 }
+
 body {
-  font-size: 14px;
-}
-.v25_185 {
-  width: 100%;
-  height: 1024px;
-  background: rgba(12,7,75,1);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  font-family: 'Courier New', Courier, monospace;
   overflow: hidden;
 }
-.v25_186 {
-  width: 411px;
-  height: 586px;
-  background: url("../images/v25_186.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 0.30000001192092896;
-  position: absolute;
-  top: 157px;
-  left: 924px;
-  transform: rotate(-57deg);
-  overflow: hidden;
+
+
+.planet {
+  opacity:0.5; 
 }
-.v25_187 {
-  width: 198px;
-  height: 209px;
-  background: url("../images/v25_187.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 0.30000001192092896;
-  position: absolute;
-  top: 577px;
-  left: 1304px;
-  overflow: hidden;
+
+.planet .earth img {
+  width: 300px;
+  height: 300px;
+  transform: translate(-30%, 60%);
+  rotate: 10deg;
 }
-.v25_188 {
-  width: 753px;
-  height: 750px;
-  background: url("../images/v25_188.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 576px;
-  left: 415px;
-  overflow: hidden;
+
+.planet .mercury img{
+  width: 130px;
+  height: 130px;
+  transform: translate(410%, -370%);
+  rotate: 10deg;
 }
-.v25_189 {
-  width: 114px;
-  height: 114px;
-  background: url("../images/v25_189.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 0.30000001192092896;
-  position: absolute;
-  top: 76px;
-  left: 299px;
-  overflow: hidden;
+
+.planet .saturn img{
+  width: 300px;
+  height: 300px;
+  transform: translate(-340%, 10%);
+  rotate: 128deg;
 }
-.v25_190 {
-  width: 32px;
-  height: 31px;
-  background: rgba(255,255,255,1);
-  opacity: 0.30000001192092896;
-  position: absolute;
-  top: 563px;
-  left: 417px;
-  transform: rotate(-33deg);
-}
-.v25_191 {
-  width: 32px;
-  height: 31px;
-  background: rgba(255,255,255,1);
-  opacity: 0.30000001192092896;
-  position: absolute;
-  top: 519px;
-  left: 1222px;
-  transform: rotate(-33deg);
-}
-.v25_192 {
-  width: 32px;
-  height: 31px;
-  background: rgba(255,255,255,1);
-  opacity: 0.30000001192092896;
-  position: absolute;
-  top: 920px;
-  left: 869px;
-  transform: rotate(-33deg);
-}
-.v25_193 {
-  width: 32px;
-  height: 31px;
-  background: rgba(255,255,255,1);
-  opacity: 0.30000001192092896;
-  position: absolute;
-  top: 125px;
-  left: 509px;
-  transform: rotate(-33deg);
-}
-.v25_194 {
-  width: 32px;
-  height: 31px;
-  background: rgba(255,255,255,1);
-  opacity: 0.30000001192092896;
-  position: absolute;
-  top: 307px;
-  left: 80px;
-  transform: rotate(-33deg);
-}
-.v25_195 {
-  width: 750px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 549px;
-  left: 207px;
-  font-family: Akshar;
-  font-weight: Regular;
-  font-size: 80px;
-  opacity: 1;
-  text-align: center;
-}
-.v25_196 {
-  width: 488px;
-  height: 661px;
-  background: url("../images/v25_196.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 663px;
-  left: 148px;
-  transform: rotate(-117deg);
-  overflow: hidden;
-}
-.v25_230 {
-  width: 72px;
-  height: 57px;
-  background: rgba(217,217,217,1);
-  opacity: 1;
-  position: absolute;
-  top: 441px;
-  left: 1377px;
-  border: 1px solid rgba(0,0,0,1);
-}
-.name {
-  color: #fff;
-}
-.v29_770 {
-  width: 190px;
-  height: 73px;
-  background: url("../images/v29_770.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 910px;
-  left: 26px;
-  overflow: hidden;
-}
-.v25_232 {
-  width: 190px;
-  height: 73px;
-  background: rgba(255,255,255,1);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  overflow: hidden;
-}
-.v25_233 {
-  width: 137px;
-  color: rgba(0,0,0,1);
-  position: absolute;
-  top: 15px;
-  left: 26px;
-  font-family: Akaya Kanadaka;
-  font-weight: Regular;
-  font-size: 32px;
-  opacity: 1;
-  text-align: center;
-}
-.v29_578 {
-  width: 575px;
-  height: 746px;
-  background: url("../images/v29_578.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 146px;
-  left: 720px;
-  overflow: hidden;
-}
-.v29_579 {
-  width: 560px;
-  height: 746px;
-  background: rgba(230,229,236,1);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border: 1px solid rgba(0,0,0,1);
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-}
-.v29_580 {
-  width: 528px;
-  height: 705px;
-  background: rgba(255,255,255,1);
-  opacity: 1;
-  position: absolute;
-  top: 23px;
-  left: 18px;
-  border: 1px solid rgba(255,255,255,1);
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-}
-.v29_581 {
-  width: 535px;
-  color: rgba(0,0,0,1);
-  position: absolute;
-  top: 64px;
-  left: 40px;
-  font-family: Aguafina Script;
-  font-weight: Regular;
-  font-size: 24px;
-  opacity: 1;
-  text-align: left;
-}
-.name {
-  color: #fff;
-}
-.v29_584 {
-  width: 544px;
-  height: 404px;
-  background: url("../images/v29_584.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 604px;
-  left: 78px;
-  overflow: hidden;
+
+.planet .uranus img{
+  width: 120px;
+  height: 120px;
+  transform: translate(-90%, -880%);
+  rotate: 10deg;
 }
