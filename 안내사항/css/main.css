@@ -8,12 +8,74 @@
 }
 
 body {
+  color: white;
   font-family: 'Courier New', Courier, monospace;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: rgb(21, 9, 76);
 }
 
+.container {
+  z-index: 1;
+}
+
+.planet {
+  z-index: 2;
+}
+
 hr {
-  
-  size: 10%;
+  width: 50%;
+}
+
+.hr-solid {
+  border : 0px;
+  border-top: 5px solid #ffffff;
+}
+
+.planet {
+  border-radius: 50%;
+  background-color: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#earth {  
+  position: absolute;
+  top: 65%;
+  right: 67.5%;
+  left: 10%;
+  rotate: 10deg;
+}
+
+#mercury {  
+  position: absolute;
+  top: 65%;
+  right: 17.5%;
+  left: 70%;
+  rotate: 10deg;
+}
+
+#saturn {
+  position: absolute;
+  right: 0%;
+  left: 70%;
+  top: -2%;
+  rotate: -50deg;
+}
+
+.welcome_msg img {
+}
+
+#uranus {
+  position: absolute;
+  right: 73.5%;
+  left: 20%;
+  top: 5%;
+  rotate: 10deg;
 }
