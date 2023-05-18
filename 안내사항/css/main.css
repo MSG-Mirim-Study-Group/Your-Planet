@@ -16,10 +16,26 @@ body {
 
 .container {
   z-index: 1;
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 20%;
+  background: rgb(0, 0, 0, 0);
+}
+
+.box1 {
+  position: absolute;
+  padding: 100%;
+  left: 30%;
+  right: 30%;
+  top: 20%;
+  bottom: 40%;
+  background-color: white;
 }
 
 .planet {
   z-index: 2;
+
 }
 
 hr {
@@ -37,6 +53,13 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.name p {
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  top: 20%;
 }
 
 img {
@@ -69,7 +92,7 @@ img {
   rotate: -50deg;
 }
 
-.welcome_msg img {
+.welcome_planet img {
 }
 
 #uranus {
