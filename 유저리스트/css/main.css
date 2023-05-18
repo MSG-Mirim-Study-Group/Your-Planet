@@ -71,12 +71,12 @@ body {
 .triangle {
   border-left: 2vw solid transparent;
   border-right: 2vw solid transparent;
-  border-bottom: 2.5vw solid #333; /* 버튼의 배경색을 변경하려면 이 부분을 수정해주세요 */
+  border-bottom: 2.5vw solid rgb(255, 255, 255); /* 버튼의 배경색을 변경하려면 이 부분을 수정해주세요 */
   cursor: pointer;
 }
 
 .triangle:hover {
-  border-bottom-color: #555; /* 마우스 오버 시 버튼의 배경색을 변경하려면 이 부분을 수정해주세요 */
+  border-bottom-color: rgb(128, 128, 128); /* 마우스 오버 시 버튼의 배경색을 변경하려면 이 부분을 수정해주세요 */
 }
 #triangleLeft { 
   transform: rotate(-90deg);
@@ -103,11 +103,13 @@ body {
 }
 .square-box {
   position: absolute;
-  top: 10%;
-  left: 13%;
-  width: 70%;
-  height: 80%;
+  top: 4%;
+  left: 10%;
+  width: 61%;
+  height: 77%;
   background-color: #f1f1f1;
   border-radius: 5%;
-  border-color: rgb(95, 95, 95);
+  border: 1vw solid #919191;
+  padding: 5%;
+  word-wrap: break-word;
 }
