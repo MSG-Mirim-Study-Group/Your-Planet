@@ -14,13 +14,25 @@ body {
   background-color: rgb(21, 9, 76);
 }
 
-.container {
-  z-index: 1;
+button {
   position: absolute;
-  left: 20%;
-  right: 20%;
-  top: 20%;
-  background: rgb(0, 0, 0, 0);
+  left: 80%;
+  top: 87%;
+  size: 10%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
+
+button::after {
+
+}
+
+.container {
+  z-index: 2;
 }
 
 .box1 {
@@ -33,33 +45,94 @@ body {
   background-color: white;
 }
 
+.box2 {
+  z-index: 3;
+}
+
+.welcome_planet {
+  width: 60%; 
+  height: 20%;
+  margin-left: 40%;
+  margin-top: 10%;
+  margin-right: 0%;
+  margin-bottom: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: brown;
+  border: 1vw solid whitesmoke;
+  border-radius: 5%;
+}
+
+.welcome_planet img {
+  rotate: 290deg;
+}
+
+.welcome_planet p {
+  rotate: 0deg;
+  font-size: 130%;
+  position: inherit;
+  top: 5%;
+}
+
 .planet {
-  z-index: 2;
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-hr {
-  width: 50%;
-}
-
-.hr-solid {
-  border : 0px;
-  border-top: 5px solid #ffffff;
-}
-
-.planet {
-  border-radius: 50%;
-  background-color: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.name {
+  margin-right: 10%;
+  padding: 30%;
+  padding-left: 30%;
+  padding-top: 0%;
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  right: 20%;
+  bottom: 400%;
 }
 
 .name p {
   position: absolute;
   left: 30%;
   right: 30%;
-  top: 20%;
+  top: 15%;
+  font-size: 180%;
+}
+
+#input_name {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  top: 25%;
+  left: 15%;
+  right: 30%;
+  font-size: 140%;
+  border-radius: 15px;
+  /* outline: none; */
+  padding-left: 20%;
+  padding-right: 20%;
+  background-color: rgb(233, 233, 233);
+  text-align: center;
+}
+
+.agree p {
+  font-size: 100%;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+
+}
+
+.title p {
+  position: absolute;
+  left: 43%;
+  right: 30%;
+  top: 5%;
+  font-size: 250%;
 }
 
 img {
@@ -69,36 +142,41 @@ img {
 }
 
 #earth {  
+  z-index: 1;
+  filter: brightness(50%); 
   position: absolute;
-  top: 65%;
-  right: 67.5%;
-  left: 10%;
+  top: 45%;
+  right: 77.5%;
+  left: -20%;
   rotate: 10deg;
 }
 
 #mercury {  
+  z-index: 1;
+  filter: brightness(50%); 
   position: absolute;
-  top: 65%;
-  right: 17.5%;
-  left: 70%;
+  top: 60%;
+  right: 5.5%;
+  left: 89%;
   rotate: 10deg;
 }
 
 #saturn {
+  z-index: 1;
+  filter: brightness(50%); 
   position: absolute;
-  right: 0%;
-  left: 70%;
-  top: -2%;
+  right: -5%;
+  left: 80%;
+  top: -10%;
   rotate: -50deg;
 }
 
-.welcome_planet img {
-}
-
 #uranus {
+  z-index: 1;
+  filter: brightness(50%); 
   position: absolute;
-  right: 73.5%;
-  left: 20%;
+  right: 89.5%;
+  left: 5%;
   top: 5%;
   rotate: 10deg;
 }
