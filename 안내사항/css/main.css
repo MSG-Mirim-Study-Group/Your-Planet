@@ -27,46 +27,42 @@ button {
   padding-bottom: 0.5%;
 }
 
-button::after {
-
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .container {
   z-index: 2;
 }
 
-.box1 {
+/* 제목 */
+.title p {
   position: absolute;
-  padding: 100%;
-  left: 30%;
+  left: 43%;
   right: 30%;
-  top: 20%;
-  bottom: 40%;
-  background-color: white;
+  top: 5%;
+  font-size: 250%;
 }
 
-.box2 {
-  z-index: 3;
-}
-
+/* 이름이 사용될 곳 보여주는 박스 */
 .welcome_planet {
-  width: 60%; 
-  height: 20%;
-  margin-left: 40%;
-  margin-top: 10%;
-  margin-right: 0%;
-  margin-bottom: 10%;
-  padding-left: 10%;
-  padding-right: 10%;
+  z-index: 3;
+  width: 100%;
+  height: 0;
+  padding-top: 61.8%;
   background-color: brown;
-  border: 1vw solid whitesmoke;
+  border: 1vw solid rgb(255, 255, 255);
   border-radius: 5%;
 }
 
+/* 예시 이미지 [토성] */
 .welcome_planet img {
   rotate: 290deg;
 }
 
+/* 예시제목 [토성에 오신 것을 환영합니다] */
 .welcome_planet p {
   rotate: 0deg;
   font-size: 130%;
@@ -74,15 +70,7 @@ button::after {
   top: 5%;
 }
 
-.planet {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
+/* 사용자 이름 입력란 */
 .name {
   margin-right: 10%;
   padding: 30%;
@@ -91,10 +79,11 @@ button::after {
   position: absolute;
   top: 60%;
   left: 25%;
-  right: 20%;
+  right: 25%;
   bottom: 400%;
 }
 
+/* 제목 [사용자 이름] */
 .name p {
   position: absolute;
   left: 30%;
@@ -103,6 +92,7 @@ button::after {
   font-size: 180%;
 }
 
+/* 이름 입력란 */
 #input_name {
   position: absolute;
   width: 10%;
@@ -112,33 +102,30 @@ button::after {
   right: 30%;
   font-size: 140%;
   border-radius: 15px;
-  /* outline: none; */
+  outline: none;
   padding-left: 20%;
   padding-right: 20%;
   background-color: rgb(233, 233, 233);
   text-align: center;
 }
 
+/* 이름 동의 체크박스 */
 .agree p {
   font-size: 100%;
   position: absolute;
   top: 40%;
   left: 20%;
-
+  right: 20%;
 }
 
-.title p {
+/* 행성이미지 */
+.planet {
   position: absolute;
-  left: 43%;
-  right: 30%;
-  top: 5%;
-  font-size: 250%;
-}
-
-img {
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #earth {  
