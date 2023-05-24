@@ -15,16 +15,27 @@ body {
 }
 
 button {
-  position: absolute;
-  left: 86%;
-  top: 87%;
-  size: 10%;
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
   padding-left: 1.5%;
   padding-right: 1.5%;
   padding-top: 0.5%;
   padding-bottom: 0.5%;
+}
+
+button#next {
+  position: absolute;
+  left: 86%;
+  top: 87%;
+  size: 10%;
+}
+
+button#reset {
+  z-index: 1;   /* 지구 이미지의 버튼 가림 방지 */
+  position: absolute;
+  left: 8%;
+  top: 87%;
+  size: 20%;
 }
 
 img {
@@ -154,6 +165,7 @@ hr {
   top: 40%;
   left: 18%;
   right: 20%;
+  filter: brightness(70%);
 }
 
 /* 행성이미지 */
