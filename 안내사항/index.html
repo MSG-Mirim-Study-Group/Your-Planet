@@ -23,28 +23,34 @@
       </div>
     </div>
     <div class="title">
-      <h2>안내사항</h2>
+      <p>안내사항</p>
     </div>
     <form action="check.php" method="post">
       <div class="container">
-        <!--<div class="box2">
-                <div class="welcome_planet">
-                    <p>토성에 오신 것을 환영합니다</p>
-                    <hr class='hr-solid'/>
-                    <img src="../images/planet/Saturn.png" alt="Mercury">
-                </div>
-            </div> -->
+        <div class="welcome_planet">
+          <p>토성에 오신 것을 환영합니다</p>
+            <hr>
+            <img src="../images/planet/Saturn.png" alt="Saturn">
+            <div class="square-box" id="userList" style="display: none;">
+              <div id = "user">이미남</div>
+              <div id = "user">이미녀</div>
+              <div id = "user">김미남</div>
+              <div id = "user">김미녀</div>
+              <div id = "user">최규정</div>
+            </div>
+        </div>
         <div class="name">
           <p>사용자 이름</p>
-          <input type="text" id="input_name" />
+          <input type="text" id="input_name" placeholder="이름입력" autofocus>
           <div class="agree">
             <p>
-              <input type="checkbox" />
+              <input type="checkbox" name="agree">
               사용자님의 이름을 사용하는 것에 동의하십니까?
             </p>
           </div>
         </div>
-        <button>다음</button>
+        <button onclick="history.back()" id="next">다음</button>
+        <button onClick="location.href='./질문화면/index.html'" id="reset">처음으로</button>
       </div>
     </form>
   </body>
