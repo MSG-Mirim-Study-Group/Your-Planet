@@ -49,25 +49,32 @@ img {
 /* 이름이 사용될 곳 보여주는 박스 */
 .welcome_planet {
   filter: brightness(100%); /* 예시 박스 밝기 높임 */
-  width: 100%;
-  height: 0;
-  padding-top: 61.8%;
-  background-color: rgb(255, 0, 0);
-  border: 1vw solid rgb(255, 255, 255);
-  border-radius: 5%;
+  width: 50%;
+  height: 30%;
+  position: absolute;
+  left: 25%;
+  top: 20%;
+  background-color: rgb(156, 116, 226);
+  background:rgb(140, 141, 210);
+  border-radius:1em;
+  padding:1em;
+  box-shadow:0 0 0 0.6em khaki;
+  outline:.6em solid rgb(255, 255, 255);
 }
 
 /* 예시 이미지 [토성] */
 .welcome_planet img {
   rotate: 290deg;
+  position: absolute;
+  width: 30%;
+  height: inherit;
 }
 
 /* 예시제목 [토성에 오신 것을 환영합니다] */
 .welcome_planet p {
   rotate: 0deg;
   font-size: 130%;
-  position: inherit;
-  top: 5%;
+  
 }
 
 /* 사용자 이름 입력란 */
