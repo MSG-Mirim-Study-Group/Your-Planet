@@ -68,6 +68,13 @@ body {
   left: 2%;
 }
 
+.section {
+  top: 70%;
+  left: 10%;
+  right: 80%;
+
+}
+
 .triangle {
   border-left: 2vw solid transparent;
   border-right: 2vw solid transparent;
@@ -119,15 +126,26 @@ body {
 #planetExplan {
   background-color: #f1f1f1;
   border-radius: 5%;
-  border: 1vw solid #919191;
+  border: 1vw solid #919191;  
 }
 
 #user {
-  border: 0.5vw solid #919191;
-  background-color: #f1f1f1;
+  border: 0.5vw solid #f1f1f1;
+  background-color: #00ff0000;
   border-radius: 7%;
+  color: #f1f1f1;
+  text-align: center;
+  
   float: left;
-  width: 30%;
+  width: 25%;
   height: 10%;
   margin: 1%;
+}
+
+#img {
+  position: fixed;
+  bottom: 0;
+  left: 30%;
+  width: 30%;
+  transform: translate(-70%, 5%);
 }
