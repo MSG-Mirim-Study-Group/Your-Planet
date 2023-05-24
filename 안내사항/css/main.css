@@ -10,13 +10,13 @@
 body {
   color: white;
   font-family: 'Courier New', Courier, monospace;
-  /* overflow: hidden; */
+  overflow: hidden;
   background-color: rgb(21, 9, 76);
 }
 
 button {
   position: absolute;
-  left: 80%;
+  left: 86%;
   top: 87%;
   size: 10%;
   background-color: rgb(255, 255, 255);
@@ -28,13 +28,9 @@ button {
 }
 
 img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: auto;
   object-fit: cover;
-}
-
-.container {
-  z-index: 2;
 }
 
 /* 제목 */
@@ -42,7 +38,7 @@ img {
   position: absolute;
   left: 43%;
   right: 30%;
-  top: 5%;
+  top: 7%;
   font-size: 250%;
 }
 
@@ -50,34 +46,77 @@ img {
 .welcome_planet {
   filter: brightness(100%); /* 예시 박스 밝기 높임 */
   width: 50%;
-  height: 30%;
+  height: 35%;
   position: absolute;
-  left: 25%;
+  left: 23%;
   top: 20%;
-  background-color: rgb(156, 116, 226);
-  background:rgb(140, 141, 210);
-  border-radius:1em;
-  padding:1em;
-  box-shadow:0 0 0 0.6em khaki;
-  outline:.6em solid rgb(255, 255, 255);
+  background-color: rgb(56, 53, 137);
+  background:rgb(12, 12, 66);
+  border-radius:1em;  
+  padding: 1.5em;
+  outline: 1.5em solid rgb(255, 255, 255);
+}
+
+
+/* 예시제목 [토성에 오신 것을 환영합니다] */
+.welcome_planet p { 
+  font-size: 140%;
+  margin: auto; /* 줄 가운데 정렬 */
+}
+
+hr {
+  color: white;
+  filter: brightness(100%);
+  border: 1px solid white;
+  margin: auto; /* 줄 가운데 정렬 */
+  width: 50%;
+  margin-top: 1%;
 }
 
 /* 예시 이미지 [토성] */
 .welcome_planet img {
   rotate: 290deg;
   position: absolute;
+  left: 4%;
+  top: 10%;
   width: 30%;
-  height: inherit;
+  height: 100%;
 }
 
-/* 예시제목 [토성에 오신 것을 환영합니다] */
-.welcome_planet p {
-  rotate: 0deg;
-  font-size: 130%;
-  
+/* 유저 리스트 박스 */
+.square-box {
+  position: absolute;
+  top: 4%;
+  left: 10%;
+  width: 61%;
+  height: 77%;
+  padding: 5%;
+  word-wrap: break-word;
 }
 
-/* 사용자 이름 입력란 */
+#userList {
+  background-color: #00ff0000;
+  filter: brightness(100%);
+  position: absolute;
+  left: 20%;
+  background:tan;
+  border-radius:0.8em;
+  padding:1em;
+  box-shadow:0 0 0 .6em khaki;
+  outline: 0.6em solid khaki;
+  margin: auto;
+}
+
+/* 제목 [사용자 이름] */
+.name p {
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  top: 15%;
+  font-size: 180%;
+}
+
+/* 사용자 이름 입력하는 박스 */
 .name {
   margin-right: 10%;
   padding: 30%;
@@ -90,14 +129,6 @@ img {
   bottom: 400%;
 }
 
-/* 제목 [사용자 이름] */
-.name p {
-  position: absolute;
-  left: 30%;
-  right: 30%;
-  top: 15%;
-  font-size: 180%;
-}
 
 /* 이름 입력란 */
 #input_name {
@@ -121,7 +152,7 @@ img {
   font-size: 100%;
   position: absolute;
   top: 40%;
-  left: 20%;
+  left: 18%;
   right: 20%;
 }
 
@@ -149,9 +180,9 @@ img {
   z-index: 1;
   filter: brightness(50%); 
   position: absolute;
-  top: 60%;
-  right: 5.5%;
-  left: 89%;
+  top: 63%;
+  right: 10.5%;
+  left: 83%;
   rotate: 10deg;
 }
 
@@ -160,7 +191,7 @@ img {
   filter: brightness(50%); 
   position: absolute;
   right: -5%;
-  left: 80%;
+  left: 78%;
   top: -10%;
   rotate: -50deg;
 }
