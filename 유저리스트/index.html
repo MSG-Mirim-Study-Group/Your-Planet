@@ -10,7 +10,9 @@
   </head>
 
   <body>
-      <button type="button" class="planet"><img src="imgs/planet/Earth.png" alt=""></button>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery 라이브러리 추가 -->
+      <script  src="JS/main.js"></script> 
+      <button type="button" class="planet" ><img src="imgs/planet/Earth.png" alt=""></button>
       <button type="button" class="back">돌아가기</button>
       <div class="left">
         <div class="name">
@@ -18,9 +20,16 @@
         </div>
       </div>
       <div class="right" >
-          <button class="triangle" id="triangleLeft"></button>
-            <div class="square-box">내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용</div>
-          <button class="triangle" id="triangleRight"></button>
+          <button class="triangle" id="triangleLeft" onclick="planetExplan()"></button>
+            <div class="square-box" id="planetExplan">내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용</div>
+            <div class="square-box" id="userList" style="display: none;">
+              <div id = "user">이미남</div>
+              <div id = "user">이미녀</div>
+              <div id = "user">김미남</div>
+              <div id = "user">김미녀</div>
+              <div id = "user">최규정</div>
+            </div>
+          <button class="triangle" id="triangleRight" onclick="userList()"></button>
       </div>
 
 

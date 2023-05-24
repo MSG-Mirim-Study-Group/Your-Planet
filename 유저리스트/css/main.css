@@ -114,9 +114,27 @@ body {
   left: 10%;
   width: 61%;
   height: 77%;
+  padding: 5%;
+  word-wrap: break-word;
+}
+
+#userList {
+  background-color: #00ff0000;
+  border: 1vw solid #00ff0000;
+}
+
+#planetExplan {
   background-color: #f1f1f1;
   border-radius: 5%;
   border: 1vw solid #919191;
-  padding: 5%;
-  word-wrap: break-word;
+}
+
+#user {
+  border: 0.5vw solid #919191;
+  background-color: #f1f1f1;
+  border-radius: 7%;
+  float: left;
+  width: 30%;
+  height: 10%;
+  margin: 1%;
 }
