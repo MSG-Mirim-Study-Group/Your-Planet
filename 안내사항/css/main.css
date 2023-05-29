@@ -76,7 +76,6 @@ img {
 }
 
 hr {
-  color: white;
   filter: brightness(100%);
   border: 1px solid white;
   margin: auto; /* 줄 가운데 정렬 */
