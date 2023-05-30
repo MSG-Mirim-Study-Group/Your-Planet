@@ -1,6 +1,6 @@
 * {
-  padding: 0%;
-  margin: 0%;
+  padding: 0;
+  margin: 0;
   width: fit-content;
   height: fit-content; 
   border: none;
@@ -85,8 +85,41 @@ button {
   background-color: white;
 }
 
-.triangle {
-  
+.btns {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 5%; 
+}
+
+/* 버튼 구현 */
+.triangle:after {
+  content:'';
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-top: 3em solid #ffffff;
+  border-left: 3em solid transparent;
+  border-right: 3em solid transparent;
+}
+#triangleRight { 
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 50%;
+  left: 82%;
+}
+#triangleLeft {
+  z-index: 4;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 50%;
+  left: 13%;
+}
+.triangle:hover {
+  filter: brightness(50%);
 }
 
 .container {
@@ -97,7 +130,7 @@ button {
   background-color: rgb(184, 185, 185);
   position: absolute;
   top: 12%;
-  left: 20%;
+  left: 19%;
   right: 20%;
   width: 60%;
   height: 73%;
@@ -117,6 +150,11 @@ button {
   border-radius:1em;  
   padding: 1.5em;
   outline: 0.1em solid rgb(0, 0, 0);
+}
+
+.question h2 {
+  font-size: 20dp;
+  color: black;
 }
 
 .a1 {
