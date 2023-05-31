@@ -33,7 +33,7 @@ body {
     font-size: 110%;
 }
 
-button {
+#btn_start {
     z-index: 2;
     position: absolute;
     right: 30%;
