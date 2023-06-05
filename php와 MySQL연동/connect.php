@@ -2,7 +2,7 @@
 $server = "localhost3306";
 $user = "root";
 $password = "0000";
-$dbname = "Local instance MySQL80";
+$dbname = "your_planet";
 
 $conn = new mysqli($server, $user, $password, $dbname);
 
