@@ -14,84 +14,179 @@ body {
 
 .container {
   position: absolute;
-  width: 50%;
-  height: 90%;
-  left: 25%;
+  width: 48%;
+  height: 110%;
+  left: 26%;
   top: 5%;
 }
 
 .my_planet {
+  z-index: 2;
   position: absolute;
   width: 100%;
-  height: 65%;
+  height: 68%;
   left: 0%;
   background:rgb(255, 255, 255);
   border-radius: 1em;  
 }
 
+/* 나의 행성 이미지 */
+.my_planet #uranus {
+  position: absolute;
+  width: 280%;
+  height: 280%;
+  left: 28%;
+  top: -180%;
+  rotate: 10deg;
+}
+
+/* 나의 행성 이름 */
+.planet_title {
+  position: absolute;
+  left: 40%;
+  top: 13%;
+  font-size: 230%;
+  font-style: bold;
+}
+
+/* 나의 행성 한줄평 */
+.planet_subtitle {
+  position: absolute;
+  left: 35%;
+  top: 7%;
+  font-size: 130%;
+  font-style: bold;
+}
+
+/* 행성 성격 설명 */
 .explain {
   position: absolute;
   width: 80%;
-  height: 8%;
-  left: 7%;
-  top: 75%;
+  height: 7%;
+  left: 6%;
+  top: 79%;
   background:rgb(207, 207, 207);
   border-radius:1em;  
   padding: 1.5em;
 }
 
+.same_planet {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  top: 70%;
+  left: 0%;
+  background:rgb(255, 255, 255);
+  border-radius: 1em;  
+}
+
+.same_planet .question {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  top: 10%;
+  left: 20%;
+  font-size: 115%;
+}
+
+.same_planet .percentage {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  top: 41%;
+  left: 40%;
+  font-size: 270%;
+}
+
+/* 좋은 행성 or 나쁜 행성 */
 .other_planet {
+  z-index: 2;
   position: absolute;
   width: 100%;
   height: 30%;
-  top: 70%;
+  top:  89%;
   border-radius:1em;  
 }
 
+/* 나와 잘 맞는 행성 */
 .good_planet {
   position: absolute;
   width: 48%;
-  height: 100%;
+  height: 130%;
   top: 0%;
   background:rgb(255, 255, 255);
   border-radius:1em;  
 }
 
+/* 잘 맞지 않는 행성 */
 .bad_planet {
   position: absolute;
   width: 48%;
-  height: 100%;
+  height: 130%;
   left: 52%;
   top: 0%;
   background:rgb(255, 255, 255);
   border-radius:1em;  
 }
 
-.my_planet #uranus {
+/* 나와 잘 맞는 행성 이미지 */
+.good_planet img {
   position: absolute;
-  width: 280%;
-  height: 280%;
-  left: 0%;
-  top: -150%;
-  rotate: 10deg;
+  width: 50%;
+  height: 58%;
+  left: 25%;
+  top: 8%;
 }
 
-#earth { 
+/* 위의 행성 이름 */
+.good_planet .title {
   position: absolute;
-  top: 45%;
-  left: 20%;
-  rotate: 10deg;
+  width: 50%;
+  height: 60%;
+  left: 42%;
+  top: 70%;
+  font-size: 150%;
 }
 
-#mercury {
+/* 위의 행성 소제목 */
+.good_planet .sub_title {
   position: absolute;
-  width: 40%;
-  height: 40%;
-  top: 63%;
-  left: -6%;
-  rotate: 10deg;
+  width: 100%;
+  height: 60%;
+  left: 15%;
+  top: 83%;
 }
 
+/* 나와 잘 맞지 않는 행성 이미지 */
+.bad_planet img {
+  position: absolute;
+  width: 50%;
+  height: 58%;
+  left: 25%;
+  top: 8%;
+}
+
+/* 위의 행성 이름 */
+.bad_planet .title {
+  position: absolute;
+  width: 50%;
+  height: 60%;
+  left: 42%;
+  top: 70%;
+  font-size: 150%;
+}
+
+/* 위의 행성 소제목 */
+.bad_planet .sub_title {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  left: 15%;
+  top: 83%;
+}
+
+/* 전체 행성 */
 .planet {
   position: absolute;
   top: 0;
@@ -101,36 +196,35 @@ body {
   background-color: rgb(20, 12, 70);
 }
 
-
 .planet #mercury {  
   z-index: 1;
   opacity: 0.2;
   position: absolute;
-  width: 40%;
-  height: 40%;
-  top: 63%;
-  left: -6%;
-  rotate: 10deg;
+  width: 30%;
+  height: 30%;
+  top: 69%;
+  left: 1%;
+  rotate: 80deg;
 }
 
 .planet #saturn {
   z-index: 1;
   opacity: 0.2;
   position: absolute;
-  width: 90%;
-  height: 90%;
+  width: 70%;
+  height: 70%;
   left: 58%;
-  top: 90%;
+  top: 20%;
   rotate: -50deg;
 }
 
 .planet #uranus {
   z-index: 1;
   position: absolute;
-  width: 20%;
-  height: 20%;
-  left: 80%;
-  top: 55%;
+  width: 10%;
+  height: 10%;
+  left: 78%;
+  top: 20%;
   rotate: 10deg;
   opacity: 0.2;
 }
