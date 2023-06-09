@@ -24,3 +24,11 @@ function showSection(sectionNumber) {
     // 선택한 섹션 보여주기
     document.getElementById("section" + sectionNumber).classList.remove("hidden");
   }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var selectedPlanet = localStorage.getItem("selectedPlanet");
+    var planetScene = document.getElementById(selectedPlanet + "Scene");
+    if (planetScene) {
+      planetScene.style.display = "block";
+    }
+  });
