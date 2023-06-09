@@ -3,7 +3,7 @@
 include_once("connect.php");
 
 // form 데이터 읽어오기
-$user_name = $_POST["name"];
+$user_name = $_POST["user_name"];
 
 echo "<h3>사용자의 이름은 {$name}입니다."
 ?>
