@@ -156,3 +156,13 @@ body {
   width: 30%;
   transform: translate(-70%, 5%);
 }
+
+.EarthScene{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
