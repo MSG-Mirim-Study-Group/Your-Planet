@@ -12,135 +12,23 @@
   <body>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery 라이브러리 추가 -->
       <script  src="JS/main.js"></script>  
-      <div class="left">
+
 
         <div class="planet-image" id="SunScene">
-          <button type="button" class="planet"><img src="../images/planet/Sun.png" alt=""></button>
-          <div class="name">
-            태양
+          <div class="left">
+            <button type="button" class="planet"><img src="../images/planet/Sun.png" alt=""></button>
+            <div class="name">
+              태양
+            </div>
+            <div>
+              <img id="img" src="../images/Talk/section.png" />
+            </div>
           </div>
-          <div>
-            <img id="img" src="../images/Talk/section.png" />
-          </div>
-        </div>
 
-        <div class="planet-image" id="MercuryScene">
-          <button type="button" class="planet"><img src="../images/planet/Mercury.png" alt=""></button>
-          <div class="name">
-            수성
-          </div>
-          <div>
-            <img id="img" src="../images/Talk/section.png" />
-          </div>
-        </div>
-
-        <div class="planet-image" id="VenusScene">
-          <button type="button" class="planet"><img src="../images/planet/Venus.png" alt=""></button>
-          <div class="name">
-            금성
-          </div>
-          <div>
-            <img id="img" src="../images/Talk/section.png" />
-          </div>
-        </div>
-
-        <div class="planet-image" id="EarthScene">
-          <button type="button" class="planet"><img src="../images/planet/Earth.png" alt=""></button>
-          <div class="name">
-            지구
-          </div>
-          <div>
-            <img id="img" src="../images/Talk/section.png" />
-          </div>
-        </div>
-        
-        <div class="planet-image" id="MoonScene">
-          <button type="button" class="planet"><img src="../images/planet/Moon.png" alt=""></button>
-          <div class="name">
-            달
-          </div>
-          <div>
-            <img id="img" src="../images/Talk/section.png" />
-          </div>
-        </div>
-
-        <div class="planet-image" id="MarsScene">
-          <button type="button" class="planet"><img src="../images/planet/Mars.png" alt=""></button>
-          <div class="name">
-            화성
-          </div>
-          <div>
-            <img id="img" src="../images/Talk/section.png" />
-          </div>
-        </div>
-
-        <div class="planet-image" id="SaturnScene">
-          <button type="button" class="planet"><img src="../images/planet/Saturn.png" alt=""></button>
-          <div class="name">
-            목성
-          </div>
-          <div>
-            <img id="img" src="../images/Talk/section.png" />
-          </div>
-        </div>
-
-        <div class="planet-image" id="JupiterScene">
-          <button type="button" class="planet"><img src="../images/planet/Jupiter.png" alt=""></button>
-          <div class="name">
-            토성
-          </div>
-          <div>
-            <img id="img" src="../images/Talk/section.png" />
-          </div>
-        </div>
-
-        <div class="planet-image" id="UranusScene">
-          <button type="button" class="planet"><img src="../images/planet/Uranus.png" alt=""></button>
-          <div class="name">
-            천왕성
-          </div>
-          <div>
-            <img id="img" src="../images/Talk/section.png" />
-          </div>
-        </div>
-        
-        <div class="planet-image" id="NeptuneScene">
-          <button type="button" class="planet"><img src="../images/planet/Neptune.png" alt=""></button>
-          <div class="name">
-            해왕성
-          </div>
-          <div>
-            <img id="img" src="../images/Talk/section.png" />
-          </div>
-        </div>
-        
-        <div class="planet-image" id="BlackHallScene">
-          <button type="button" class="planet"><img src="../images/planet/BlackHall.png" alt=""></button>
-          <div class="name">
-            블랙홀
-          </div>
-          <div>
-            <img id="img" src="../images/Talk/section.png" />
-          </div>
-        </div>
-        
-        <div class="planet-image" id="PlutoScene">
-          <button type="button" class="planet"><img src="../images/planet/Pluto.png" alt=""></button>
-          <div class="name">
-            명왕성
-          </div>
-          <div>
-            <img id="img" src="../images/Talk/section.png" />
-          </div>
-        </div>
-
-      </div>
-
-      <div class="right" >
-          <button class="triangle" id="triangleLeft" onclick="planetExplan()"></button>
+          <div class = "right">
             <div class="square-box" id="planetExplan">
               <div id="scene1">
-                  <h1> 안녕 오늘도</h1>
+                  <h1> 나는 태양</h1>
               </div>
             </div>
             <div class="square-box" id="userList" style="display: none;">
@@ -150,10 +38,324 @@
               <div id = "user">김미녀</div>
               <div id = "user">최규정</div>
             </div>
-          <button class="triangle" id="triangleRight" onclick="userList()"></button>
-      </div>
+          </div>
+        </div>
+        
+        
+        <div class="planet-image" id="MercuryScene">
+          <div class = "left">
+            <button type="button" class="planet"><img src="../images/planet/Mercury.png" alt=""></button>
+            <div class="name">
+              수성
+            </div>
+            <div>
+              <img id="img" src="../images/Talk/section.png" />
+            </div>
+          </div>
 
-      <button type="button" class="back" src="../전체행성/index.html">돌아가기</button>
+          <div class = "right">
+              <div class="square-box" id="planetExplan">
+                <div id="scene1">
+                    <h1> 나는 수성</h1>
+                </div>
+              </div>
+              <div class="square-box" id="userList" style="display: none;">
+                <div id = "user">이미남</div>
+                <div id = "user">이미녀</div>
+                <div id = "user">김미남</div>
+                <div id = "user">김미녀</div>
+                <div id = "user">최규정</div>
+              </div>
+          </div>
+        </div>
+        
+
+        <div class="planet-image" id="VenusScene">
+          <div class = "left">
+            <button type="button" class="planet"><img src="../images/planet/Venus.png" alt=""></button>
+            <div class="name">
+              금성
+            </div>
+            <div>
+              <img id="img" src="../images/Talk/section.png" />
+            </div>
+          </div>
+
+          <div class = "right">
+            <div class="square-box" id="planetExplan">
+              <div id="scene1">
+                  <h1> 나는 금성</h1>
+              </div>
+            </div>
+            <div class="square-box" id="userList" style="display: none;">
+              <div id = "user">이미남</div>
+              <div id = "user">이미녀</div>
+              <div id = "user">김미남</div>
+              <div id = "user">김미녀</div>
+              <div id = "user">최규정</div>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="planet-image" id="EarthScene">
+          <div class = "left">
+            <button type="button" class="planet"><img src="../images/planet/Earth.png" alt=""></button>
+          <div class="name">
+            지구
+          </div>
+          <div>
+            <img id="img" src="../images/Talk/section.png" />
+          </div>
+          </div>
+
+          <div class = "right">
+            <div class="square-box" id="planetExplan">
+              <div id="scene1">
+                  <h1> 나는 지구</h1>
+              </div>
+            </div>
+            <div class="square-box" id="userList" style="display: none;">
+              <div id = "user">이미남</div>
+              <div id = "user">이미녀</div>
+              <div id = "user">김미남</div>
+              <div id = "user">김미녀</div>
+              <div id = "user">최규정</div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="planet-image" id="MoonScene">
+          <div class = "left">
+            <button type="button" class="planet"><img src="../images/planet/Moon.png" alt=""></button>
+            <div class="name">
+              달
+            </div>
+            <div>
+              <img id="img" src="../images/Talk/section.png" />
+            </div>
+          </div>
+
+          <div class = "right">
+            <div class="square-box" id="planetExplan">
+              <div id="scene1">
+                  <h1> 나는 달</h1>
+              </div>
+            </div>
+            
+            <div class="square-box" id="userList" style="display: none;">
+              <div id = "user">이미남</div>
+              <div id = "user">이미녀</div>
+              <div id = "user">김미남</div>
+              <div id = "user">김미녀</div>
+              <div id = "user">최규정</div>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="planet-image" id="MarsScene">
+          <div class = "left">
+            <button type="button" class="planet"><img src="../images/planet/Mars.png" alt=""></button>
+            <div class="name">
+              화성
+            </div>
+            <div>
+              <img id="img" src="../images/Talk/section.png" />
+            </div>
+          </div>
+
+          <div class = "right">
+            <div class="square-box" id="planetExplan">
+              <div id="scene1">
+                  <h1> 나는 화성</h1>
+              </div>
+            </div>
+            <div class="square-box" id="userList" style="display: none;">
+              <div id = "user">이미남</div>
+              <div id = "user">이미녀</div>
+              <div id = "user">김미남</div>
+              <div id = "user">김미녀</div>
+              <div id = "user">최규정</div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="planet-image" id="SaturnScene">
+          <div class = "left">
+            <button type="button" class="planet"><img src="../images/planet/Saturn.png" alt=""></button>
+            <div class="name">
+              목성
+            </div>
+            <div>
+              <img id="img" src="../images/Talk/section.png" />
+            </div>
+          </div>
+
+          <div class = "right">
+            <div class="square-box" id="planetExplan">
+              <div id="scene1">
+                  <h1> 나는 목성</h1>
+              </div>
+            </div>
+            <div class="square-box" id="userList" style="display: none;">
+              <div id = "user">이미남</div>
+              <div id = "user">이미녀</div>
+              <div id = "user">김미남</div>
+              <div id = "user">김미녀</div>
+              <div id = "user">최규정</div>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="planet-image" id="JupiterScene">
+          <div class = "left">
+            <button type="button" class="planet"><img src="../images/planet/Jupiter.png" alt=""></button>
+            <div class="name">
+              토성
+            </div>
+            <div>
+              <img id="img" src="../images/Talk/section.png" />
+            </div>
+          </div>
+
+          <div class = "right">
+            <div class="square-box" id="planetExplan">
+              <div id="scene1">
+                  <h1> 나는 토성</h1>
+              </div>
+            </div>
+            <div class="square-box" id="userList" style="display: none;">
+              <div id = "user">이미남</div>
+              <div id = "user">이미녀</div>
+              <div id = "user">김미남</div>
+              <div id = "user">김미녀</div>
+              <div id = "user">최규정</div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="planet-image" id="UranusScene">
+          <div class = "left">
+            <button type="button" class="planet"><img src="../images/planet/Uranus.png" alt=""></button>
+            <div class="name">
+              천왕성
+            </div>
+            <div>
+              <img id="img" src="../images/Talk/section.png" />
+            </div>
+          </div>
+
+          <div class = "right">
+            <div class="square-box" id="planetExplan">
+              <div id="scene1">
+                  <h1> 나는 천왕성</h1>
+              </div>
+            </div>
+            <div class="square-box" id="userList" style="display: none;">
+              <div id = "user">이미남</div>
+              <div id = "user">이미녀</div>
+              <div id = "user">김미남</div>
+              <div id = "user">김미녀</div>
+              <div id = "user">최규정</div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="planet-image" id="NeptuneScene">
+          <div class = "left">
+            <button type="button" class="planet"><img src="../images/planet/Neptune.png" alt=""></button>
+            <div class="name">
+              해왕성
+            </div>
+            <div>
+              <img id="img" src="../images/Talk/section.png" />
+            </div>
+          </div>
+
+          <div class = "right">
+            <div class="square-box" id="planetExplan">
+              <div id="scene1">
+                  <h1> 나는 해왕성</h1>
+              </div>
+            </div>
+            <div class="square-box" id="userList" style="display: none;">
+              <div id = "user">이미남</div>
+              <div id = "user">이미녀</div>
+              <div id = "user">김미남</div>
+              <div id = "user">김미녀</div>
+              <div id = "user">최규정</div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="planet-image" id="BlackHallScene">
+          <div class = "left">
+            <button type="button" class="planet"><img src="../images/planet/BlackHall.png" alt=""></button>
+            <div class="name">
+              블랙홀
+            </div>
+            <div>
+              <img id="img" src="../images/Talk/section.png" />
+            </div>
+          </div>
+
+          <div class = "right">
+            <div class="square-box" id="planetExplan">
+              <div id="scene1">
+                  <h1> 나는 블랙홀</h1>
+              </div>
+            </div>
+            <div class="square-box" id="userList" style="display: none;">
+              <div id = "user">이미남</div>
+              <div id = "user">이미녀</div>
+              <div id = "user">김미남</div>
+              <div id = "user">김미녀</div>
+              <div id = "user">최규정</div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="planet-image" id="PlutoScene">
+          <div class = "left">
+            <button type="button" class="planet"><img src="../images/planet/Pluto.png" alt=""></button>
+            <div class="name">
+              명왕성
+            </div>
+            <div>
+              <img id="img" src="../images/Talk/section.png" />
+            </div>
+          </div>
+
+          <div class = "right">
+            <div class="square-box" id="planetExplan">
+              <div id="scene1">
+                  <h1> 나는 명왕성</h1>
+              </div>
+            </div>
+            <div class="square-box" id="userList" style="display: none;">
+              <div id = "user">이미남</div>
+              <div id = "user">이미녀</div>
+              <div id = "user">김미남</div>
+              <div id = "user">김미녀</div>
+              <div id = "user">최규정</div>
+            </div>
+          </div>
+        </div>
+      
+      <button type="button" class="back" src="">돌아가기</button>
+
+      <div class = "right">
+        <button class="triangle" id="triangleRight" onclick="userList()"></button>
+        <button class="triangle" id="triangleLeft" onclick="planetExplan()"></button>
+      </div>
 
   </body>
 
