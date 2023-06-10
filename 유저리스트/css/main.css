@@ -39,7 +39,6 @@ body {
   right: 30%;
   top: 6%;
   transform: rotate(90deg);
-  border-radius: 50%;
   background-color: none;
   display: flex;
   align-items: center;
@@ -133,7 +132,7 @@ body {
 #planetExplan {
   background-color: #f1f1f1;
   border-radius: 5%;
-  border: 1vw solid #919191;  
+  border: 1vw solid #919191; 
 }
 
 #user {
