@@ -16,6 +16,7 @@ body {
 
 #sun {
   position: absolute;
+  border-radius: 0%;
   right: 78%;
   left: -10%;
   top: -18%;
@@ -38,7 +39,7 @@ body {
   left: 40%;
   top: 17%;
   filter: drop-shadow(0px 0px 20px #ffb84eaf);
-  transform: rotate(90deg);
+  animation: rotate 4s infinite linear; 
 }
 
 #earth  {
@@ -47,16 +48,28 @@ body {
   left: 43%;
   top: 50%;
   filter: drop-shadow(0px 0px 20px #87b570ba);
-  transform: rotate(90deg);
+  animation: rotate 5s infinite linear;
 }
 
+<<<<<<< HEAD
+#moon  {
+  position: absolute;
+  right: 64%;
+  left: 32%;
+  top: 50%;
+  filter: drop-shadow(0px 0px 10px #c1c1c1ba);
+  animation: rotate 4s infinite linear;
+}
+
+=======
+>>>>>>> 692149629243c51589b31316d1deb8c314d774bc
 #mars {
   position: absolute;
   right: 38%;
   left: 54%;
   top: 70%;
   filter: drop-shadow(0px 0px 20px #c1431dc9);
-  transform: rotate(90deg);
+  animation: rotate 6s infinite linear;
 }
 
 #saturn {
@@ -64,8 +77,8 @@ body {
   right: 22%;
   left: 60%;
   top: 30%;
-  filter: drop-shadow(0px 0px 20px #b6925dc1);
-  transform: rotate(-90deg);
+  filter: drop-shadow(0px 0px 10px #b6925dc1);
+  animation: rotate 8s infinite linear;
 }
 
 #jupiter {
@@ -74,7 +87,7 @@ body {
   left: 75%;
   top: 65%;
   filter: drop-shadow(0px 0px 20px #b6925db7);
-  transform: rotate(90deg);
+  animation: rotate 7s infinite linear;
 }
 
 #uranus {
@@ -83,7 +96,7 @@ body {
   left: 87%;
   top: 30%;
   filter: drop-shadow(0px 0px 20px #6dacd4be);
-  transform: rotate(90deg);
+  animation: rotate 8s infinite linear;
 }
 
 #neptune {
@@ -92,15 +105,18 @@ body {
   left: 91%;
   top: 9%;
   filter: drop-shadow(0px 0px 20px #1448D4);
-  transform: rotate(90deg);
+  animation: rotate 9s infinite linear;
 }
 
 #blackhole {
   position: absolute;
+  border-radius: 0%;
   right:77%;
   left: 5%;
   top: 55%;
-  filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.50));
+  transform: rotate(-30deg);
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.50));
+  animation: rotate 11s infinite linear;
 }
 
 #pluto {
@@ -109,7 +125,7 @@ body {
   left: 30%;
   top: 82%;
   filter: drop-shadow(0px 0px 20px #FFC9A0);
-  transform: rotate(90deg);
+  animation: rotate 4s infinite linear;
 }
 
 .planet {
@@ -125,4 +141,111 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+<<<<<<< HEAD
+}
+
+.line1 {
+  position: absolute;
+  width: 16%;
+  height: 0px;
+  left: 17%;
+  top: 13%;
+
+  border: 5px solid #FFFFFF;
+  transform: rotate(5deg);
+}
+
+.line2 {
+  position: absolute;
+  width: 14%;
+  height: 0px;
+  left: 32%;
+  top: 19%;
+
+  border: 5px solid #FFFFFF;
+  transform: rotate(25deg);
+}
+.line3 {
+  position: absolute;
+  width: 15%;
+  height: 0px;
+  left: 38%;
+  top: 39%;
+
+  border: 5px solid #FFFFFF;
+  transform: rotate(79deg);
+}
+.line3_1{
+  position: absolute;
+  width: 10%;
+  height: 0px;
+  left: 33%;
+  top: 55%;
+
+  border: 5px solid #FFFFFF;
+  transform: rotate(15deg);
+}
+.line4 {
+  position: absolute;
+  width: 15%;
+  height: 0px;
+  left: 46%;
+  top: 69%;
+
+  border: 5px solid #FFFFFF;
+  transform: rotate(45deg);
+}
+.line5 {
+  position: absolute;
+  width: 20%;
+  height: 0px;
+  left: 59%;
+  top: 77%;
+
+  border: 5px solid #FFFFFF;
+  transform: rotate(1deg);
+}
+.line6 {
+  position: absolute;
+  width: 20%;
+  height: 0px;
+  left: 65%;
+  top: 63%;
+
+  border: 5px solid #FFFFFF;
+  transform: rotate(50deg);
+}
+.line7 {
+  position: absolute;
+  width: 23%;
+  height: 0px;
+  left: 68%;
+  top: 39%;
+
+  border: 5px solid #FFFFFF;
+  transform: rotate(-16deg);
+}
+.line8 {
+  position: absolute;
+  width: 15%;
+  height: 0px;
+  left: 84%;
+  top: 26%;
+
+  border: 5px solid #FFFFFF;
+  transform: rotate(-78deg);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(90deg) ;
+  }
+  50% {
+    transform: rotate(80deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+=======
+>>>>>>> 692149629243c51589b31316d1deb8c314d774bc
 }

@@ -13,6 +13,13 @@ body {
   background: rgb(33, 23, 80);
 } 
 
+.title p {
+  z-index: 1;
+  position: absolute;
+    top: 80px;
+    right: 0px;
+}
+
 .back {
   border: 0%;
   font-size: 2vw;
@@ -32,7 +39,6 @@ body {
   right: 66%;
   top: 6%;
   transform: rotate(90deg);
-  border-radius: 50%;
   background-color: none;
   display: flex;
   align-items: center;
@@ -68,15 +74,22 @@ body {
   left: 2%;
 }
 
+.section {
+  top: 70%;
+  left: 10%;
+  right: 80%;
+
+}
+
 .triangle {
   border-left: 2vw solid transparent;
   border-right: 2vw solid transparent;
-  border-bottom: 2.5vw solid #333; /* 버튼의 배경색을 변경하려면 이 부분을 수정해주세요 */
+  border-bottom: 2.5vw solid rgb(255, 255, 255); /* 버튼의 배경색을 변경하려면 이 부분을 수정해주세요 */
   cursor: pointer;
 }
 
 .triangle:hover {
-  border-bottom-color: #555; /* 마우스 오버 시 버튼의 배경색을 변경하려면 이 부분을 수정해주세요 */
+  border-bottom-color: rgb(128, 128, 128); /* 마우스 오버 시 버튼의 배경색을 변경하려면 이 부분을 수정해주세요 */
 }
 #triangleLeft { 
   transform: rotate(-90deg);
@@ -103,11 +116,49 @@ body {
 }
 .square-box {
   position: absolute;
-  top: 10%;
-  left: 13%;
-  width: 70%;
-  height: 80%;
+  top: 4%;
+  left: 10%;
+  width: 61%;
+  height: 77%;
+  padding: 5%;
+  word-wrap: break-word;
+}
+
+#userList {
+  background-color: #00ff0000;
+  border: 1vw solid #00ff0000;
+}
+
+#planetExplan {
   background-color: #f1f1f1;
   border-radius: 5%;
-  border-color: rgb(95, 95, 95);
+  border: 1vw solid #919191; 
+}
+
+#user {
+  border: 0.5vw solid #f1f1f1;
+  background-color: #00ff0000;
+  border-radius: 7%;
+  color: #f1f1f1;
+  text-align: center;
+  
+  float: left;
+  width: 25%;
+  height: 10%;
+  margin: 1%;
+}
+
+#img {
+  position: fixed;
+  bottom: 0;
+  left: 30%;
+  width: 30%;
+  transform: translate(-70%, 5%);
+<<<<<<< HEAD:유저리스트_행성설명/css/main.css
+}
+
+.planet-image {
+  display: none;
+=======
+>>>>>>> 692149629243c51589b31316d1deb8c314d774bc:유저리스트/css/main.css
 }
