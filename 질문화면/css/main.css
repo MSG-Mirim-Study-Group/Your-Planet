@@ -1,7 +1,22 @@
 @font-face {
-  font-family : '이쁜폰트';
-  src : url(nanumsquare.ttf);
-  transform : rotate(0.04deg); 
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OTWelcomeRA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
@@ -120,6 +135,7 @@ button #test {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  font-family: 'Cafe24Ssurround';
 }
 
 #question {
@@ -128,6 +144,8 @@ button #test {
 }
 
 .question .title {
+  font-family: 'S-CoreDream-3Light';
+  color: rgb(19, 19, 141);
   position: absolute;
   top: 15%;
   font-size: 20px;
@@ -160,6 +178,8 @@ button #test {
   align-items: center;
   flex-direction: column;
   margin-top: 2em;
+  font-size: 18px;
+  font-family: 'OTWelcomeRA';
 }
 
 #answer {
