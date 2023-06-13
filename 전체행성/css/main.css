@@ -21,7 +21,7 @@ body {
   left: -10%;
   top: -18%;
   filter: drop-shadow(0px 0px 20px #aa1d1dc0);
-  transform: rotate(-160deg);
+  animation: rotate 8s infinite linear; 
 }
 
 #mercury {
@@ -31,6 +31,7 @@ body {
   left: 30%;
   top: 10%;
   filter: drop-shadow(0px 0px 10px #ff714ec3);
+  animation: rotate 3s infinite linear; 
 }
 
 #venus  {
