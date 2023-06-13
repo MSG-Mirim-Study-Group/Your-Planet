@@ -35,9 +35,9 @@ body {
 
 .planet {
   position: absolute;
-  left: 10%;
-  right: 66%;
-  top: 6%;
+  left: 23%;
+  right: 28%;
+  top: 2%;
   transform: rotate(90deg);
   background-color: none;
   display: flex;
@@ -57,9 +57,9 @@ body {
   left: 20%;
   top: 50%;
 
-  font-family: 'Akshar';
+  font-family:'Akshar';
   font-style: normal;
-  font-size: 4.2vw;
+  font-size: 80px;
 
   color: #FFFFFF;
 }
@@ -67,7 +67,7 @@ body {
 .name::after {
   content: "";
   position: absolute;
-  width: 302.9%;
+  width: 29vw;
   height: 0.5vw;
   background-color: white;
   bottom: 0;
@@ -125,6 +125,7 @@ body {
 }
 
 #userList {
+  display: none;
   background-color: #00ff0000;
   border: 1vw solid #00ff0000;
 }
@@ -154,11 +155,8 @@ body {
   left: 30%;
   width: 30%;
   transform: translate(-70%, 5%);
-<<<<<<< HEAD:유저리스트_행성설명/css/main.css
 }
 
 .planet-image {
   display: none;
-=======
->>>>>>> 692149629243c51589b31316d1deb8c314d774bc:유저리스트/css/main.css
 }
