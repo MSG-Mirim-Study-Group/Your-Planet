@@ -51,7 +51,6 @@ body {
   animation: rotate 5s infinite linear;
 }
 
-<<<<<<< HEAD
 #moon  {
   position: absolute;
   right: 64%;
@@ -61,8 +60,6 @@ body {
   animation: rotate 4s infinite linear;
 }
 
-=======
->>>>>>> 692149629243c51589b31316d1deb8c314d774bc
 #mars {
   position: absolute;
   right: 38%;
@@ -141,7 +138,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-<<<<<<< HEAD
 }
 
 .line1 {
@@ -246,6 +242,4 @@ body {
   100% {
     transform: rotate(90deg);
   }
-=======
->>>>>>> 692149629243c51589b31316d1deb8c314d774bc
 }
