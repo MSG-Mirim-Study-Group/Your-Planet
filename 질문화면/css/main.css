@@ -86,37 +86,6 @@ button #test {
   background-color: #f0f0f0;
 }
 
-/* 버튼 구현 */
-.triangle:after {
-  content:'';
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto; /* 버튼 수평 정렬 */
-  width: 0;
-  height: 0;
-  border-top: 3em solid #ffffff;
-  border-left: 3em solid transparent;
-  border-right: 3em solid transparent;
-  cursor : pointer;
-}
-#triangleRight { 
-  transform: rotate(-90deg);
-  position: absolute;
-  top: 50%;
-  left: 78%;
-}
-#triangleLeft {
-  z-index: 4;
-  transform: rotate(90deg);
-  position: absolute;
-  top: 50%;
-  left: -68%;
-}
-.triangle:hover {
-  filter: brightness(50%);
-}
-
 .container {
   margin: 0;
   object-fit: cover;
@@ -161,11 +130,12 @@ button #test {
 .question .title {
   position: absolute;
   top: 15%;
+  font-size: 20px;
 }
 
 .question .sub_title {
   position: absolute;
-  top: 23%;
+  top: 24%;
 }
 
 .question h2 {
@@ -189,7 +159,7 @@ button #test {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 #answer {
