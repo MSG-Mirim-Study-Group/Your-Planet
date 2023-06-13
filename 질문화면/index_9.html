@@ -11,6 +11,31 @@
     <link rel="stylesheet" href="./js/main.js">
 </head>
 <body>
+    <script src="js/storage.js"></script>
+    <script>
+        function updateVariables(variable1, variable2) {   
+            if (variable1 ===  "j") {
+                e++;
+            } else if (variable1 === "p") {
+                p++;
+            }else if (variable1 === "f" && variable2 === "n") {
+                f++;
+                n++;
+            }
+
+            // 변수 값 저장
+            localStorage.setItem("j", j);
+            localStorage.setItem("f", f);
+            localStorage.setItem("n", n);
+            localStorage.setItem("p", p);
+
+            // 페이지 전환
+            window.location.href = "../질문화면/index_10.html";
+            
+    }
+    </script>
+    <!-- mbti 각각의 수가 얼마인지 -->
+    <script src="js/ItemTest.js"></script>
     <div class="planet">
         <img src="../images/planet/Saturn.png" id="saturn" alt="Saturn">
         <img src="../images/planet/Earth.png" id="earth" alt="Earth">
@@ -24,9 +49,9 @@
             <h2 class="sub_title">그렇게 우주선을 타고 돌아다니고 있는데<br>당신이 찾던 별이 드디어 눈 앞에!!</h2>
         </div>
         <div class="answer" id="answer">
-            <div class="a1" id="a1">‘오오오오!!!!!!!!!!가즈아!!!’ 착륙하기 위해 전속력으로 전진한다.</div>
-            <div class="a2" id="a2">‘혹시 모르는 비상사태가 발생할지도 모르니 멀리서 봐야겠다.’ 일단 멀리서 별을 관찰한다.</div>
-            <div class="a3" id="a3">‘흐어어엉 드디어 이걸 보게 되다니ㅠㅠ’ 감격스러운 마음에 눈물을 흘린다.</div>
+            <div class="a1" id="a1" onclick="updateVariables('p')">‘오오오오!!!!!!!!!!가즈아!!!’ 착륙하기 위해 전속력으로 전진한다.</div>
+            <div class="a2" id="a2" onclick="updateVariables('j')" >‘혹시 모르는 비상사태가 발생할지도 모르니 멀리서 봐야겠다.’ 일단 멀리서 별을 관찰한다.</div>
+            <div class="a3" id="a3" onclick="updateVariables('f', 'n')">‘흐어어엉 드디어 이걸 보게 되다니ㅠㅠ’ 감격스러운 마음에 눈물을 흘린다.</div>
         </div>
     </div>
 </body>

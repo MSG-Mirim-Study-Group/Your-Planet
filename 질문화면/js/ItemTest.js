@@ -1,0 +1,16 @@
+var I = localStorage.getItem("i");
+console.log(I);
+var E = localStorage.getItem("e");
+console.log(E);
+var S = localStorage.getItem("s");
+console.log(S);
+var N = localStorage.getItem("n");
+console.log(N);
+var F = localStorage.getItem("f");
+console.log(F);
+var T = localStorage.getItem("t");
+console.log(T);
+var P = localStorage.getItem("p");
+console.log(P);
+var J = localStorage.getItem("j");
+console.log(J);

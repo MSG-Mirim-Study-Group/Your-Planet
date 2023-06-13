@@ -11,6 +11,42 @@
     <link rel="stylesheet" href="./js/main.js">
 </head>
 <body>
+    <script src="js/storage.js"></script>
+    <script>
+        function updateVariables(variable1, variable2) {   
+            if (variable1 === "e") {
+                e++;
+            } else if (variable1 === "f") {
+                f++;
+            }else if (variable1 === "all") {
+                i++;
+                e++;
+                n++;
+                s++;
+                f++;
+                t++;
+                p++;
+                j++;
+            }
+
+            // 변수 값 저장
+            localStorage.setItem("i", i);
+            localStorage.setItem("j", j);
+            localStorage.setItem("s", s);
+            localStorage.setItem("e", e);
+            localStorage.setItem("f", f);
+            localStorage.setItem("n", n);
+            localStorage.setItem("p", p);
+            localStorage.setItem("t", t);
+
+            // 페이지 전환
+            window.location.href = "../질문화면/mbti.js";
+            
+    }
+    </script>
+    <!-- mbti 각각의 수가 얼마인지 -->
+    <script src="js/ItemTest.js"></script>
+
     <div class="planet">
         <img src="../images/planet/Saturn.png" id="saturn" alt="Saturn">
         <img src="../images/planet/Earth.png" id="earth" alt="Earth">
@@ -24,9 +60,9 @@
             <h2 class="sub_title">이럴수가! 어떠한 이유로 인해 지구로 돌아갈 수 없게 되었다.<br>지금이 마지막으로 지구와 통신할 수 있는 기회, 그때 할 일은?</h2>
         </div>
         <div class="answer" id="answer">
-            <div class="a1" id="a1">‘우주 사진 찍어서 자랑해야지’ 인증샷을 찍고, SNS에 올린다.</div>
-            <div class="a2" id="a2">‘흑흑..엄마아빠..우리 초코’ 사랑했던 사람들에게 메시지를 돌리며 운다.</div>
-            <div class="a3" id="a3">‘안돼..살려줘..!!!’ 도움을 요청한다</div>
+            <div class="a1" id="a1" onclick="updateVariables('e')" >‘우주 사진 찍어서 자랑해야지’ 인증샷을 찍고, SNS에 올린다.</div>
+            <div class="a2" id="a2" onclick="updateVariables('f')" >‘흑흑..엄마아빠..우리 초코’ 사랑했던 사람들에게 메시지를 돌리며 운다.</div>
+            <div class="a3" id="a3" onclick="updateVariables('all')">‘안돼..살려줘..!!!’ 도움을 요청한다</div>
         </div>
     </div>
 </body>
