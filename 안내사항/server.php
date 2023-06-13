@@ -2,15 +2,25 @@
 
 include('connect.php');
 if(isset($_POST['user_name'])){
+<<<<<<< HEAD
+    $user_name = ($conn, $_POST['user_name']);
+=======
     $user_name = $_POST['user_name'];
+>>>>>>> 6926db4e88ed09b2f23909393876815c8293a317
     
     if(empty($user_name)){
         header("location: index.html?error=이름을 써주세요");
         exit();
     }else{
+<<<<<<< HEAD
+        $save = "insert into member(user_name) value($user_name)"
+        $rname = mysqli_query($conn, $save);
+        if($rname){
+=======
         $save = "INSERT INTO member (user_name) VALUES ('$user_name')";
         $result = mysqli_query($conn, $save);
         if($result){
+>>>>>>> 6926db4e88ed09b2f23909393876815c8293a317
             header("location: index.html?error=이름 저장 성공");
             exit();
         }else{
@@ -18,6 +28,19 @@ if(isset($_POST['user_name'])){
             exit();
         }
     }
+<<<<<<< HEAD
+    
+
+
+}
+else{
+    header("location: index.html?error=오류 발생");
+}
+
+
+
+?>
+=======
 }
 else{
     header("location: index.html?error=오류 발생");
@@ -61,3 +84,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 }
 ?> -->
+>>>>>>> 6926db4e88ed09b2f23909393876815c8293a317
