@@ -8,16 +8,40 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <button type="button" class="planet" id="sun"><img src="imgs/planet/Sun.png" alt="태양"></button>
-    <button type="button" class="planet" id="mercury"><img src="imgs/planet/Mercury.png" alt="수성"></button>
-    <button type="button" class="planet" id="venus"><img src="imgs/planet/Venus.png" alt="금성"></button>
-    <button type="button" class="planet" id="earth"><img src="imgs/planet/Earth.png" alt="지구"></button>
-    <button type="button" class="planet" id="mars"><img src="imgs/planet/Mars.png" alt="화성"></button>
-    <button type="button" class="planet" id="saturn"><img src="imgs/planet/Saturn.png" alt="목성"></button>
-    <button type="button" class="planet" id="jupiter"><img src="imgs/planet/Jupiter.png" alt="토성"></button>
-    <button type="button" class="planet"  id="uranus"><img src="imgs/planet/Uranus.png" alt="천왕성"></button>
-    <button type="button" class="planet"  id="neptune"><img src="imgs/planet/Neptune.png" alt="해왕성"></button>
-    <button type="button" class="planet" id="blackhole"><img src="imgs/planet/BlackHall.png" alt=""></button>
-    <button type="button" class="planet"  id="pluto"><img src="imgs/planet/Pluto.png" alt=""></button>
+    <script  src="JS/main.js"></script>  
+    <div style="position: absolute; width: 100%; height: 100%; " >
+        <img src="../images/dark_star1.png" style="position: absolute; top: 30%; left: 40%;" alt="이미지1">
+        <img src="../images/dark_star1.png" style="position: absolute; top: 50%; left: 20%;" alt="이미지2">
+        <img src="../images/dark_star1.png" style="position: absolute; top: 60%; left: 60%;" alt="이미지3">
+        <img src="../images/dark_star1.png" style="position: absolute; top: 10%; left: 66%;" alt="이미지4">
+        <img src="../images/dark_star1.png" style="position: absolute; top: 90%; left: 05%;" alt="이미지5">
+        <img src="../images/dark_star1.png" style="position: absolute; top: 84%; left: 68%;" alt="이미지6">
+        <img src="../images/dark_star1.png" style="position: absolute; top: 95%; left: 95%;" alt="이미지7">
+        <img src="../images/dark_star1.png" style="position: absolute; top: 55%; left: 85%;" alt="이미지8">
+        <img src="../images/dark_star1.png" style="position: absolute; top: 77%; left: 34%;" alt="이미지9">
+    </div>
+
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+    <div class="line3_1"></div>
+    <div class="line4"></div>
+    <div class="line5"></div>
+    <div class="line6"></div>
+    <div class="line7"></div>
+    <div class="line8"></div>
+    
+    <button type="button" class="planet" id="sun" onclick="goToBPage('Sun')"><img src="../images/planet/Sun.png" alt="태양"></button>
+    <button type="button" class="planet" id="mercury" onclick="goToBPage('Mercury')"><img src="../images/planet/Mercury.png" alt="수성"></button>
+    <button type="button" class="planet" id="venus" onclick="goToBPage('Venus')"><img src="../images/planet/Venus.png" alt="금성"></button>
+    <button type="button" class="planet" id="earth" onclick="goToBPage('Earth')"><img src="../images/planet/Earth.png" alt="지구"></button>
+    <button type="button" class="planet" id="moon" onclick="goToBPage('Moon')"><img src="../images/planet/Moon.png" alt="달"></button>    
+    <button type="button" class="planet" id="mars" onclick="goToBPage('Mars')"><img src="../images/planet/Mars.png" alt="화성"></button>
+    <button type="button" class="planet" id="saturn" onclick="goToBPage('Saturn')"><img src="../images/planet/Saturn.png" alt="목성"></button>
+    <button type="button" class="planet" id="jupiter" onclick="goToBPage('Jupiter')"><img src="../images/planet/Jupiter.png" alt="토성"></button>
+    <button type="button" class="planet"  id="uranus" onclick="goToBPage('Uranus')"><img src="../images/planet/Uranus.png" alt="천왕성"></button>
+    <button type="button" class="planet"  id="neptune" onclick="goToBPage('Neptune')"><img src="../images/planet/Neptune.png" alt="해왕성"></button>
+    <button type="button" class="planet" id="blackhole" onclick="goToBPage('BlackHall')"><img src="../images/planet/BlackHall.png" alt="블랙홀"></button>
+    <button type="button" class="planet"  id="pluto" onclick="goToBPage('Pluto')"><img src="../images/planet/Pluto.png" alt="명왕성"></button> 
 </body>
 </html>
