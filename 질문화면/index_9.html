@@ -7,33 +7,27 @@
     <title>질문 화면</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./js/main.js">
 </head>
 <body>
     <div class="planet">
         <img src="../images/planet/Saturn.png" id="saturn" alt="Saturn">
         <img src="../images/planet/Earth.png" id="earth" alt="Earth">
     </div>
-    <div>
-        <progress value="90" max="100" id="jb"></progress>
+    <div class="progress" id="progress">
+        <progress value="10" max="100" id="jb"></progress>
     </div>
-    <div class="container">
-        <div class="question">
-            <h2>Q8. 안녕하세요</h2>
+    <div class="container" id="container">
+        <div class="question" id="question">
+            <h2 class="title">Q9.<br></h2>
+            <h2 class="sub_title">그렇게 우주선을 타고 돌아다니고 있는데<br>당신이 찾던 별이 드디어 눈 앞에!!</h2>
         </div>
-        <div class="answer">
-            <div class="a1"></div>
-            <div class="a2"></div>
-            <div class="a3"></div>
+        <div class="answer" id="answer">
+            <div class="a1" id="a1">‘오오오오!!!!!!!!!!가즈아!!!’ 착륙하기 위해 전속력으로 전진한다.</div>
+            <div class="a2" id="a2">‘혹시 모르는 비상사태가 발생할지도 모르니 멀리서 봐야겠다.’ 일단 멀리서 별을 관찰한다.</div>
+            <div class="a3" id="a3">‘흐어어엉 드디어 이걸 보게 되다니ㅠㅠ’ 감격스러운 마음에 눈물을 흘린다.</div>
         </div>
-    </div>
-    <div class="btns">
-        <button class="triangle" id="triangleLeft"
-        onclick="location.href='../질문화면/index_8.html'">
-        </button>
-        <button class="triangle" id="triangleRight"
-        onclick="location.href='../질문화면/index_10.html'">
-        </button>
     </div>
 </body>
 </html>

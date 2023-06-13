@@ -7,33 +7,27 @@
     <title>질문 화면</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./js/main.js">
 </head>
 <body>
     <div class="planet">
         <img src="../images/planet/Saturn.png" id="saturn" alt="Saturn">
         <img src="../images/planet/Earth.png" id="earth" alt="Earth">
     </div>
-    <div>
-        <progress value="30" max="100" id="jb"></progress>
+    <div class="progress" id="progress">
+        <progress value="10" max="100" id="jb"></progress>
     </div>
-    <div class="container">
-        <div class="question">
-            <h2>Q3. 안녕하세요</h2>
+    <div class="container" id="container">
+        <div class="question" id="question">
+            <h2 class="title">Q3.<br></h2>
+            <h2 class="sub_title">달로 가는 길,<br>갑자기 경로가 헷갈리기 시작하는데..!</h2>
         </div>
-        <div class="answer">
-            <div class="a1"></div>
-            <div class="a2"></div>
-            <div class="a3"></div>
+        <div class="answer" id="answer">
+            <div class="a1" id="a1">‘여기서 길을 잃게 되면..’ 걱정되는 상황들을 상상해본다.</div>
+            <div class="a2" id="a2">‘여기서 가장 가까운 행성 경로가..’ 모니터를 보며 경로 찾는 데에 집중한다.</div>
+            <div class="a3" id="a3">‘아 몰라 그냥 느낌가는데로 GO!’ 자신의 감을 믿는다.</div>
         </div>
-    </div>
-    <div class="btns">
-        <button class="triangle" id="triangleLeft"
-        onclick="location.href='../질문화면/index_2.html'">
-        </button>
-        <button class="triangle" id="triangleRight"
-        onclick="location.href='../질문화면/index_4.html'">
-        </button>
     </div>
 </body>
 </html>
