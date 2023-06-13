@@ -35,8 +35,8 @@ body {
 
 .planet {
   position: absolute;
-  left: 23%;
-  right: 30%;
+  left: 10%;
+  right: 66%;
   top: 6%;
   transform: rotate(90deg);
   background-color: none;
@@ -154,8 +154,11 @@ body {
   left: 30%;
   width: 30%;
   transform: translate(-70%, 5%);
+<<<<<<< HEAD:유저리스트_행성설명/css/main.css
 }
 
 .planet-image {
   display: none;
+=======
+>>>>>>> 692149629243c51589b31316d1deb8c314d774bc:유저리스트/css/main.css
 }
