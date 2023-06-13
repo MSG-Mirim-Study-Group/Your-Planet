@@ -16,3 +16,4 @@ function planetExplan() {
       planetScene.style.display = "block";
     }
   });
+  
