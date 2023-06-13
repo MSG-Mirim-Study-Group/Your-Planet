@@ -13,13 +13,15 @@ body {
   background: rgb(33, 23, 80);
 }
 
+
 #sun {
   position: absolute;
+  border-radius: 0%;
   right: 78%;
   left: -10%;
   top: -18%;
   filter: drop-shadow(0px 0px 20px #aa1d1dc0);
-  transform: rotate(0deg);
+  transform: rotate(-160deg);
 }
 
 #mercury {
@@ -37,7 +39,7 @@ body {
   left: 40%;
   top: 17%;
   filter: drop-shadow(0px 0px 20px #ffb84eaf);
-  transform: rotate(90deg);
+  animation: rotate 4s infinite linear; 
 }
 
 #earth  {
@@ -46,7 +48,7 @@ body {
   left: 43%;
   top: 50%;
   filter: drop-shadow(0px 0px 20px #87b570ba);
-  transform: rotate(90deg);
+  animation: rotate 5s infinite linear;
 }
 
 #moon  {
@@ -55,7 +57,7 @@ body {
   left: 32%;
   top: 50%;
   filter: drop-shadow(0px 0px 10px #c1c1c1ba);
-  transform: rotate(90deg);
+  animation: rotate 4s infinite linear;
 }
 
 #mars {
@@ -64,7 +66,7 @@ body {
   left: 54%;
   top: 70%;
   filter: drop-shadow(0px 0px 20px #c1431dc9);
-  transform: rotate(90deg);
+  animation: rotate 6s infinite linear;
 }
 
 #saturn {
@@ -72,8 +74,8 @@ body {
   right: 22%;
   left: 60%;
   top: 30%;
-  filter: drop-shadow(0px 0px 20px #b6925dc1);
-  transform: rotate(-90deg);
+  filter: drop-shadow(0px 0px 10px #b6925dc1);
+  animation: rotate 8s infinite linear;
 }
 
 #jupiter {
@@ -82,7 +84,7 @@ body {
   left: 75%;
   top: 65%;
   filter: drop-shadow(0px 0px 20px #b6925db7);
-  transform: rotate(90deg);
+  animation: rotate 7s infinite linear;
 }
 
 #uranus {
@@ -91,7 +93,7 @@ body {
   left: 87%;
   top: 30%;
   filter: drop-shadow(0px 0px 20px #6dacd4be);
-  transform: rotate(90deg);
+  animation: rotate 8s infinite linear;
 }
 
 #neptune {
@@ -100,15 +102,18 @@ body {
   left: 91%;
   top: 9%;
   filter: drop-shadow(0px 0px 20px #1448D4);
-  transform: rotate(90deg);
+  animation: rotate 9s infinite linear;
 }
 
 #blackhole {
   position: absolute;
+  border-radius: 0%;
   right:77%;
   left: 5%;
   top: 55%;
-  filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.50));
+  transform: rotate(-30deg);
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.50));
+  animation: rotate 11s infinite linear;
 }
 
 #pluto {
@@ -117,7 +122,7 @@ body {
   left: 30%;
   top: 82%;
   filter: drop-shadow(0px 0px 20px #FFC9A0);
-  transform: rotate(90deg);
+  animation: rotate 4s infinite linear;
 }
 
 .planet {
@@ -127,7 +132,6 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  cursor: pointer;
 }
 
 .planet img {
@@ -226,4 +230,16 @@ body {
 
   border: 5px solid #FFFFFF;
   transform: rotate(-78deg);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(90deg) ;
+  }
+  50% {
+    transform: rotate(80deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
 }
