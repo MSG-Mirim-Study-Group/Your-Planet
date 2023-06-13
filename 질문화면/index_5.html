@@ -7,33 +7,27 @@
     <title>질문 화면</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./js/main.js">
 </head>
 <body>
     <div class="planet">
         <img src="../images/planet/Saturn.png" id="saturn" alt="Saturn">
         <img src="../images/planet/Earth.png" id="earth" alt="Earth">
     </div>
-    <div>
-        <progress value="50" max="100" id="jb"></progress>
+    <div class="progress" id="progress">
+        <progress value="10" max="100" id="jb"></progress>
     </div>
-    <div class="container">
-        <div class="question">
-            <h2>Q5. 안녕하세요</h2>
+    <div class="container" id="container">
+        <div class="question" id="question">
+            <h2 class="title">Q5.<br></h2>
+            <h2 class="sub_title">갑자기 호의를 보이는 한 외계인이 내 주위로 다가와 다른 외계인들을 불러 모으기 시작한다</h2>
         </div>
-        <div class="answer">
-            <div class="a1"></div>
-            <div class="a2"></div>
-            <div class="a3"></div>
+        <div class="answer" id="answer">
+            <div class="a1" id="a1">‘허걱 외계인을 보게 되다니’ 새 외계인들을 알아가며 친해질 생각에 설렌다.</div>
+            <div class="a2" id="a2">‘아니 제발..’ 많은 외계인들이 모여 있어 조금 부담스러워진다.</div>
+            <div class="a3" id="a3">‘엄마..무서워…’집갈래!!’무서우니 도망친다.</div>
         </div>
-    </div>
-    <div class="btns">
-        <button class="triangle" id="triangleLeft"
-        onclick="location.href='../질문화면/index_4.html'">
-        </button>
-        <button class="triangle" id="triangleRight"
-        onclick="location.href='../질문화면/index_6.html'">
-        </button>
     </div>
 </body>
 </html>
