@@ -1,63 +1,20 @@
 <?php
 
-include('connect.php');
-if(isset($_POST['user_name'])){
-    $user_name = $_POST['user_name'];
-    
-    if(empty($user_name)){
-        header("location: index.html?error=이름을 써주세요");
-        exit();
-    }else{
-        $save = "INSERT INTO member (user_name) VALUES ('$user_name')";
-        $result = mysqli_query($conn, $save);
-        if($result){
-            header("location: index.html?error=이름 저장 성공");
-            exit();
-        }else{
-            header("location: index.html?error=이름 저장 실패");
-            exit();
-        }
-    }
+include('./connect.php');
+
+$_uname = $_POST['uname'];
+$query = "INSERT INTO user (user_name) VALUES (?)";
+$stmt = mysqli_prepare($conn, $query);
+mysqli_stmt_bind_param($stmt, 's', $_uname);
+$result = mysqli_stmt_execute($stmt);
+
+if ($result) {
+    echo 'db에 연결 성공';
+} else {
+    echo 'db에 연결 실패' . mysqli_error($conn);
 }
-else{
-    header("location: index.html?error=오류 발생");
-    exit();
-}
+
+mysqli_stmt_close($stmt);
+mysqli_close($conn);
+
 ?>
-
-<!-- 
-<?php
-// 폼이 제출되었는지 확인합니다.
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  // 체크박스가 선택되었는지 확인합니다.
-  if (isset($_POST["agree"]) && $_POST["agree"] == "on") {
-    // 사용자 이름 값을 가져옵니다.
-    $user_name = $_POST["user_name"];
-
-    // 데이터베이스에 연결합니다 (아래에 데이터베이스 연결 정보를 입력해야 합니다).
-    $servername = "데이터베이스_서버_주소";
-    $username = "사용자_이름";
-    $password = "비밀번호";
-    $dbname = "데이터베이스_이름";
-
-    $conn = new mysqli($servername, $username, $password, $dbname);
-
-    // 연결을 확인합니다.
-    if ($conn->connect_error) {
-      die("데이터베이스 연결 실패: " . $conn->connect_error);
-    }
-
-    // 사용자 이름 값을 데이터베이스에 저장합니다.
-    $sql = "INSERT INTO users (user_name) VALUES ('$user_name')";
-
-    if ($conn->query($sql) === TRUE) {
-      echo "사용자 이름이 성공적으로 저장되었습니다.";
-    } else {
-      echo "오류: " . $sql . "<br>" . $conn->error;
-    }
-
-    // 데이터베이스 연결을 닫습니다.
-    $conn->close();
-  }
-}
-?> -->

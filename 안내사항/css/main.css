@@ -141,7 +141,7 @@ hr {
 
 
 /* 이름 입력란 */
-#input_name {
+.input_name {
   position: absolute;
   width: 10%;
   height: 10%;

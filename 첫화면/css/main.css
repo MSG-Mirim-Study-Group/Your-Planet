@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'LOTTERIACHAB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIACHAB.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     padding: 0%;
     margin: 0%;
@@ -8,9 +22,14 @@
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
-    overflow: hidden;
+    color: white;
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* overflow: hidden; */
     background-color: rgb(21, 9, 76);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .button {  
@@ -26,31 +45,34 @@ body {
 }
 
 .button p {
+    font-family: 'Cafe24Ssurround';
     position: absolute;
     left: 30%;
-    top: -4%;
-    rotate: -17deg;
-    font-size: 110%;
+    top: -5%;
+    rotate: -12deg;
+    font-size: 140%;
 }
 
 #btn_start {
+    font-family: 'Cafe24Ssurround';
     z-index: 2;
     position: absolute;
-    right: 30%;
-    left: 44%;
+    width: 100vw;
     top: 80%;
     border: none;
     color: rgb(221, 220, 220);
     cursor: pointer;
-    font-size: 150%;
+    font-size: 20px;
+}
+
+#btn_start:hover {
+    background-color: beige;
+    color: blue;
 }
 
 .planet {
     border-radius: 50%;
     background-color: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
   
 img {
@@ -60,10 +82,19 @@ img {
 } 
 
 .main_title {
-    position: absolute;
-    right: 31%;
-    left: 31%;
-    top: 3%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'LOTTERIACHAB';
+    font-size: 140px;
+    margin-top: -3%;
+}
+
+#title {
+    height: 100vh;
+    width: 100vw;
 }
 
 .button:hover {
