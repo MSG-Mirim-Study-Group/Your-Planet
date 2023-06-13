@@ -1,3 +1,9 @@
+@font-face {
+  font-family : '이쁜폰트';
+  src : url(nanumsquare.ttf);
+  transform : rotate(0.04deg); 
+}
+
 * {
   padding: 0%;
   margin: 0%;
@@ -6,7 +12,7 @@
 }
 
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family : '이쁜폰트';
   /* overflow: hidden; */
   background-color: rgb(32, 20, 83);
   overflow-x: hidden;
@@ -14,37 +20,50 @@ body {
 
 .container {
   position: absolute;
-  width: 48%;
-  height: 110%;
-  left: 26%;
-  top: 5%;
+  left: 25%;  
+  width: 50%;
+  height: 120%;
+  top: -10%;
+  /* 가로 센터 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .my_planet {
   z-index: 2;
-  position: absolute;
   width: 100%;
-  height: 68%;
+  height: 65%;
   left: 0%;
   background:rgb(255, 255, 255);
   border-radius: 1em;  
+  /* 가운데 */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  text-align: center;
+}
+
+img {
+  width: 40%;
+  height: auto;
+  margin: auto;
+  display: block;
 }
 
 /* 나의 행성 이미지 */
-.my_planet #uranus {
+.my_planet img #uranus {
   position: absolute;
-  width: 280%;
-  height: 280%;
-  left: 28%;
-  top: -180%;
+  width: 90%;
+  height: 90%;
   rotate: 10deg;
 }
 
 /* 나의 행성 이름 */
 .planet_title {
   position: absolute;
-  left: 40%;
-  top: 13%;
+  padding-top: 5%;
   font-size: 230%;
   font-style: bold;
 }
@@ -52,14 +71,14 @@ body {
 /* 나의 행성 한줄평 */
 .planet_subtitle {
   position: absolute;
-  left: 35%;
-  top: 7%;
+  padding-top: 150px;
   font-size: 130%;
   font-style: bold;
 }
 
-/* 행성 성격 설명 */
+/* 행성 성격 설명 박스 */
 .explain {
+  z-index: 3;
   position: absolute;
   width: 80%;
   height: 7%;
@@ -68,6 +87,17 @@ body {
   background:rgb(207, 207, 207);
   border-radius:1em;  
   padding: 1.5em;
+  text-align: center;
+}
+
+/* 행성 성격 설명 */
+.explain p {
+  z-index: 3;
+  position: absolute;
+  width: 80%;
+  height: 0%;
+  background:rgb(207, 207, 207);
+  border-radius:1em;
 }
 
 .same_planet {
@@ -75,18 +105,18 @@ body {
   position: absolute;
   width: 100%;
   height: 15%;
-  top: 70%;
+  top: 85%;
   left: 0%;
   background:rgb(255, 255, 255);
   border-radius: 1em;  
+  text-align: center;
 }
 
 .same_planet .question {
   position: absolute;
   width: 100%;
   height: 20%;
-  top: 10%;
-  left: 20%;
+  top: 13%;
   font-size: 115%;
 }
 
@@ -94,8 +124,7 @@ body {
   position: absolute;
   width: 100%;
   height: 20%;
-  top: 41%;
-  left: 40%;
+  top: 45px;
   font-size: 270%;
 }
 
@@ -105,8 +134,9 @@ body {
   position: absolute;
   width: 100%;
   height: 30%;
-  top:  89%;
+  top:  103%;
   border-radius:1em;  
+  text-align: center;
 }
 
 /* 나와 잘 맞는 행성 */
@@ -117,6 +147,7 @@ body {
   top: 0%;
   background:rgb(255, 255, 255);
   border-radius:1em;  
+  /* text-align: center; */
 }
 
 /* 잘 맞지 않는 행성 */
@@ -128,13 +159,14 @@ body {
   top: 0%;
   background:rgb(255, 255, 255);
   border-radius:1em;  
+  /* text-align: center; */
 }
 
 /* 나와 잘 맞는 행성 이미지 */
 .good_planet img {
   position: absolute;
   width: 50%;
-  height: 58%;
+  height: auto;
   left: 25%;
   top: 8%;
 }
@@ -142,9 +174,8 @@ body {
 /* 위의 행성 이름 */
 .good_planet .title {
   position: absolute;
-  width: 50%;
+  width: 100%;
   height: 60%;
-  left: 42%;
   top: 70%;
   font-size: 150%;
 }
@@ -153,8 +184,7 @@ body {
 .good_planet .sub_title {
   position: absolute;
   width: 100%;
-  height: 60%;
-  left: 15%;
+  height: auto;
   top: 83%;
 }
 
@@ -162,7 +192,7 @@ body {
 .bad_planet img {
   position: absolute;
   width: 50%;
-  height: 58%;
+  height: auto;
   left: 25%;
   top: 8%;
 }
@@ -170,9 +200,8 @@ body {
 /* 위의 행성 이름 */
 .bad_planet .title {
   position: absolute;
-  width: 50%;
+  width: 100%;
   height: 60%;
-  left: 42%;
   top: 70%;
   font-size: 150%;
 }
@@ -181,8 +210,7 @@ body {
 .bad_planet .sub_title {
   position: absolute;
   width: 100%;
-  height: 60%;
-  left: 15%;
+  height: auto;
   top: 83%;
 }
 
@@ -214,7 +242,7 @@ body {
   width: 70%;
   height: 70%;
   left: 58%;
-  top: 20%;
+  top: 90%;
   rotate: -50deg;
 }
 
@@ -227,15 +255,4 @@ body {
   top: 20%;
   rotate: 10deg;
   opacity: 0.2;
-}
-
-
-/* 맨 밑 margin */
-.blank {
-  position: absolute;
-  left: 0%;
-  top: 100%;
-  width: 10%;
-  height: 10%;
-  background-color: rgb(32, 20, 83);
 }
