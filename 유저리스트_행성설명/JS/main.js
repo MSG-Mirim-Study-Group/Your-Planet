@@ -1,13 +1,3 @@
-function userList() {
-    $('#userList').show();
-    $('#planetExplan').hide();
-    console.log("userList");
-}
-function planetExplan() {
-    $('#planetExplan').show();
-    $('#userList').hide();
-    console.log("planetExplan");
-}
 
   document.addEventListener("DOMContentLoaded", function() {
     var selectedPlanet = localStorage.getItem("selectedPlanet");
@@ -16,4 +6,13 @@ function planetExplan() {
       planetScene.style.display = "block";
     }
   });
-  
+
+
+function goToUserPage(planet) {
+   localStorage.setItem("selectedPlanet", planet);
+   location.href="../유저리스트_행성설명/index_User.html";
+}
+function goToPage(planet) {
+  localStorage.setItem("selectedPlanet", planet);
+  location.href="../유저리스트_행성설명/index.html";
+}
