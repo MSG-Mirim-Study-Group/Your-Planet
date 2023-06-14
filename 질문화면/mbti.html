@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var i = localStorage.getItem("i");
+    var e = localStorage.getItem("e");
+    var s = localStorage.getItem("s");
+    var n = localStorage.getItem("n");
+    var f = localStorage.getItem("f");
+    var t = localStorage.getItem("t");
+    var p = localStorage.getItem("p");
+    var j = localStorage.getItem("j");
+
+    let mbti = "";
+    let planet = "";
+
+    if (i > e) {
+      mbti += "i";
+    } else {
+      mbti += "e";
+    }
+
+    if (s > n) {
+      mbti += "s";
+    } else {
+      mbti += "n";
+    }
+
+    if (f > t) {
+      mbti += "f";
+    } else {
+      mbti += "t";
+    }
+
+    if (p > j) {
+      mbti += "p";
+    } else {
+      mbti += "j";
+    }
+
+    console.log("결과 : " + mbti);
+
+
+    switch (mbti) {
+      case "infp":
+        planet = "Earth";
+        window.location.href = "../결과화면/index.html";
+        break;
+      case "infj":
+        planet = "Earth";
+        window.location.href = "../결과화면/index.html";
+        break;
+      case "intj":
+        planet = "Pluto";
+        window.location.href = "../결과화면/index.html";
+        break;
+      case "intp":
+        planet = "Neptune";
+        window.location.href = "../결과화면/index.html";
+        break;
+      case "isfp":
+        planet = "Moon";
+        window.location.href = "../결과화면/index.html";
+        break;
+      case "isfj":
+        planet = "Saturn";
+        window.location.href = "../결과화면/index.html";
+        break;
+      case "istp":
+        planet = "Mercury";
+        window.location.href = "../결과화면/index.html";
+        break;
+      case "istj":
+        planet = "Uranus";
+        window.location.href = "../결과화면/index.html";
+        break;
+      case "enfp":
+        planet = "Sun";
+        window.location.href = "../결과화면/index.html";
+        break;
+      case "enfj":
+        planet = "Sun";
+        window.location.href = "../결과화면/index.html";
+        break;
+      case "entj":
+        planet = "Sun";
+        window.location.href = "../결과화면/index.html";
+        break;
+      case "entp":
+        planet = "Venus";
+        window.location.href = "../결과화면/index.html";
+        break;
+      case "esfj":
+        planet = "Jupiter";
+        window.location.href = "../결과화면/index.html";
+        break;
+      case "estj":
+        planet = "Jupiter";
+        window.location.href = "../결과화면/index.html";
+        break;
+      case "esfp":
+        planet = "Mars"
+        window.location.href = "../결과화면/index.html";
+        break;
+      case "estp":
+        planet = "Mars"
+        window.location.href = "../결과화면/index.html";
+        break;
+    }
+    console.log(planet)
+  </script>
+</body>
+</html>
