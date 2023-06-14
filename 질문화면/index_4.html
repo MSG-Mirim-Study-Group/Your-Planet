@@ -11,6 +11,33 @@
     <link rel="stylesheet" href="./js/main.js">
 </head>
 <body>
+    <script src="js/storage.js"></script>
+    <script>
+        function updateVariables(variable1, variable2) {   
+            if (variable1 === "e") {
+                e++;
+            } else if (variable1 === "i" && variable2 === "s") {
+                i++;
+                s++;
+            } else if (variable1 === "i" && variable2 === "n") {
+                i++;
+                n++;
+            }
+
+            // 변수 값 저장
+            localStorage.setItem("i", i);
+            localStorage.setItem("s", s);
+            localStorage.setItem("e", e);
+            localStorage.setItem("n", n);
+
+
+            // 페이지 전환
+            window.location.href = "../질문화면/index_5.html";
+            
+    }
+    </script>
+    <!-- mbti 각각의 수가 얼마인지 -->
+    <script src="js/ItemTest.js"></script>
     <div class="planet">
         <img src="../images/planet/Saturn.png" id="saturn" alt="Saturn">
         <img src="../images/planet/Earth.png" id="earth" alt="Earth">
@@ -24,9 +51,15 @@
             <h2 class="sub_title">결국 이상한 행성에 도착하게 된 당신,<br>주위를 둘러보니 처음 보는 외계인들이 있다. 그럴 때, 나는?</h2>
         </div>
         <div class="answer" id="answer">
+<<<<<<< HEAD
             <div class="a1" id="a1">‘여기는 무슨 행성인가요?’ 먼저 말을 걸어본다.</div>
             <div class="a2" id="a2">‘저..저기...’ 나를 도와줄 외계인이 있을지 조심스럽게 찾아본다.</div>
             <div class="a3" id="a3">‘허걱 외계인이라니...잡아먹히는거 아니야?’ 무서워서 도망친다.</div>
+=======
+            <div class="a1" id="a1" onclick="updateVariables('e')" >‘여기는 무슨 행성인가요?’ 먼저 말을 붙여본다</div>
+            <div class="a2" id="a2" onclick="updateVariables('i', 's')">‘저…저기…’ 나를 도와줄 외계인이 있을지 조심스럽게 찾아본다.</div>
+            <div class="a3" id="a3" onclick="updateVariables('i', 'n')">‘허걱 외계인이라니…잡아먹히는거 아니야?’ 무서워서 도망친다.</div>
+>>>>>>> 65324284144c4c0edd7941e3c0143f304e44fc2c
         </div>
     </div>
 </body>
