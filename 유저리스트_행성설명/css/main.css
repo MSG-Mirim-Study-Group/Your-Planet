@@ -35,9 +35,10 @@ body {
 
 .planet {
   position: absolute;
-  left: 23%;
-  right: 28%;
-  top: 2%;
+  left: 150px;
+  width: 500px;
+  height: 500px;
+  top: 50px;
   transform: rotate(90deg);
   background-color: none;
   display: flex;
@@ -55,7 +56,7 @@ body {
 .name {
   position: absolute;
   left: 20%;
-  top: 50%;
+  top: 600px;
 
   font-family:'Akshar';
   font-style: normal;
@@ -116,37 +117,53 @@ body {
 }
 .square-box {
   position: absolute;
-  top: 4%;
-  left: 10%;
+  top: 60px;
+  left: 85px;
   width: 61%;
   height: 77%;
   padding: 5%;
   word-wrap: break-word;
+  overflow: hidden;
+  overflow-y:auto;
+  z-index: 100;
+  
 }
 
 #userList {
-  display: none;
   background-color: #00ff0000;
-  border: 1vw solid #00ff0000;
+  border-radius: 25px;
+  border: 5px solid transparent;
+  border-color: rgb(255, 255, 255, 0.5);
+  box-shadow: inset 0px 0px 5px rgb(212, 225, 255);
+  left: 105px;
+}
+.square-box::-webkit-scrollbar {
+  width: 0px;
 }
 
 #planetExplan {
-  background-color: #f1f1f1;
-  border-radius: 5%;
-  border: 1vw solid #919191; 
+  border-radius: 25px;
+  border: 5px solid transparent;
+  border-color: rgb(255, 255, 255, 0.5);
+  box-shadow: inset 0px 0px 5px rgb(212, 225, 255);
+  color:white;
+  left: 105px;
 }
 
 #user {
-  border: 0.5vw solid #f1f1f1;
+  border-radius: 10px;
+  border: 5px solid transparent;
+  border-color: rgb(255, 255, 255);
   background-color: #00ff0000;
-  border-radius: 7%;
   color: #f1f1f1;
+
+  font-size: 25px;
   text-align: center;
-  
   float: left;
-  width: 25%;
-  height: 10%;
-  margin: 1%;
+  width: 20%;
+  height: vh center;
+  margin: 10px;
+  padding: 10px;
 }
 
 #img {
