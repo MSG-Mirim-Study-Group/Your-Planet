@@ -1,16 +1,41 @@
+@font-face {
+  font-family: 'Cafe24Ssurround';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OTWelcomeRA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   padding: 0;
   margin: 0;
   width: fit-content;
-  height: fit-content; 
+  height: fit-content;
   border: none;
   background: rgb(0, 0, 0, 0);
 }
 
 body {
+  overflow: hidden;
   color: white;
-  font-family: 'Courier New', Courier, monospace; 
   background-color: rgb(21, 9, 76);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 img {
@@ -19,53 +44,21 @@ img {
   object-fit: cover;
 }
 
-.planet {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-#saturn {
-  z-index: 1;
-  filter: brightness(50%); 
-  position: absolute;
-  right: 20%;
-  left: -9%;
-  top: -1%;
-  width: 30%;
-  rotate: 230deg;
-}
-
-#earth {  
-  z-index: 1;
-  filter: brightness(50%); 
-  position: absolute;
-  top: 55%;
-  left: 80%;
-  width: 40%;
-  rotate: 10deg;
-}
-
 div progress {
   appearance: none;
   filter: brightness(100%);
   position: absolute;
   border: 0em solid black;
   left: 25%;
-  width: 50%;
-  height: 2.5%;
-  top: 5%;
+  top: 10%;
 }
 
 progress::-webkit-progress-bar {
   background: #f0f0f0;
   border-radius: 12em;
   border: 0.1px solid #eeeeee;
-  height: 100%;
-  width: 100%; 
+  width: 50vw;
+  height: 0.5vh;
   overflow: hidden;
 }
 
@@ -76,133 +69,182 @@ progress::-webkit-progress-value {
   width: 100%;
 }
 
-button {
-  z-index: 1;
-  position: absolute;
-  top: 20%;
-  left: 1%;
-  width: 100px;
-  background-color: white;
-}
-
-.btns {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  right: 5%; 
-}
-
-button #test {
-  z-index: 5;
-  position: absolute;
-  left: -30%;
-  top: 20%;
-  background-color: #f0f0f0;
-}
-
-/* 버튼 구현 */
-.triangle:after {
-  content:'';
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto; /* 버튼 수평 정렬 */
-  width: 0;
-  height: 0;
-  border-top: 3em solid #ffffff;
-  border-left: 3em solid transparent;
-  border-right: 3em solid transparent;
-}
-#triangleRight { 
-  transform: rotate(-90deg);
-  position: absolute;
-  top: 50%;
-  left: 78%;
-}
-#triangleLeft {
-  z-index: 4;
-  transform: rotate(90deg);
-  position: absolute;
-  top: 50%;
-  left: -68%;
-}
-.triangle:hover {
-  filter: brightness(50%);
-}
 
 .container {
-  max-width: 100%;
-  max-height: auto;
+  margin: 0;
   object-fit: cover;
   z-index: 2;
-  background-color: rgb(184, 185, 185);
   position: absolute;
-  top: 12%;
-  left: 19%;
-  right: 20%;
-  width: 60%;
+  top: 10%;
+  left: 20%;
+  width: 50%;
   height: 73%;
-  border-radius:1em;  
-  padding: 1.5em;
+  padding: 3.5em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#container {
+  width: 50vw;
+  height: 50hw;
 }
 
 .question {
   z-index: 2;
   background-color: rgb(255, 255, 255);
-  position: absolute;
-  top: 5%;
-  left: 6%;
-  right: 6%;
-  width: 82%;
-  height: 35%;
-  border-radius:1em;  
+  border-radius: 1em;
   padding: 1.5em;
-  outline: 0.1em solid rgb(0, 0, 0);
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Cafe24Ssurround';
+}
+
+#question {
+  width: 50vw;
+  height: 70vh;
+}
+
+.question .title {
+  font-family: 'S-CoreDream-3Light';
+  color: rgb(19, 19, 141);
+  position: absolute;
+  top: 15%;
+  font-size: 20px;
+}
+
+.question .sub_title {
+  position: absolute;
+  top: 24%;
 }
 
 .question h2 {
+  position: absolute;
+  top: 10%;
   font-size: 20dp;
   color: black;
+  text-align: center;
+  width: 50vw;
+}
+
+.answer {
+  z-index: 2;
+  background-color: rgb(255, 255, 255, 0.5);
+  color: black;
+  position: absolute;
+  top: 45%;
+  border-radius: 1em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2em;
+  font-size: 18px;
+  font-family: 'OTWelcomeRA';
+}
+
+#answer {
+  width: 50vw;
+  height: 30vh;
 }
 
 .a1 {
-  z-index: 2;
-  background-color: rgb(255, 255, 255);
   position: absolute;
-  top: 55%;
-  left: 6%;
-  right: 6%;
-  width: 82%;
-  height: 1%;
-  border-radius:1em;  
+  top: -20%;
+  z-index: 4;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-radius: 3em;
   padding: 1.5em;
-  outline: 0.1em solid rgb(0, 0, 0);
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid blue;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#a1 {
+  width: 40vw;
+  height: 1hw;
+}
+
+#a1::onclick {
+  background-color: #5a28f2;
+  color: beige;
 }
 
 .a2 {
   z-index: 2;
   background-color: rgb(255, 255, 255);
   position: absolute;
-  top: 70%;
-  left: 6%;
-  right: 6%;
-  width: 82%;
-  height: 1%;
-  border-radius:1em;  
+  top: 20%;
+  border-radius: 3em;
   padding: 1.5em;
-  outline: 0.1em solid rgb(0, 0, 0);
+  cursor: pointer;
+  border: 1px solid blue;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#a2 {
+  width: 40vw;
+  height: 1hw;
 }
 
 .a3 {
   z-index: 2;
   background-color: rgb(255, 255, 255);
   position: absolute;
-  top: 85%;
-  left: 6%;
-  right: 6%;
-  width: 82%;
-  height: 1%;
-  border-radius:1em;  
+  top: 60%;
+  border-radius: 3em;
   padding: 1.5em;
-  outline: 0.1em solid rgb(0, 0, 0);
+  cursor: pointer;
+  border: 1px solid blue;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#a3 {
+  width: 40vw;
+  height: 1hw;
+}
+
+.planet {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#saturn {
+  z-index: 1;
+  filter: brightness(50%);
+  position: absolute;
+  right: 20%;
+  left: -9%;
+  top: -1%;
+  width: 30%;
+  rotate: 230deg;
+}
+
+#earth {
+  z-index: 1;
+  filter: brightness(50%);
+  position: absolute;
+  top: 55%;
+  left: 80%;
+  width: 40%;
+  rotate: 10deg;
 }
