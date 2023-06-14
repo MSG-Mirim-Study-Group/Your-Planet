@@ -1,14 +1,29 @@
 @font-face {
-  font-family : '이쁜폰트';
-  src : url(nanumsquare.ttf);
-  transform : rotate(0.04deg); 
+  font-family: 'Cafe24Ssurround';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OTWelcomeRA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
   padding: 0;
   margin: 0;
   width: fit-content;
-  height: fit-content; 
+  height: fit-content;
   border: none;
   background: rgb(0, 0, 0, 0);
 }
@@ -16,8 +31,6 @@
 body {
   overflow: hidden;
   color: white;
-  /* font-family: Consolas; */
-  font-family: '이쁜폰트';
   background-color: rgb(21, 9, 76);
   display: flex;
   flex-direction: column;
@@ -37,13 +50,7 @@ div progress {
   position: absolute;
   border: 0em solid black;
   left: 25%;
-  top: 5%;
-}
-
-.progress {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  top: 10%;
 }
 
 progress::-webkit-progress-bar {
@@ -51,7 +58,7 @@ progress::-webkit-progress-bar {
   border-radius: 12em;
   border: 0.1px solid #eeeeee;
   width: 50vw;
-  height: 3vh;
+  height: 0.5vh;
   overflow: hidden;
 }
 
@@ -62,29 +69,6 @@ progress::-webkit-progress-value {
   width: 100%;
 }
 
-button {
-  z-index: 1;
-  position: absolute;
-  top: 20%;
-  left: 1%;
-  width: 100px;
-  background-color: white;
-}
-
-.btns {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  right: 5%; 
-}
-
-button #test {
-  z-index: 5;
-  position: absolute;
-  left: -30%;
-  top: 20%;
-  background-color: #f0f0f0;
-}
 
 .container {
   margin: 0;
@@ -115,11 +99,12 @@ button #test {
 .question {
   z-index: 2;
   background-color: rgb(255, 255, 255);
-  border-radius:1em;  
+  border-radius: 1em;
   padding: 1.5em;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  font-family: 'Cafe24Ssurround';
 }
 
 #question {
@@ -128,6 +113,8 @@ button #test {
 }
 
 .question .title {
+  font-family: 'S-CoreDream-3Light';
+  color: rgb(19, 19, 141);
   position: absolute;
   top: 15%;
   font-size: 20px;
@@ -153,13 +140,15 @@ button #test {
   color: black;
   position: absolute;
   top: 45%;
-  border-radius: 1em;  
-  cursor : pointer;
+  border-radius: 1em;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 2em;
+  font-size: 18px;
+  font-family: 'OTWelcomeRA';
 }
 
 #answer {
@@ -173,9 +162,9 @@ button #test {
   z-index: 4;
   background-color: rgb(255, 255, 255);
   color: black;
-  border-radius:3em;  
+  border-radius: 3em;
   padding: 1.5em;
-  cursor : pointer;
+  cursor: pointer;
   text-align: center;
   border: 1px solid blue;
   justify-content: center;
@@ -188,15 +177,23 @@ button #test {
   height: 1hw;
 }
 
+#a1::onclick {
+  background-color: #5a28f2;
+  color: beige;
+}
+
 .a2 {
   z-index: 2;
   background-color: rgb(255, 255, 255);
   position: absolute;
   top: 20%;
-  border-radius:3em;  
+  border-radius: 3em;
   padding: 1.5em;
-  cursor : pointer;
+  cursor: pointer;
   border: 1px solid blue;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 #a2 {
@@ -209,10 +206,13 @@ button #test {
   background-color: rgb(255, 255, 255);
   position: absolute;
   top: 60%;
-  border-radius:3em;  
+  border-radius: 3em;
   padding: 1.5em;
-  cursor : pointer;
+  cursor: pointer;
   border: 1px solid blue;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 #a3 {
@@ -230,7 +230,7 @@ button #test {
 
 #saturn {
   z-index: 1;
-  filter: brightness(50%); 
+  filter: brightness(50%);
   position: absolute;
   right: 20%;
   left: -9%;
@@ -239,9 +239,9 @@ button #test {
   rotate: 230deg;
 }
 
-#earth {  
+#earth {
   z-index: 1;
-  filter: brightness(50%); 
+  filter: brightness(50%);
   position: absolute;
   top: 55%;
   left: 80%;
