@@ -20,6 +20,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Dovemayo_gothic';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
 
@@ -267,6 +273,14 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 0 0 1mm 0 ;
+}
+.box > h3 {
+  font-size: 3mm;
+  font-family: 'Dovemayo_gothic';
+}
+.box > h2{
+  font-size: 5mm;
 }
 #good {
   left: 5%;
@@ -277,6 +291,13 @@ body {
 }
 
 .what_planet {
-  padding: 10px 0 0 0 ;
-  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 5mm 0 4mm;
+  width: 50%;
+  transform: rotate(90deg);
+}
+
+p {
+  font-family: 'Dovemayo_gothic';
 }
