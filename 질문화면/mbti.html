@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title></title>
 </head>
+
 <body>
   <script>
     var i = localStorage.getItem("i");
@@ -49,70 +51,110 @@
     switch (mbti) {
       case "infp":
         planet = "Earth";
-        window.location.href = "../결과화면/index.html";
         break;
       case "infj":
         planet = "Earth";
-        window.location.href = "../결과화면/index.html";
         break;
       case "intj":
         planet = "Pluto";
-        window.location.href = "../결과화면/index.html";
         break;
       case "intp":
         planet = "Neptune";
-        window.location.href = "../결과화면/index.html";
         break;
       case "isfp":
         planet = "Moon";
-        window.location.href = "../결과화면/index.html";
         break;
       case "isfj":
         planet = "Saturn";
-        window.location.href = "../결과화면/index.html";
         break;
       case "istp":
         planet = "Mercury";
-        window.location.href = "../결과화면/index.html";
         break;
       case "istj":
         planet = "Uranus";
-        window.location.href = "../결과화면/index.html";
         break;
       case "enfp":
         planet = "Sun";
-        window.location.href = "../결과화면/index.html";
         break;
       case "enfj":
         planet = "Sun";
-        window.location.href = "../결과화면/index.html";
         break;
       case "entj":
         planet = "Sun";
-        window.location.href = "../결과화면/index.html";
         break;
       case "entp":
         planet = "Venus";
-        window.location.href = "../결과화면/index.html";
         break;
       case "esfj":
         planet = "Jupiter";
-        window.location.href = "../결과화면/index.html";
         break;
       case "estj":
         planet = "Jupiter";
-        window.location.href = "../결과화면/index.html";
         break;
       case "esfp":
         planet = "Mars"
-        window.location.href = "../결과화면/index.html";
         break;
       case "estp":
         planet = "Mars"
-        window.location.href = "../결과화면/index.html";
         break;
     }
     console.log(planet)
+
+    var xhr = new XMLHttpRequest(); // AJAX 요청 객체 생성
+
+    xhr.open("POST", "server_.php", true); // 요청 설정
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); // POST 데이터 타입 설정
+
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === XMLHttpRequest.DONE) { // 요청 완료 시
+        if (xhr.status === 200) { // 응답 상태 확인
+          console.log(xhr.responseText); // 응답 데이터 출력
+        } else {
+          console.log("Request failed. Status:", xhr.status); // 요청 실패 시 오류 메시지 출력
+        }
+      }
+    };
+
+    var data = "planet=" + encodeURIComponent(planet); // 변수를 쿼리 문자열로 인코딩
+    xhr.send(data); // AJAX 요청 전송
+
+
+    switch (planet) {
+      case "Earth":
+        window.location.href = "../결과화면/index.html";
+        break;
+      case "Pluto":
+        window.location.href = "../결과화면/index.html";
+        break;
+      case "Neptune":
+        window.location.href = "../결과화면/index.html";
+        break;
+      case "Moon":
+        window.location.href = "../결과화면/index.html";
+        break;
+      case "Saturn":
+        window.location.href = "../결과화면/index.html";
+        break;
+      case "Mercury":
+        window.location.href = "../결과화면/index.html";
+        break;
+      case "Uranus":
+        window.location.href = "../결과화면/index.html";
+        break;
+      case "Sun":
+        window.location.href = "../결과화면/index.html";
+        break;
+      case "Venus":
+        window.location.href = "../결과화면/index.html";
+        break;
+      case "Jupiter":
+        window.location.href = "../결과화면/index.html";
+        break;
+      case "Mars":
+        window.location.href = "../결과화면/index.html";
+        break;
+    }
   </script>
 </body>
+
 </html>
