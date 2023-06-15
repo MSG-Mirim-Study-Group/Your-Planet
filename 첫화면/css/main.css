@@ -23,8 +23,9 @@
 
 body {
     color: white;
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* overflow: hidden; */
     background-color: rgb(21, 9, 76);
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,11 +42,9 @@ body {
     transition: 1s;
     font-size: 1%;
     color: white;
-    cursor: pointer;
 }
 
 .button p {
-    z-index: 3;
     font-family: 'Cafe24Ssurround';
     position: absolute;
     left: 30%;
@@ -58,16 +57,14 @@ body {
     font-family: 'Cafe24Ssurround';
     z-index: 2;
     position: absolute;
-    left: 40%;
-    top: 75%;
-    width: 20vw;
+    width: 100vw;
+    top: 80%;
     border: none;
     border-radius: 5em;
     background-color: rgb(221, 220, 220);
     color: rgb(21, 9, 76);
     cursor: pointer;
     font-size: 20px;
-    padding: 1em;
 }
 
 #btn_start:hover {
@@ -103,7 +100,6 @@ img {
     font-family: 'LOTTERIACHAB';
     font-size: 140px;
     margin-top: -3%;
-    filter: drop-shadow(0px 0px 10px #000000ba);
 }
 
 #title {
@@ -114,10 +110,9 @@ img {
 .button:hover {
     rotate: 30deg;
     transition: 1s;
-    animation-duration: 12s; /* 부드러운 회전 */
     background-color: rgba(4, 2, 12, 0);
     cursor: pointer; 
-    z-index : 1;
+    z-index : 100;
     font-size: 130%; 
     filter: drop-shadow(0px 0px 50px #87b570ba);
     /* cursor: pointer; */
@@ -129,7 +124,6 @@ img {
     left: 70%;
     width: 30%;
     rotate: 10deg;
-    filter: drop-shadow(0px 0px 10px #ff714ec3);
 }
 
 #saturn {
@@ -137,8 +131,7 @@ img {
     right: 0%;
     left: 70%;
     top: -2%;
-    rotate: 120deg;
-    filter: drop-shadow(0px 0px 10px #b6925dc1);
+    rotate: -50deg;
 }
 
 #uranus {
@@ -147,7 +140,6 @@ img {
     left: 20%;
     top: 5%;
     rotate: 10deg;
-    filter: drop-shadow(0px 0px 20px #6dacd4be);
 }
 
 #star1 {
