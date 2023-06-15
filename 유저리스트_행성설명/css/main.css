@@ -1,10 +1,35 @@
+@font-face {
+  font-family: 'Cafe24Ssurround';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OTWelcomeRA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 * {
+
   padding: 0%;
   margin: 0%;
   width: fit-content;
   height: fit-content; 
   border: none;
   background: rgb(0, 0, 0, 0);
+  font-family: 'Cafe24Ssurround';
 }
 
 body {
@@ -12,6 +37,9 @@ body {
   overflow: hidden;
   background: rgb(33, 23, 80);
 } 
+.scene1 {
+  padding: 0 0 10% 0;
+}
 
 .title p {
   z-index: 1;
@@ -21,6 +49,7 @@ body {
 }
 
 .back {
+  z-index: 1;
   border: 0%;
   font-size: 2vw;
   padding: 1%;
@@ -33,12 +62,18 @@ body {
   top: 87%;
 }
 
+.planetList{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0 60px 0 ;
+
+}
 .planet {
-  position: absolute;
-  left: 150px;
-  width: 500px;
-  height: 500px;
-  top: 50px;
+  left: 20%;
+  width: 450px;
   transform: rotate(90deg);
   background-color: none;
   display: flex;
@@ -46,7 +81,6 @@ body {
   justify-content: center;
   overflow: hidden;
 }
-
 .planet img {
   width: 100%;
   height: 100%;
@@ -54,11 +88,8 @@ body {
 }
 
 .name {
-  position: absolute;
-  left: 20%;
-  top: 600px;
+  padding: 10mm;
 
-  font-family:'Akshar';
   font-style: normal;
   font-size: 80px;
 
@@ -66,13 +97,16 @@ body {
 }
 
 .name::after {
-  content: "";
   position: absolute;
   width: 29vw;
-  height: 0.5vw;
+  height: 0.3vh;
   background-color: white;
   bottom: 0;
-  left: 2%;
+}
+.talk {
+  padding: 5mm 0 0 0;
+  font-size: 30px;
+  color:rgb(255, 255, 255);
 }
 
 .section {
@@ -118,18 +152,17 @@ body {
 .square-box {
   position: absolute;
   top: 60px;
-  left: 85px;
-  width: 61%;
+  width: 60%;
   height: 77%;
   padding: 5%;
   word-wrap: break-word;
   overflow: hidden;
   overflow-y:auto;
   z-index: 100;
-  
 }
 
 #userList {
+  margin: 0;
   background-color: #00ff0000;
   border-radius: 25px;
   border: 5px solid transparent;
@@ -158,22 +191,92 @@ body {
   color: #f1f1f1;
 
   font-size: 25px;
-  text-align: center;
   float: left;
-  width: 20%;
   height: vh center;
   margin: 10px;
   padding: 10px;
 }
 
 #img {
-  position: fixed;
-  bottom: 0;
-  left: 30%;
-  width: 30%;
-  transform: translate(-70%, 5%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .planet-image {
   display: none;
+}
+
+
+#scene1 {
+  width: 100%;
+  height: 100%;
+}
+
+
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.title > h1{
+  font-size: 4rem;
+}
+
+.title > h4 {
+  font-size: 3rem;
+  font-family: 'S-CoreDream-3Light';
+}
+
+.list {
+  width: 100%;
+  
+  display:flexbox;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.boxing {
+  padding: 30px 0 30px 0 ;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  border-radius: 25px;
+  border: 5px solid transparent;
+  border-color: rgba(0, 0, 0, 0.5);
+  background-color: #f1f1f1;
+  width: 40%;
+  padding: 12px;
+  bottom: 20px;
+  color:rgb(0, 0, 0);
+}
+.box > h2 ,
+.box > h3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#good {
+  left: 5%;
+}
+
+#bad {
+  right: 5%;
+}
+
+.what_planet {
+  padding: 10px 0 0 0 ;
+  width: 100%;
 }

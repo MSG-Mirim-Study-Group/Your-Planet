@@ -1,35 +1,29 @@
 @font-face {
-  font-family: 'Cafe24Ssurround';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Dovemayo_gothic';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
+  font-family : '이쁜폰트';
+  src : url(nanumsquare.ttf);
+  transform : rotate(0.04deg); 
 }
 
 * {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
+  padding: 0%;
+  margin: 0%;
+  width: fit-content;
+  height: 100%; 
 }
 
 body {
+  font-family : '이쁜폰트';
+  /* overflow: hidden; */
   background-color: rgb(32, 20, 83);
   overflow-x: hidden;
-  height: 100vh;
 }
 
 .container {
   position: absolute;
   left: 25%;  
   width: 50%;
-  height: 100%;
+  height: 120%;
+  top: -10%;
   /* 가로 센터 정렬 */
   display: flex;
   justify-content: center;
@@ -38,9 +32,9 @@ body {
 
 .my_planet {
   z-index: 2;
-  width: 46vw;
-  height: 80vh;
-  top: 1%;
+  width: 100%;
+  height: 65%;
+  left: 0%;
   background:rgb(255, 255, 255);
   border-radius: 1em;  
   /* 가운데 */
@@ -52,159 +46,105 @@ body {
 }
 
 img {
-  object-fit: cover;
+  width: 40%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+/* 나의 행성 이미지 */
+.my_planet img #uranus {
   position: absolute;
-  width: 100%;
-  height: auto;
-  height: auto;
-}
-
-/* 형광펜 밑줄 */
-span.underline {
-  background: linear-gradient(to top, #FFE400 50%, transparent 50%);
-}
-
-/* 좋은 궁합 초록 형광펜 밑줄 */
-.good_planet span.underline {
-  background: linear-gradient(to top, #00ff1a 50%, transparent 50%);
-}
-
-/* 나쁜 궁합 주황 형광펜 밑줄 */
-.bad_planet span.underline {
-  background: linear-gradient(to top, #f9740f 50%, transparent 50%);
+  width: 90%;
+  height: 90%;
+  rotate: 10deg;
 }
 
 /* 나의 행성 이름 */
 .planet_title {
-  font-family: 'Cafe24Ssurround';
   position: absolute;
-  padding-top: 25%;
-  font-size: 350%;
+  padding-top: 5%;
+  font-size: 230%;
   font-style: bold;
 }
 
 /* 나의 행성 한줄평 */
 .planet_subtitle {
-  font-family: 'Dovemayo_gothic';
   position: absolute;
-  padding-top: 16%;
-  font-size: 150%;
-}
-
-/* 나의 행성 이미지 */
-.my_planet img {
-  z-index: 1;
-  width: 18vw;
-  height: auto;
-  position: absolute;
-  top: 26%;
-  rotate: 10deg;
-  filter: brightness(110%);
+  padding-top: 150px;
+  font-size: 130%;
+  font-style: bold;
 }
 
 /* 행성 성격 설명 박스 */
 .explain {
-  z-index: 2;
+  z-index: 3;
   position: absolute;
-  width: 38vw;
-  height: auto;
-  top: 69%;
-  padding: 2em;
-  transform: translateX(-50%, -50%);
-  background:rgb(250, 246, 239);
+  width: 80%;
+  height: 7%;
+  left: 6%;
+  top: 79%;
+  background:rgb(207, 207, 207);
   border-radius:1em;  
-  padding: 1em;
-  padding-bottom: 1em;
+  padding: 1.5em;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column; /* 컨텐츠를 세로로 정렬하기 위해 추가 */
-  align-items: center;
-  font-size: 130%;
-  font-family: 'Dovemayo_gothic';
 }
 
 /* 행성 성격 설명 */
 .explain p {
   z-index: 3;
+  position: absolute;
+  width: 80%;
+  height: 0%;
   background:rgb(207, 207, 207);
   border-radius:1em;
-  padding: 1em;
-  margin-top: 50%;
-  text-align: center;
 }
 
-
-/* 같은 행성 비율 */
 .same_planet {
   z-index: 2;
   position: absolute;
-  width: 46vw;
-  height: auto;
-  top: 97%;
-  /* padding-top: 1em; */
-  padding-bottom: 1em;
+  width: 100%;
+  height: 15%;
+  top: 85%;
+  left: 0%;
   background:rgb(255, 255, 255);
   border-radius: 1em;  
   text-align: center;
-  display: flex;
-  flex-direction: column; /* 컨텐츠를 세로로 정렬하기 위해 추가 */
-  align-items: center; /* 가로 가운데 정렬을 위해 추가 */
-  justify-content: center; /* 세로 가운데 정렬을 위해 추가 */
 }
 
-/* 위의 질문 */
-.percentage span#question {
-  font-size: 50%;
-  font-family: 'Dovemayo_gothic';
-  padding-bottom: 0.4em;
+.same_planet .question {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  top: 13%;
+  font-size: 115%;
 }
 
-/* 같은 행성을 가진 사람의 퍼센테이지 */
 .same_planet .percentage {
-  padding-bottom: 1em;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 250%;
-  font-family: 'Cafe24Ssurround';
-  padding: 0.5em;
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  top: 45px;
+  font-size: 270%;
 }
 
 /* 좋은 행성 or 나쁜 행성 */
 .other_planet {
   z-index: 2;
   position: absolute;
-  width: 46vw;
-  height: 30vh;
-  top:  119%;
+  width: 100%;
+  height: 30%;
+  top:  103%;
   border-radius:1em;  
   text-align: center;
-}
-
-.main#best {
-  padding-top: 1.5em;
-  font-family: 'Cafe24Ssurround';
-  font-size: 110%;
-
-  /* background: linear-gradient(to top, #00ff00 10%, transparent 1%); */
-}
-
-.main#worst {
-  padding-top: 1.5em;
-  font-family: 'Cafe24Ssurround';
-  font-size: 110%;
-
-  /* background: linear-gradient(to top, #00ff00 10%, transparent 1%); */
 }
 
 /* 나와 잘 맞는 행성 */
 .good_planet {
   position: absolute;
-  width: 22vw;
-  height: 45vh;
+  width: 48%;
+  height: 130%;
+  top: 0%;
   background:rgb(255, 255, 255);
   border-radius:1em;  
   /* text-align: center; */
@@ -213,8 +153,8 @@ span.underline {
 /* 잘 맞지 않는 행성 */
 .bad_planet {
   position: absolute;
-  width: 22vw;
-  height: 45vh;
+  width: 48%;
+  height: 130%;
   left: 52%;
   top: 0%;
   background:rgb(255, 255, 255);
@@ -228,12 +168,7 @@ span.underline {
   width: 50%;
   height: auto;
   left: 25%;
-  top: 21%;
-  transition: transform 0.3s ease-in-out;
-}
-
-.good_planet img:hover {
-  transform: scale(1.2);
+  top: 8%;
 }
 
 /* 위의 행성 이름 */
@@ -241,9 +176,8 @@ span.underline {
   position: absolute;
   width: 100%;
   height: 60%;
-  top: 72%;
+  top: 70%;
   font-size: 150%;
-  font-family: 'Cafe24Ssurround';
 }
 
 /* 위의 행성 소제목 */
@@ -252,7 +186,6 @@ span.underline {
   width: 100%;
   height: auto;
   top: 83%;
-  font-family: 'Dovemayo_gothic';
 }
 
 /* 나와 잘 맞지 않는 행성 이미지 */
@@ -261,11 +194,7 @@ span.underline {
   width: 50%;
   height: auto;
   left: 25%;
-  top: 21%;transition: transform 0.3s ease-in-out;
-}
-
-.bad_planet img:hover {
-  transform: scale(1.2);
+  top: 8%;
 }
 
 /* 위의 행성 이름 */
@@ -273,9 +202,8 @@ span.underline {
   position: absolute;
   width: 100%;
   height: 60%;
-  top: 72%;
+  top: 70%;
   font-size: 150%;
-  font-family: 'Cafe24Ssurround';
 }
 
 /* 위의 행성 소제목 */
@@ -284,7 +212,6 @@ span.underline {
   width: 100%;
   height: auto;
   top: 83%;
-  font-family: 'Dovemayo_gothic';
 }
 
 /* 전체 행성 */
@@ -301,34 +228,31 @@ span.underline {
   z-index: 1;
   opacity: 0.2;
   position: absolute;
-  width: 20%;
-  height: auto;
-  top: 99%;
-  left: 90%;
+  width: 30%;
+  height: 30%;
+  top: 69%;
+  left: 1%;
   rotate: 80deg;
-  filter: drop-shadow(0px 0px 10px #ff714ec3);
 }
 
 .planet #saturn {
   z-index: 1;
   opacity: 0.2;
   position: absolute;
-  width: 50%;
-  height: auto;
-  left: 18%;
-  top: 50%;
-  rotate: 70deg;
-  filter: drop-shadow(0px 0px 10px #b6925dc1);
+  width: 70%;
+  height: 70%;
+  left: 58%;
+  top: 90%;
+  rotate: -50deg;
 }
 
 .planet #uranus {
   z-index: 1;
   position: absolute;
-  width: 20%;
-  height: auto;
-  left: 68%;
-  top: 10%;
+  width: 10%;
+  height: 10%;
+  left: 78%;
+  top: 20%;
   rotate: 10deg;
   opacity: 0.2;
-  filter: drop-shadow(0px 0px 20px #6dacd4be);
 }
