@@ -58,7 +58,7 @@ progress::-webkit-progress-bar {
   border-radius: 12em;
   border: 0.1px solid #eeeeee;
   width: 50vw;
-  height: 0.5vh;
+  height: 1.9vh;
   overflow: hidden;
 }
 
@@ -158,7 +158,7 @@ progress::-webkit-progress-value {
 
 .a1 {
   position: absolute;
-  top: -20%;
+  top: -15%;
   z-index: 4;
   background-color: rgb(255, 255, 255);
   color: black;
@@ -166,10 +166,11 @@ progress::-webkit-progress-value {
   padding: 1.5em;
   cursor: pointer;
   text-align: center;
-  border: 1px solid blue;
+  border: 2px solid blue;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  font-style: bold;
 }
 
 #a1 {
@@ -190,7 +191,7 @@ progress::-webkit-progress-value {
   border-radius: 3em;
   padding: 1.5em;
   cursor: pointer;
-  border: 1px solid blue;
+  border: 2px solid blue;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -205,11 +206,11 @@ progress::-webkit-progress-value {
   z-index: 2;
   background-color: rgb(255, 255, 255);
   position: absolute;
-  top: 60%;
+  top: 55%;
   border-radius: 3em;
   padding: 1.5em;
   cursor: pointer;
-  border: 1px solid blue;
+  border: 2px solid blue;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -230,21 +231,23 @@ progress::-webkit-progress-value {
 
 #saturn {
   z-index: 1;
-  filter: brightness(50%);
+  opacity: 0.5;
   position: absolute;
   right: 20%;
-  left: -9%;
-  top: -1%;
+  left: -1%;
+  top: 14%;
   width: 30%;
-  rotate: 230deg;
+  rotate: 50deg;
+  filter: drop-shadow(0px 0px 10px #b6925dc1);
 }
 
 #earth {
   z-index: 1;
-  filter: brightness(50%);
+  opacity: 0.5;
   position: absolute;
   top: 55%;
   left: 80%;
   width: 40%;
   rotate: 10deg;
+  filter: drop-shadow(0px 0px 20px #87b570ba);
 }
