@@ -58,7 +58,7 @@ progress::-webkit-progress-bar {
   border-radius: 12em;
   border: 0.1px solid #eeeeee;
   width: 50vw;
-  height: 0.5vh;
+  height: 1.5vh;
   overflow: hidden;
 }
 
