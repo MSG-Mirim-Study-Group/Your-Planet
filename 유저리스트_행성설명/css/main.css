@@ -5,7 +5,6 @@
   font-style: normal;
 }
 
-
 @font-face {
   font-family: 'S-CoreDream-3Light';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
@@ -28,13 +27,12 @@
 }
 
 * {
-
-  padding: 0%;
-  margin: 0%;
+  padding: 0;
+  margin: 0;
   width: fit-content;
-  height: fit-content; 
+  height: fit-content;
   border: none;
-  background: rgb(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
   font-family: 'Cafe24Ssurround';
 }
 
@@ -42,25 +40,28 @@ body {
   font-family: 'Courier New', Courier, monospace;
   overflow: hidden;
   background: rgb(33, 23, 80);
-} 
-.scene1 {
-  padding: 0 0 10% 0;
+}
+
+#scene1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .title p {
   z-index: 1;
   position: absolute;
-    top: 80px;
-    right: 0px;
+  top: 80px;
+  right: 0px;
 }
 
 .back {
   z-index: 1;
-  border: 0%;
+  border: 0;
   font-size: 2vw;
   padding: 1%;
-  background: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background: #fff;
+  color: #000;
   cursor: pointer;
   border-radius: 2vw;
   position: absolute;
@@ -68,25 +69,26 @@ body {
   top: 87%;
 }
 
-.planetList{
+.planetList {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 0 60px 0 ;
-
+  padding: 60px 0;
 }
+
 .planet {
   left: 20%;
   width: 450px;
   transform: rotate(90deg);
-  background-color: none;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 }
+
 .planet img {
   width: 100%;
   height: 100%;
@@ -95,11 +97,9 @@ body {
 
 .name {
   padding: 10mm;
-
   font-style: normal;
   font-size: 80px;
-
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .name::after {
@@ -109,52 +109,57 @@ body {
   background-color: white;
   bottom: 0;
 }
+
 .talk {
   padding: 5mm 0 0 0;
   font-size: 30px;
-  color:rgb(255, 255, 255);
+  color: #fff;
 }
 
 .section {
   top: 70%;
   left: 10%;
   right: 80%;
-
 }
 
 .triangle {
   border-left: 2vw solid transparent;
   border-right: 2vw solid transparent;
-  border-bottom: 2.5vw solid rgb(255, 255, 255); /* 버튼의 배경색을 변경하려면 이 부분을 수정해주세요 */
+  border-bottom: 2.5vw solid #fff; /* 버튼의 배경색을 변경하려면 이 부분을 수정해주세요 */
   cursor: pointer;
 }
 
 .triangle:hover {
   border-bottom-color: rgb(128, 128, 128); /* 마우스 오버 시 버튼의 배경색을 변경하려면 이 부분을 수정해주세요 */
 }
-#triangleLeft { 
+
+#triangleLeft {
   transform: rotate(-90deg);
   position: absolute;
   top: 50%;
   left: 0%;
 }
+
 #triangleRight {
   transform: rotate(90deg);
   position: absolute;
   top: 50%;
   left: 87%;
 }
+
 .right {
   position: absolute;
   width: 50%;
   height: 100%;
-  right: 5%; 
+  right: 5%;
 }
+
 .left {
-  position:absolute;
+  position: absolute;
   width: 50%;
   height: 100%;
 }
+
 .square-box {
   position: absolute;
   top: 60px;
@@ -163,7 +168,7 @@ body {
   padding: 5%;
   word-wrap: break-word;
   overflow: hidden;
-  overflow-y:auto;
+  overflow-y: auto;
   z-index: 100;
 }
 
@@ -172,10 +177,12 @@ body {
   background-color: #00ff0000;
   border-radius: 25px;
   border: 5px solid transparent;
-  border-color: rgb(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.5);
   box-shadow: inset 0px 0px 5px rgb(212, 225, 255);
   left: 105px;
+  
 }
+
 .square-box::-webkit-scrollbar {
   width: 0px;
 }
@@ -183,19 +190,18 @@ body {
 #planetExplan {
   border-radius: 25px;
   border: 5px solid transparent;
-  border-color: rgb(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.5);
   box-shadow: inset 0px 0px 5px rgb(212, 225, 255);
-  color:white;
+  color: white;
   left: 105px;
 }
 
 #user {
   border-radius: 10px;
   border: 5px solid transparent;
-  border-color: rgb(255, 255, 255);
+  border-color: #fff;
   background-color: #00ff0000;
   color: #f1f1f1;
-
   font-size: 25px;
   float: left;
   height: vh center;
@@ -216,12 +222,10 @@ body {
   display: none;
 }
 
-
 #scene1 {
   width: 100%;
   height: 100%;
 }
-
 
 .title {
   width: 100%;
@@ -231,25 +235,21 @@ body {
   justify-content: center;
   text-align: center;
 }
-.title > h1{
-  font-size: 4rem;
-}
 
-.title > h4 {
-  font-size: 3rem;
-  font-family: 'S-CoreDream-3Light';
+.title > h1 {
+  font-size: 4rem;
 }
 
 .list {
   width: 100%;
-  
-  display:flexbox;
+  display: flexbox;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
+
 .boxing {
-  padding: 30px 0 30px 0 ;
+  padding: 30px 0;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -261,11 +261,12 @@ body {
   border-color: rgba(0, 0, 0, 0.5);
   background-color: #f1f1f1;
   width: 40%;
-  padding: 12px;
+  padding: 2.2%;
   bottom: 20px;
-  color:rgb(0, 0, 0);
+  color: #000;
 }
-.box > h2 ,
+
+.box > h2,
 .box > h3 {
   width: 100%;
   display: flex;
@@ -273,15 +274,18 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 0 1mm 0 ;
+  padding: 0 0 1mm;
 }
+
 .box > h3 {
   font-size: 3mm;
   font-family: 'Dovemayo_gothic';
 }
-.box > h2{
+
+.box > h2 {
   font-size: 5mm;
 }
+
 #good {
   left: 5%;
 }
@@ -298,6 +302,8 @@ body {
   transform: rotate(90deg);
 }
 
-p {
+.title > h4 {
   font-family: 'Dovemayo_gothic';
+  text-align: left;
+  font-weight: lighter;
 }
