@@ -309,6 +309,6 @@ h4 {
   transform: scale(1.2); 
 }
 
-#SaturnScene > .container > .left > .planetList > .planet img{
-  transform: scale(); 
+#SaturnScene > .container > .left > .planetList > .planet{
+  transform: scale(1.7); 
 }
