@@ -26,7 +26,7 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  animation: rotate 2s infinite linear;
+  animation: rotate 2.5s infinite linear;
   cursor: pointer;
 }
 
@@ -160,8 +160,12 @@ body {
   position: absolute;
   right: 22%;
   left: 60%;
-  top: 30%;
+  top: 25%;
   filter: drop-shadow(0px 0px 10px #b6925dc1);
+}
+
+#saturn img{
+  transform: scale(0.6); 
 }
 
 #jupiter {
@@ -223,12 +227,12 @@ body {
 
 @keyframes rotate {
   0% {
-    transform: rotate(90deg);
+    transform: rotate(100deg);
   }
   50% {
     transform: rotate(80deg);
   }
   100% {
-    transform: rotate(90deg);
+    transform: rotate(100deg);
   }
 }
