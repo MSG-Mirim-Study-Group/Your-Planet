@@ -29,5 +29,9 @@ function previousPage() {
 }
 
 function goBack() {
-  history.go(-1);
+  var num = -1;
+  while(history.go(num) === "../유저리스트_행성설명/index.html" || history.go(-1) === "../유저리스트_행성설명/index_User.html" ){
+    num --;
+  }
+  history.go(num);
 }
