@@ -73,6 +73,7 @@ body {
 }
 
 .planet {
+  left: 20%;
   width: 28em;
   transform: rotate(90deg);
   background-color: transparent;
@@ -308,7 +309,6 @@ h4 {
   transform: scale(1.2); 
 }
 
-#SaturnScene > .container > .left > .planetList > .name{
-  padding: 0 0 0 0;
-  margin: 0;
+#SaturnScene > .container > .left > .planetList > .planet img{
+  transform: scale(); 
 }
