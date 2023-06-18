@@ -4,13 +4,14 @@
   font-weight: normal;
   font-style: normal;
 }
+
 * {
-  padding: 0%;
-  margin: 0%;
+  padding: 0;
+  margin: 0;
   width: fit-content;
-  height: fit-content; 
+  height: fit-content;
   border: none;
-  background: rgb(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
 }
 
 body {
@@ -18,10 +19,96 @@ body {
   background: rgb(33, 23, 80);
 }
 
+.planet {
+  border-radius: 50%;
+  background-color: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  animation: rotate 2s infinite linear;
+  cursor: pointer;
+}
+
+.planet img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.line {
+  position: absolute;
+  width: 5px;
+  height: 0;
+  border: 5px solid #fff;
+}
+
+#line1 {
+  left: 17%;
+  top: 13%;
+  width: 16%;
+  transform: rotate(5deg);
+}
+
+#line2 {
+  left: 32%;
+  top: 19%;
+  width: 14%;
+  transform: rotate(25deg);
+}
+
+#line3 {
+  left: 38%;
+  top: 39%;
+  width: 15%;
+  transform: rotate(79deg);
+}
+
+#line3_1 {
+  left: 33%;
+  top: 55%;
+  width: 10%;
+  transform: rotate(15deg);
+}
+
+#line4 {
+  left: 46%;
+  top: 69%;
+  width: 15%;
+  transform: rotate(45deg);
+}
+
+#line5 {
+  left: 59%;
+  top: 77%;
+  width: 20%;
+  transform: rotate(1deg);
+}
+
+#line6 {
+  left: 65%;
+  top: 63%;
+  width: 20%;
+  transform: rotate(50deg);
+}
+
+#line7 {
+  left: 68%;
+  top: 39%;
+  width: 23%;
+  transform: rotate(-16deg);
+}
+
+#line8 {
+  left: 84%;
+  top: 26%;
+  width: 15%;
+  transform: rotate(-78deg);
+}
 
 #sun {
   position: absolute;
-  border-radius: 0%;
+  border-radius: 0;
   right: 78%;
   left: -10%;
   top: -18%;
@@ -37,7 +124,7 @@ body {
   filter: drop-shadow(0px 0px 10px #ff714ec3);
 }
 
-#venus  {
+#venus {
   position: absolute;
   right: 53%;
   left: 40%;
@@ -45,7 +132,7 @@ body {
   filter: drop-shadow(0px 0px 20px #ffb84eaf);
 }
 
-#earth  {
+#earth {
   position: absolute;
   right: 48%;
   left: 43%;
@@ -53,7 +140,7 @@ body {
   filter: drop-shadow(0px 0px 20px #87b570ba);
 }
 
-#moon  {
+#moon {
   position: absolute;
   right: 64%;
   left: 32%;
@@ -87,7 +174,7 @@ body {
 
 #uranus {
   position: absolute;
-  right:7%;
+  right: 7%;
   left: 87%;
   top: 30%;
   filter: drop-shadow(0px 0px 20px #6dacd4be);
@@ -95,7 +182,7 @@ body {
 
 #neptune {
   position: absolute;
-  right:4%;
+  right: 4%;
   left: 91%;
   top: 9%;
   filter: drop-shadow(0px 0px 20px #1448D4);
@@ -103,8 +190,8 @@ body {
 
 #blackhole {
   position: absolute;
-  border-radius: 0%;
-  right:77%;
+  border-radius: 0;
+  right: 77%;
   left: 5%;
   top: 55%;
   transform: rotate(-30deg);
@@ -113,121 +200,13 @@ body {
 
 #pluto {
   position: absolute;
-  right:64%;
+  right: 64%;
   left: 30%;
   top: 82%;
   filter: drop-shadow(0px 0px 20px #FFC9A0);
 }
 
-.planet {
-  border-radius: 50%;
-  background-color: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  animation: rotate 2s infinite linear; 
-}
-
-.planet img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.line1 {
-  position: absolute;
-  width: 16%;
-  height: 0px;
-  left: 17%;
-  top: 13%;
-
-  border: 5px solid #FFFFFF;
-  transform: rotate(5deg);
-}
-
-.line2 {
-  position: absolute;
-  width: 14%;
-  height: 0px;
-  left: 32%;
-  top: 19%;
-
-  border: 5px solid #FFFFFF;
-  transform: rotate(25deg);
-}
-.line3 {
-  position: absolute;
-  width: 15%;
-  height: 0px;
-  left: 38%;
-  top: 39%;
-
-  border: 5px solid #FFFFFF;
-  transform: rotate(79deg);
-}
-.line3_1{
-  position: absolute;
-  width: 10%;
-  height: 0px;
-  left: 33%;
-  top: 55%;
-
-  border: 5px solid #FFFFFF;
-  transform: rotate(15deg);
-}
-.line4 {
-  position: absolute;
-  width: 15%;
-  height: 0px;
-  left: 46%;
-  top: 69%;
-
-  border: 5px solid #FFFFFF;
-  transform: rotate(45deg);
-}
-.line5 {
-  position: absolute;
-  width: 20%;
-  height: 0px;
-  left: 59%;
-  top: 77%;
-
-  border: 5px solid #FFFFFF;
-  transform: rotate(1deg);
-}
-.line6 {
-  position: absolute;
-  width: 20%;
-  height: 0px;
-  left: 65%;
-  top: 63%;
-
-  border: 5px solid #FFFFFF;
-  transform: rotate(50deg);
-}
-.line7 {
-  position: absolute;
-  width: 23%;
-  height: 0px;
-  left: 68%;
-  top: 39%;
-
-  border: 5px solid #FFFFFF;
-  transform: rotate(-16deg);
-}
-.line8 {
-  position: absolute;
-  width: 15%;
-  height: 0px;
-  left: 84%;
-  top: 26%;
-
-  border: 5px solid #FFFFFF;
-  transform: rotate(-78deg);
-}
-  
-.back{
+.back {
   z-index: 1;
   border: 0;
   font-size: 2vw;
@@ -244,7 +223,7 @@ body {
 
 @keyframes rotate {
   0% {
-    transform: rotate(90deg) ;
+    transform: rotate(90deg);
   }
   50% {
     transform: rotate(80deg);
