@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face {
   font-family: 'Cafe24Ssurround';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
@@ -5,6 +6,7 @@
   font-style: normal;
 }
 
+/* Global Styles */
 * {
   padding: 0;
   margin: 0;
@@ -19,6 +21,7 @@ body {
   background: rgb(33, 23, 80);
 }
 
+/* Planet Styles */
 .planet {
   border-radius: 50%;
   background-color: none;
@@ -26,8 +29,9 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  animation: rotate 2s infinite linear;
+  animation: rotate 3s infinite linear;
   cursor: pointer;
+  position: absolute;
 }
 
 .planet img {
@@ -36,6 +40,7 @@ body {
   object-fit: cover;
 }
 
+/* Line Styles */
 .line {
   position: absolute;
   width: 5px;
@@ -106,106 +111,7 @@ body {
   transform: rotate(-78deg);
 }
 
-#sun {
-  position: absolute;
-  border-radius: 0;
-  right: 78%;
-  left: -10%;
-  top: -18%;
-  filter: drop-shadow(0px 0px 20px #aa1d1dc0);
-}
-
-#mercury {
-  transform: rotate(90deg);
-  position: absolute;
-  right: 65%;
-  left: 30%;
-  top: 10%;
-  filter: drop-shadow(0px 0px 10px #ff714ec3);
-}
-
-#venus {
-  position: absolute;
-  right: 53%;
-  left: 40%;
-  top: 17%;
-  filter: drop-shadow(0px 0px 20px #ffb84eaf);
-}
-
-#earth {
-  position: absolute;
-  right: 48%;
-  left: 43%;
-  top: 50%;
-  filter: drop-shadow(0px 0px 20px #87b570ba);
-}
-
-#moon {
-  position: absolute;
-  right: 64%;
-  left: 32%;
-  top: 50%;
-  filter: drop-shadow(0px 0px 10px #c1c1c1ba);
-}
-
-#mars {
-  position: absolute;
-  right: 38%;
-  left: 54%;
-  top: 70%;
-  filter: drop-shadow(0px 0px 20px #c1431dc9);
-}
-
-#saturn {
-  position: absolute;
-  right: 22%;
-  left: 60%;
-  top: 30%;
-  filter: drop-shadow(0px 0px 10px #b6925dc1);
-}
-
-#jupiter {
-  position: absolute;
-  right: 12.5%;
-  left: 75%;
-  top: 65%;
-  filter: drop-shadow(0px 0px 20px #b6925db7);
-}
-
-#uranus {
-  position: absolute;
-  right: 7%;
-  left: 87%;
-  top: 30%;
-  filter: drop-shadow(0px 0px 20px #6dacd4be);
-}
-
-#neptune {
-  position: absolute;
-  right: 4%;
-  left: 91%;
-  top: 9%;
-  filter: drop-shadow(0px 0px 20px #1448D4);
-}
-
-#blackhole {
-  position: absolute;
-  border-radius: 0;
-  right: 77%;
-  left: 5%;
-  top: 55%;
-  transform: rotate(-30deg);
-  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.50));
-}
-
-#pluto {
-  position: absolute;
-  right: 64%;
-  left: 30%;
-  top: 82%;
-  filter: drop-shadow(0px 0px 20px #FFC9A0);
-}
-
+/* Miscellaneous */
 .back {
   z-index: 1;
   border: 0;
@@ -221,14 +127,109 @@ body {
   font-family: 'Cafe24Ssurround';
 }
 
+/* Planet IDs */
+#sun {
+  border-radius: 0;
+  right: 78%;
+  left: -10%;
+  top: -18%;
+  filter: drop-shadow(0px 0px 20px #aa1d1dc0);
+}
+
+#mercury {
+  transform: rotate(90deg);
+  right: 65%;
+  left: 30%;
+  top: 10%;
+  filter: drop-shadow(0px 0px 10px #ff714ec3);
+}
+
+#venus {
+  right: 53%;
+  left: 40%;
+  top: 17%;
+  filter: drop-shadow(0px 0px 20px #ffb84eaf);
+}
+
+#earth {
+  right: 48%;
+  left: 43%;
+  top: 50%;
+  filter: drop-shadow(0px 0px 20px #87b570ba);
+}
+
+#moon {
+  right: 64%;
+  left: 32%;
+  top: 50%;
+  filter: drop-shadow(0px 0px 10px #c1c1c1ba);
+}
+
+#mars {
+  right: 38%;
+  left: 54%;
+  top: 70%;
+  filter: drop-shadow(0px 0px 20px #c1431dc9);
+}
+
+#saturn {
+  right: 22%;
+  left: 60%;
+  top: 30%;
+  filter: drop-shadow(0px 0px 10px #b6925dc1);
+}
+
+#saturn img{
+  transform: scale(0.8); 
+}
+
+#jupiter {
+  right: 12.5%;
+  left: 75%;
+  top: 65%;
+  filter: drop-shadow(0px 0px 20px #b6925db7);
+}
+
+#uranus {
+  right: 7%;
+  left: 87%;
+  top: 30%;
+  filter: drop-shadow(0px 0px 20px #6dacd4be);
+}
+
+#neptune {
+  right: 4%;
+  left: 91%;
+  top: 9%;
+  filter: drop-shadow(0px 0px 20px #1448D4);
+}
+
+#blackhole {
+  border-radius: 0;
+  right: 77%;
+  left: 5%;
+  top: 55%;
+  transform: rotate(-30deg);
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.50));
+}
+
+#pluto {
+  right: 64%;
+  left: 30%;
+  top: 82%;
+  filter: drop-shadow(0px 0px 20px #FFC9A0);
+}
+
+
+/* Keyframes */
 @keyframes rotate {
   0% {
-    transform: rotate(90deg);
+    transform: rotate(100deg);
   }
   50% {
     transform: rotate(80deg);
   }
   100% {
-    transform: rotate(90deg);
+    transform: rotate(100deg);
   }
 }
