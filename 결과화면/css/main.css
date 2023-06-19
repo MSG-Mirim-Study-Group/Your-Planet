@@ -53,6 +53,19 @@ body {
   text-align: center;
 }
 
+.my_planet #saturn {
+  top: 18%;
+  width: 55%;
+  height: auto;
+  rotate: 80deg;
+}
+
+.my_planet #blackhall {
+  top: 18%;
+  width: 55%;
+  height: auto;
+}
+
 img {
   object-fit: cover;
   position: absolute;
@@ -89,7 +102,7 @@ span.underline {
 .planet_subtitle {
   font-family: 'Dovemayo_gothic';
   position: absolute;
-  padding-top: 16%;
+  padding-top: 13%;
   font-size: 150%;
 }
 
