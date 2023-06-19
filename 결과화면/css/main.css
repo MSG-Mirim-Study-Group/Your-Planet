@@ -15,7 +15,9 @@
 * {
   padding: 0;
   margin: 0;
+  max-width: 2560px;
   width: 100%;
+  max-height: 1440px;
   height: 100%;
 }
 
@@ -27,7 +29,7 @@ body {
 
 .container {
   position: absolute;
-  left: 25%;  
+  left: 25%;
   width: 50%;
   height: 100%;
   /* 가로 센터 정렬 */
@@ -41,14 +43,27 @@ body {
   width: 46vw;
   height: 80vh;
   top: 1%;
-  background:rgb(255, 255, 255);
-  border-radius: 1em;  
+  background: rgb(255, 255, 255);
+  border-radius: 1em;
   /* 가운데 */
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;   
+  align-items: center;
   text-align: center;
+}
+
+.my_planet #saturn {
+  top: 18%;
+  width: 55%;
+  height: auto;
+  rotate: 80deg;
+}
+
+.my_planet #blackhall {
+  top: 18%;
+  width: 55%;
+  height: auto;
 }
 
 img {
@@ -66,12 +81,12 @@ span.underline {
 
 /* 좋은 궁합 초록 형광펜 밑줄 */
 .good_planet span.underline {
-  background: linear-gradient(to top, #00ff1a 50%, transparent 50%);
+  background: linear-gradient(to top, #00ff1a 20%, transparent 30%);
 }
 
 /* 나쁜 궁합 주황 형광펜 밑줄 */
 .bad_planet span.underline {
-  background: linear-gradient(to top, #f9740f 50%, transparent 50%);
+  background: linear-gradient(to top, #f9740f 20%, transparent 30%);
 }
 
 /* 나의 행성 이름 */
@@ -87,7 +102,7 @@ span.underline {
 .planet_subtitle {
   font-family: 'Dovemayo_gothic';
   position: absolute;
-  padding-top: 16%;
+  padding-top: 13%;
   font-size: 150%;
 }
 
@@ -111,14 +126,15 @@ span.underline {
   top: 69%;
   padding: 2em;
   transform: translateX(-50%, -50%);
-  background:rgb(250, 246, 239);
-  border-radius:1em;  
+  background: rgb(250, 246, 239);
+  border-radius: 1em;
   padding: 1em;
   padding-bottom: 1em;
   text-align: center;
   display: flex;
   justify-content: center;
-  flex-direction: column; /* 컨텐츠를 세로로 정렬하기 위해 추가 */
+  flex-direction: column;
+  /* 컨텐츠를 세로로 정렬하기 위해 추가 */
   align-items: center;
   font-size: 130%;
   font-family: 'Dovemayo_gothic';
@@ -127,8 +143,8 @@ span.underline {
 /* 행성 성격 설명 */
 .explain p {
   z-index: 3;
-  background:rgb(207, 207, 207);
-  border-radius:1em;
+  background: rgb(207, 207, 207);
+  border-radius: 1em;
   padding: 1em;
   margin-top: 50%;
   text-align: center;
@@ -144,13 +160,16 @@ span.underline {
   top: 97%;
   /* padding-top: 1em; */
   padding-bottom: 1em;
-  background:rgb(255, 255, 255);
-  border-radius: 1em;  
+  background: rgb(255, 255, 255);
+  border-radius: 1em;
   text-align: center;
   display: flex;
-  flex-direction: column; /* 컨텐츠를 세로로 정렬하기 위해 추가 */
-  align-items: center; /* 가로 가운데 정렬을 위해 추가 */
-  justify-content: center; /* 세로 가운데 정렬을 위해 추가 */
+  flex-direction: column;
+  /* 컨텐츠를 세로로 정렬하기 위해 추가 */
+  align-items: center;
+  /* 가로 가운데 정렬을 위해 추가 */
+  justify-content: center;
+  /* 세로 가운데 정렬을 위해 추가 */
 }
 
 /* 위의 질문 */
@@ -179,16 +198,23 @@ span.underline {
   position: absolute;
   width: 46vw;
   height: 30vh;
-  top:  119%;
-  border-radius:1em;  
+  top: 119%;
+  border-radius: 1em;
   text-align: center;
+}
+
+.other_planet .good_planet #blackhall {
+  /* position: absolute; */
+  top: 10%;
+  left: 15%;
+  width: 70%;
+  height: auto;
 }
 
 .main#best {
   padding-top: 1.5em;
   font-family: 'Cafe24Ssurround';
   font-size: 110%;
-
   /* background: linear-gradient(to top, #00ff00 10%, transparent 1%); */
 }
 
@@ -196,7 +222,6 @@ span.underline {
   padding-top: 1.5em;
   font-family: 'Cafe24Ssurround';
   font-size: 110%;
-
   /* background: linear-gradient(to top, #00ff00 10%, transparent 1%); */
 }
 
@@ -205,8 +230,8 @@ span.underline {
   position: absolute;
   width: 22vw;
   height: 45vh;
-  background:rgb(255, 255, 255);
-  border-radius:1em;  
+  background: rgb(255, 255, 255);
+  border-radius: 1em;
   /* text-align: center; */
 }
 
@@ -217,8 +242,8 @@ span.underline {
   height: 45vh;
   left: 52%;
   top: 0%;
-  background:rgb(255, 255, 255);
-  border-radius:1em;  
+  background: rgb(255, 255, 255);
+  border-radius: 1em;
   /* text-align: center; */
 }
 
@@ -261,7 +286,8 @@ span.underline {
   width: 50%;
   height: auto;
   left: 25%;
-  top: 21%;transition: transform 0.3s ease-in-out;
+  top: 21%;
+  transition: transform 0.3s ease-in-out;
 }
 
 .bad_planet img:hover {
@@ -297,7 +323,7 @@ span.underline {
   background-color: rgb(32, 20, 83);
 }
 
-.planet #mercury {  
+.planet #mercury {
   z-index: 1;
   opacity: 0.2;
   position: absolute;
