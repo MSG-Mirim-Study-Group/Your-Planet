@@ -85,10 +85,12 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
 .title {
-  
+
   padding: 0 0 10mm 0;
 }
+
 .name {
   font-style: normal;
   font-size: 80px;
@@ -107,7 +109,7 @@ body {
 .talk {
   font-size: 30px;
   color: #fff;
-  padding:  0 0 5rem 0;
+  padding: 0 0 5rem 0;
 }
 
 .section {
@@ -119,43 +121,44 @@ body {
 .triangle {
   border-left: 2vw solid transparent;
   border-right: 2vw solid transparent;
-  border-bottom: 2.5vw solid #fff; /* 버튼의 배경색을 변경하려면 이 부분을 수정해주세요 */
+  border-bottom: 2.5vw solid #fff;
   cursor: pointer;
 }
 
 .triangle:hover {
-  border-bottom-color: rgb(128, 128, 128); /* 마우스 오버 시 버튼의 배경색을 변경하려면 이 부분을 수정해주세요 */
+  border-bottom-color: rgb(128, 128, 128);
+  /* 마우스 오버 시 버튼의 배경색을 변경하려면 이 부분을 수정해주세요 */
 }
 
 #triangleLeft {
   transform: rotate(-90deg);
-  position: absolute;
-  top: 50%;
-  left: 0%;
+  margin: 0 0 0 1em;
+  order: 1;
 }
 
 #triangleRight {
   transform: rotate(90deg);
-  position: absolute;
-  top: 50%;
-  left: 87%;
+  margin: 0 1em 0 0;
+  order: 3;
 }
 
 .left {
   width: 50%;
   height: 100vh;
-  position:fixed;
+  position: fixed;
 }
 
 .right {
-  width: 50%;
+  width: 50vw;
   height: 100vh;
   right: 0;
-  position:fixed;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .square-box {
-  position: absolute;
   top: 60px;
   width: 60%;
   height: 77%;
@@ -164,6 +167,7 @@ body {
   overflow: hidden;
   overflow-y: auto;
   z-index: 100;
+  order: 2;
 }
 
 #userList {
@@ -173,8 +177,11 @@ body {
   border: 5px solid transparent;
   border-color: rgba(255, 255, 255, 0.5);
   box-shadow: inset 0px 0px 5px rgb(212, 225, 255);
-  left: 105px;
-  
+  display: flex;
+  text-align: center;
+  /* 수정 */
+  justify-content: space-between;
+
 }
 
 .square-box::-webkit-scrollbar {
@@ -196,11 +203,12 @@ body {
   border-color: #fff;
   background-color: #00ff0000;
   color: #f1f1f1;
-  font-size: 25px;
-  float: left;
+  font-size: 1.9em;
   height: vh center;
-  margin: 10px;
-  padding: 10px;
+  margin: 1vh 1vw;
+  padding: 1vh;
+  display: inline-flex;
+  justify-content: center;
 }
 
 #img {
@@ -230,7 +238,7 @@ body {
   text-align: center;
 }
 
-.title > h1 {
+.title>h1 {
   font-size: 4rem;
   padding: 0 0 2mm 0;
 }
@@ -261,8 +269,8 @@ body {
   color: #000;
 }
 
-.box > h2,
-.box > h3 {
+.box>h2,
+.box>h3 {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -272,12 +280,12 @@ body {
   padding: 0 0 1mm;
 }
 
-.box > h3 {
+.box>h3 {
   font-size: 3mm;
   font-family: 'Dovemayo_gothic';
 }
 
-.box > h2 {
+.box>h2 {
   font-size: 5mm;
 }
 
@@ -300,15 +308,23 @@ body {
 h4 {
   font-family: 'Dovemayo_gothic';
   text-align: left;
-  
+
   font-weight: lighter;
-  padding: 0 0 20mm 0 ;
+  padding: 0 0 20mm 0;
 }
 
-#SunScene > .container > .left > .planetList > .planet{
-  transform: scale(1.2); 
+#SunScene>.container>.left>.planetList>.planet {
+  transform: scale(1.2);
 }
 
-#SaturnScene > .container > .left > .planetList > .planet{
-  transform: scale(1.7); 
+#SaturnScene>.container>.left>.planetList>.planet {
+  transform: scale(1.7);
+}
+
+#SunScene>.left>.planetList>.planet {
+  transform: scale(1.2);
+}
+
+#SaturnScene>.left>.planetList>.planet {
+  transform: scale(1.7);
 }
