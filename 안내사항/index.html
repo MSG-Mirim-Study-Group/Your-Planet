@@ -12,15 +12,23 @@
 
 <body>
   <div style="position: absolute; width: 100vw; height: 100vh;">
-    <img src="../images/dark_star1.png" style="position: absolute; top: 15%; left: 9%; width: 2vw; height: auto;" alt="이미지1">
-    <img src="../images/dark_star1.png" style="position: absolute; top: 25%; left: 19%; width: 1vw; height: auto;" alt="이미지2">
-    <img src="../images/dark_star1.png" style="position: absolute; top: 30%; left: 80%; width: 2vw; height: auto;" alt="이미지3">
-    <img src="../images/dark_star1.png" style="position: absolute; top: 10%; left: 66%; width: 1vw; height: auto;" alt="이미지4">
-    <img src="../images/dark_star1.png" style="position: absolute; top: 4%; left: 88%; width: 1vw; height: auto;" alt="이미지5">
-    <img src="../images/dark_star1.png" style="position: absolute; top: 44%; left: 88%; width: 1vw; height: auto;" alt="이미지6">
-    <img src="../images/dark_star1.png" style="position: absolute; top: 35%; left: 5%; width: 1vw; height: auto;" alt="이미지8">
-    <img src="../images/dark_star1.png" style="position: absolute; top: 7%; left: 30%; width: 1vw; height: auto;" alt="이미지9">
-</div>
+    <img src="../images/dark_star1.png" style="position: absolute; top: 15%; left: 9%; width: 2vw; height: auto;"
+      alt="이미지1">
+    <img src="../images/dark_star1.png" style="position: absolute; top: 25%; left: 19%; width: 1vw; height: auto;"
+      alt="이미지2">
+    <img src="../images/dark_star1.png" style="position: absolute; top: 30%; left: 80%; width: 2vw; height: auto;"
+      alt="이미지3">
+    <img src="../images/dark_star1.png" style="position: absolute; top: 10%; left: 66%; width: 1vw; height: auto;"
+      alt="이미지4">
+    <img src="../images/dark_star1.png" style="position: absolute; top: 4%; left: 88%; width: 1vw; height: auto;"
+      alt="이미지5">
+    <img src="../images/dark_star1.png" style="position: absolute; top: 44%; left: 88%; width: 1vw; height: auto;"
+      alt="이미지6">
+    <img src="../images/dark_star1.png" style="position: absolute; top: 35%; left: 5%; width: 1vw; height: auto;"
+      alt="이미지8">
+    <img src="../images/dark_star1.png" style="position: absolute; top: 7%; left: 30%; width: 1vw; height: auto;"
+      alt="이미지9">
+  </div>
   <div class="planet">
     <div id="earth">
       <img src="../images/planet/Earth.png" alt="Earth" />
@@ -40,28 +48,22 @@
   </div>
   <form method="post" action="server.php" name="user_name" id="user_name">
     <div class="container">
-      <div class="welcome_planet">
-        <p>토성에 오신 것을 환영합니다</p>
-        <hr>
-        <img src="../images/planet/Saturn.png" alt="Saturn">
-        <div class="square-box" id="userList" style="display: none;">
-          <div id="user">이미남</div>
-          <div id="user">이미녀</div>
-          <div id="user">김미남</div>
-          <div id="user">김미녀</div>
-          <div id="user">최규정</div>
+      <center>
+        <div class="welcome_planet">
+          <img src="../images/sample.PNG">
         </div>
+      </center>
+    </div>
+    <div class="name">
+      <p>사용자 이름</p>
+      <input type="text" placeholder="이름입력" name="uname" id="uname" class="input_name" autofocus>
+      <div class="agree">
+        <p>
+          <input type="checkbox" name="agree">
+          사용자님의 이름을 사용하는 것에 동의하십니까?
+        </p>
       </div>
-      <div class="name">
-        <p>사용자 이름</p>
-        <input type="text" placeholder="이름입력" name="uname" id="uname" class="input_name" autofocus>
-        <div class="agree">
-          <p>
-            <input type="checkbox" name="agree">
-            사용자님의 이름을 사용하는 것에 동의하십니까?
-          </p>
-        </div>
-      </div>
+    </div>
     </div>
   </form>
   <button type="button" id="next">

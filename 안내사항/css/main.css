@@ -68,57 +68,21 @@ img {
   background-color: rgb(56, 53, 137);
   background:rgb(12, 12, 66);
   border-radius:1em;  
-  padding: 1.5em;
+  padding: 1.5em; 
   outline: 1.5em solid rgb(255, 255, 255);
 }
 
-
-/* 예시제목 [토성에 오신 것을 환영합니다] */
-.welcome_planet p { 
-  font-size: 140%;
-  margin: auto; /* 줄 가운데 정렬 */
+/* 예시 이미지 [토성] */
+.welcome_planet img {
+  height: 100%;
+  padding: 0;
 }
-
 hr {
   filter: brightness(100%);
   border: 1px solid white;
   margin: auto; /* 줄 가운데 정렬 */
   width: 50%;
   margin-top: 1%;
-}
-
-/* 예시 이미지 [토성] */
-.welcome_planet img {
-  rotate: 290deg;
-  position: absolute;
-  left: 4%;
-  top: 10%;
-  width: 30%;
-  height: 100%;
-}
-
-/* 유저 리스트 박스 */
-.square-box {
-  position: absolute;
-  top: 4%;
-  left: 10%;
-  width: 61%;
-  height: 77%;
-  padding: 5%;
-  word-wrap: break-word;
-}
-
-#userList {
-  background-color: #00ff0000;
-  filter: brightness(100%);
-  position: absolute;
-  left: 20%;
-  background:tan;
-  border-radius:0.8em;
-  padding:1em;
-  box-shadow:0 0 0 .6em khaki;
-  outline: 0.6em solid khaki;
-  margin: auto;
 }
 
 /* 제목 [사용자 이름] */
