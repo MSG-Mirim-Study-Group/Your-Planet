@@ -81,12 +81,12 @@ span.underline {
 
 /* 좋은 궁합 초록 형광펜 밑줄 */
 .good_planet span.underline {
-  background: linear-gradient(to top, #00ff1a 50%, transparent 50%);
+  background: linear-gradient(to top, #00ff1a 20%, transparent 30%);
 }
 
 /* 나쁜 궁합 주황 형광펜 밑줄 */
 .bad_planet span.underline {
-  background: linear-gradient(to top, #f9740f 50%, transparent 50%);
+  background: linear-gradient(to top, #f9740f 20%, transparent 30%);
 }
 
 /* 나의 행성 이름 */
@@ -199,11 +199,18 @@ span.underline {
   text-align: center;
 }
 
+.other_planet .good_planet #blackhall {
+  /* position: absolute; */
+  top: 10%;
+  left: 15%;
+  width: 70%;
+  height: auto;
+}
+
 .main#best {
   padding-top: 1.5em;
   font-family: 'Cafe24Ssurround';
   font-size: 110%;
-
   /* background: linear-gradient(to top, #00ff00 10%, transparent 1%); */
 }
 
@@ -211,7 +218,6 @@ span.underline {
   padding-top: 1.5em;
   font-family: 'Cafe24Ssurround';
   font-size: 110%;
-
   /* background: linear-gradient(to top, #00ff00 10%, transparent 1%); */
 }
 
