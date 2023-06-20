@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <script defer src="./js/main.js"></script>
     <div class="planet">
         <div id="mercury">
             <img src="../images/planet/Mercury.png" alt="Mercury" />
@@ -46,10 +47,12 @@
         </div>
         <div class="other_planet">
             <div class="good_planet">
-                <img src="../images/planet/Earth.png" alt="Earth" />
                 <div class="main" id="best">
                     찰떡궁합
                 </div>
+                <button type="button" id="moon" onclick="goToPage('Earth')">
+                    <img src="../images/planet/Earth.png" alt="지구">
+                </button>
                 <div class="title">
                     <span class="underline">지구</span>
                 </div>
@@ -58,8 +61,12 @@
                 </div>
             </div>
             <div class="bad_planet">
-                <img src="../images/planet/Moon.png" alt="Moon" />
-                <div class="main" id="worst">환장의 궁합</div>
+                <div class="main" id="worst">
+                    환장의 궁합
+                </div>
+                <button type="button" id="moon" onclick="goToPage('Moon')">
+                    <img src="../images/planet/Moon.png" alt="달">
+                </button>
                 <div class="title">
                     <span class="underline">달</span>
                 </div>
@@ -68,6 +75,15 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="btns">
+        <div class="planets_btn">
+            <button id="planets_btn" onclick="clickBtn('planets_btn')">전체 행성 보러 가기</button>
+        </div>
+        <div class="restart_btn">
+            <button id="restart_btn" onclick="clickBtn('restart_btn')">테스트 다시 하기</button>
+        </div>
+        <div class="blank"></div>
     </div>
 </body>
 

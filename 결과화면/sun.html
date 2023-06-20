@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <script src="./js/main.js"></script>
     <div class="planet">
         <div id="mercury">
             <img src="../images/planet/Mercury.png" alt="Mercury" />
@@ -45,7 +46,9 @@
         </div>
         <div class="other_planet">
             <div class="good_planet">
-                <img src="../images/planet/Neptune.png" alt="Neptune" />
+                <button type="button" id="neptune" onclick="goToPage('Neptune')">
+                    <img src="../images/planet/Neptune.png" alt="해왕성">
+                </button>
                 <div class="main" id="best">
                     찰떡궁합
                 </div>
@@ -57,7 +60,9 @@
                 </div>
             </div>
             <div class="bad_planet">
-                <img src="../images/planet/Jupiter.png" alt="Jupiter" />
+                <button type="button" id="jupiter" onclick="goToPage('Jupiter')">
+                    <img src="../images/planet/Jupiter.png" alt="목성">
+                </button>
                 <div class="main" id="worst">환장의 궁합</div>
                 <div class="title">
                     <span class="underline">목성</span>
@@ -67,6 +72,15 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="btns">
+        <div class="planets_btn">
+            <button id="planets_btn" onclick="clickBtn('planets_btn')">전체 행성 보러 가기</button>
+        </div>
+        <div class="restart_btn">
+            <button id="restart_btn" onclick="clickBtn('restart_btn')">테스트 다시 하기</button>
+        </div>
+        <div class="blank"></div>
     </div>
 </body>
 
