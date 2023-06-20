@@ -87,19 +87,19 @@ span.underline {
 }
 
 /* 나의 행성 이름 */
-.planet_title {
+.my_planet .planet_title {
   font-family: 'Cafe24Ssurround';
   position: absolute;
-  padding-top: 25%;
+  padding-top: 23%;
   font-size: 350%;
   font-style: bold;
 }
 
 /* 나의 행성 한줄평 */
-.planet_subtitle {
+.my_planet .planet_subtitle {
   font-family: 'Dovemayo_gothic';
   position: absolute;
-  padding-top: 13%;
+  padding-top: 12%;
   font-size: 150%;
 }
 
@@ -109,18 +109,18 @@ span.underline {
   width: 18vw;
   height: auto;
   position: absolute;
-  top: 26%;
+  top: 25%;
   rotate: 10deg;
   filter: brightness(110%);
 }
 
 /* 행성 성격 설명 박스 */
-.explain {
+.my_planet .explain {
   z-index: 2;
   position: absolute;
   width: 38vw;
   height: auto;
-  top: 69%;
+  top: 68%;
   padding: 2em;
   transform: translateX(-50%, -50%);
   background: rgb(250, 246, 239);
@@ -154,9 +154,7 @@ span.underline {
   position: absolute;
   width: 46vw;
   height: auto;
-  top: 97%;
-  /* padding-top: 1em; */
-  padding-bottom: 1em;
+  top: 93%;
   background: rgb(255, 255, 255);
   border-radius: 1em;
   text-align: center;
@@ -195,7 +193,7 @@ span.underline {
   position: absolute;
   width: 46vw;
   height: 30vh;
-  top: 119%;
+  top: 114%;
   border-radius: 1em;
   text-align: center;
 }
@@ -244,12 +242,10 @@ span.underline {
 
 /* 불필요한 버튼 제거 코드 */
 .good_planet button {
-  background-color: rgb(255, 255, 255, 0);
   border: none;
   height: 0;
 }
 .bad_planet button {
-  background-color: rgb(255, 255, 255, 0);
   border: none;
   height: 0;
 }
@@ -325,37 +321,55 @@ span.underline {
 /* 버튼 */
 .btns {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3%;
-  padding: 1em;
-  box-sizing: border-box; /* 패딩을 요소 전체 너비와 높이에 포함하기 위해 사용 */
-  margin-top: 0.5em; /* 사진과 버튼 사이에 추가된 간격 */
+  padding: 0;
+  top: 177%;
+  left: 36%;
+  width: 24vw;
+  height: 7vh;
 }
 
-.btns #reset_btn {
-  display: inline;
-  width: 40px;
-  height: 40px;
-  border-radius: 0.5em;
-  border: none;
-  background-image: url('../img/home-icon.png');
-  background-size: cover;
-   /* 사진과 버튼 사이에 추가된 간격 */
-  padding: 5em; 
+.btns div {
+  border: 1px solid rgb(255, 255, 255, 0);
+  border-radius: 5em; 
+  margin-bottom: 10%;
 }
 
-.btns #planets_btn {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  border-radius: 0.5em;
-  border: none;
-  background-image: url('../img/planet-icon.png');
-  background-size: cover;
+.planets_btn button {
+  z-index: 7;
   position: absolute;
-  left: 50%;
+  width: 26vw;
+  height: 3hv;
+  border-radius: 5em;
+  border: none;
+  font-family: 'Cafe24Ssurround';
+  font-size: 100%;
+  transition: transform 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.restart_btn button {
+  z-index: 7;
+  position: absolute;
+  width: 26vw;
+  height: 3hv;
+  border-radius: 5em;
+  border: none;
+  font-family: 'Cafe24Ssurround';
+  font-size: 100%;
+  transition: transform 0.4s ease-out;
+  cursor: pointer;
+}
+
+.btns .planets_btn button:hover {
+  transform: scale(1.2);
+  background-color: #5500ff;
+  color: white;
+}
+
+.btns .restart_btn button:hover {
+  transform: scale(1.2);
+  background-color: #5500ff;
+  color: white;
 }
 
 .home-button {
