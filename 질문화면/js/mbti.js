@@ -38,51 +38,51 @@ console.log("결과 : " + mbti);
 
 switch (mbti) {
   case "infp":
-    window.location.href = "https://example.com";
+    window.location.href = "./결과화면/earth.html";
     break;
   case "infj":
-    window.location.href = "https://example.com";
+    window.location.href = "./결과화면/earth.html";
     break;
   case "intj":
-    window.location.href = "https://example.com";
+    window.location.href = "./결과화면/pluto.html";
     break;
   case "intp":
-    window.location.href = "https://example.com";
+    window.location.href = "./결과화면/neptune.html";
     break;
   case "isfp":
-    window.location.href = "https://example.com";
+    window.location.href = "./결과화면/moon.html";
     break;
   case "isfj":
-    window.location.href = "https://example.com";
+    window.location.href = "./결과화면/saturn.html";
     break;
   case "istp":
-    window.location.href = "https://example.com";
+    window.location.href = "./결과화면/mercury.html";
     break;
   case "istj":
-    window.location.href = "https://example.com";
+    window.location.href = "./결과화면/uranus.html";
     break;
   case "enfp":
-    window.location.href = "https://example.com";
+    window.location.href = "./결과화면/mars.html";
     break;
   case "enfj":
-    window.location.href = "https://example.com";
+    window.location.href = "./결과화면/sun.html";
     break;
   case "entj":
-    window.location.href = "https://example.com";
+    window.location.href = "./결과화면/sun.html";
     break;
   case "entp":
-    window.location.href = "https://example.com";
+    window.location.href = "./결과화면/blackhall.html";
     break;
   case "esfj":
-    window.location.href = "https://example.com";
+    window.location.href = "./결과화면/jupiter.html";
     break;
   case "estj":
-    window.location.href = "https://example.com";
+    window.location.href = "./결과화면/jupiter.html";
     break;
+    case "esfj":
+      window.location.href = "./결과화면/jupiter.html";
+      break;
   case "esfp":
-    window.location.href = "https://example.com";
-    break;
-  case "esfj":
-    window.location.href = "https://example.com";
+    window.location.href = "./결과화면/venus.html";
     break;
 }

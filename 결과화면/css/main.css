@@ -29,19 +29,16 @@ body {
 
 .container {
   position: absolute;
+  top: 10%;
   left: 25%;
   width: 50%;
   height: 100%;
-  /* 가로 센터 정렬 */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .my_planet {
   z-index: 2;
   width: 46vw;
-  height: 80vh;
+  height: 85vh;
   top: 1%;
   background: rgb(255, 255, 255);
   border-radius: 1em;
@@ -203,26 +200,27 @@ span.underline {
   text-align: center;
 }
 
+/* 블랙홀 이미지 크기 조정 */
 .other_planet .good_planet #blackhall {
-  /* position: absolute; */
   top: 10%;
   left: 15%;
   width: 70%;
   height: auto;
 }
 
+/* 찰떡궁합 */
 .main#best {
   padding-top: 1.5em;
   font-family: 'Cafe24Ssurround';
   font-size: 110%;
-  /* background: linear-gradient(to top, #00ff00 10%, transparent 1%); */
 }
 
+/* 환장의 궁합 */
 .main#worst {
   padding-top: 1.5em;
   font-family: 'Cafe24Ssurround';
   font-size: 110%;
-  /* background: linear-gradient(to top, #00ff00 10%, transparent 1%); */
+  border-radius: 1em;
 }
 
 /* 나와 잘 맞는 행성 */
@@ -232,7 +230,6 @@ span.underline {
   height: 45vh;
   background: rgb(255, 255, 255);
   border-radius: 1em;
-  /* text-align: center; */
 }
 
 /* 잘 맞지 않는 행성 */
@@ -241,10 +238,20 @@ span.underline {
   width: 22vw;
   height: 45vh;
   left: 52%;
-  top: 0%;
   background: rgb(255, 255, 255);
   border-radius: 1em;
-  /* text-align: center; */
+}
+
+/* 불필요한 버튼 제거 코드 */
+.good_planet button {
+  background-color: rgb(255, 255, 255, 0);
+  border: none;
+  height: 0;
+}
+.bad_planet button {
+  background-color: rgb(255, 255, 255, 0);
+  border: none;
+  height: 0;
 }
 
 /* 나와 잘 맞는 행성 이미지 */
@@ -255,14 +262,40 @@ span.underline {
   left: 25%;
   top: 21%;
   transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* 나와 잘 맞지 않는 행성 이미지 */
+.bad_planet img {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  left: 25%;
+  top: 21%;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .good_planet img:hover {
   transform: scale(1.2);
 }
 
+.bad_planet img:hover {
+  transform: scale(1.2);
+}
+
 /* 위의 행성 이름 */
 .good_planet .title {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  top: 72%;
+  font-size: 150%;
+  font-family: 'Cafe24Ssurround';
+}
+
+/* 위의 행성 이름 */
+.bad_planet .title {
   position: absolute;
   width: 100%;
   height: 60%;
@@ -280,30 +313,6 @@ span.underline {
   font-family: 'Dovemayo_gothic';
 }
 
-/* 나와 잘 맞지 않는 행성 이미지 */
-.bad_planet img {
-  position: absolute;
-  width: 50%;
-  height: auto;
-  left: 25%;
-  top: 21%;
-  transition: transform 0.3s ease-in-out;
-}
-
-.bad_planet img:hover {
-  transform: scale(1.2);
-}
-
-/* 위의 행성 이름 */
-.bad_planet .title {
-  position: absolute;
-  width: 100%;
-  height: 60%;
-  top: 72%;
-  font-size: 150%;
-  font-family: 'Cafe24Ssurround';
-}
-
 /* 위의 행성 소제목 */
 .bad_planet .sub_title {
   position: absolute;
@@ -312,6 +321,58 @@ span.underline {
   top: 83%;
   font-family: 'Dovemayo_gothic';
 }
+
+/* 버튼 */
+.btns {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3%;
+  padding: 1em;
+  box-sizing: border-box; /* 패딩을 요소 전체 너비와 높이에 포함하기 위해 사용 */
+  margin-top: 0.5em; /* 사진과 버튼 사이에 추가된 간격 */
+}
+
+.btns #reset_btn {
+  display: inline;
+  width: 40px;
+  height: 40px;
+  border-radius: 0.5em;
+  border: none;
+  background-image: url('../img/home-icon.png');
+  background-size: cover;
+   /* 사진과 버튼 사이에 추가된 간격 */
+  padding: 5em; 
+}
+
+.btns #planets_btn {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 0.5em;
+  border: none;
+  background-image: url('../img/planet-icon.png');
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+}
+
+.home-button {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-image: url('../img/planet-icon.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  filter: brightness(120%);
+}
+
 
 /* 전체 행성 */
 .planet {
