@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <script src="./js/main.js"></script>
     <div class="planet">
         <div id="mercury">
             <img src="../images/planet/Mercury.png" alt="Mercury" />
@@ -45,28 +46,41 @@
         </div>
         <div class="other_planet">
             <div class="good_planet">
-                <img src="../images/planet/Earth.png" alt="Earth" />
+                <button type="button" id="venus" onclick="goToPage('Venus')">
+                    <img src="../images/planet/Venus.png" alt="금성">
+                </button>
                 <div class="main" id="best">
                     찰떡궁합
                 </div>
                 <div class="title">
-                    <span class="underline">지구</span>
+                    <span class="underline">금성</span>
                 </div>
                 <div class="sub_title">
-                    하루종일 기분 마치 롤러코스터
+                    어디서나 ✨당당✨하게 걷기
                 </div>
             </div>
             <div class="bad_planet">
-                <img src="../images/planet/Mars.png" alt="Mars" />
+                <button type="button" id="moon" onclick="goToPage('Moon')">
+                    <img src="../images/planet/Moon.png" alt="달">
+                </button>
                 <div class="main" id="worst">환장의 궁합</div>
                 <div class="title">
-                    <span class="underline">화성</span>
+                    <span class="underline">달</span>
                 </div>
                 <div class="sub_title">
-                    내 에너지를 견딜 사람, 다 나와!
+                    소심하지만 내 사람은 꼭 지켜야 해!
                 </div>
             </div>
         </div>
+    </div>
+    <div class="btns">
+        <div class="planets_btn">
+            <button id="planets_btn" onclick="clickBtn('planets_btn')">전체 행성 보러 가기</button>
+        </div>
+        <div class="restart_btn">
+            <button id="restart_btn" onclick="clickBtn('restart_btn')">테스트 다시 하기</button>
+        </div>
+        <div class="blank"></div>
     </div>
 </body>
 

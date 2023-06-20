@@ -1,6 +1,31 @@
+@font-face {
+  font-family: 'Cafe24Ssurround';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BMJUA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SUITE-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
-  padding: 0%;
-  margin: 0%;
+  padding: 0;
+  margin: 0;
+  max-width: 2560px;
+  width: 100%;
+  max-height: 1440px;
+  height: 100%;
   width: fit-content;
   height: fit-content; 
   border: none;
@@ -9,18 +34,21 @@
 
 body {
   color: white;
-  font-family: 'Courier New', Courier, monospace;
   overflow: hidden;
   background-color: rgb(21, 9, 76);
 }
 
-button {
+.btns button {
+  font-family: 'Cafe24Ssurround';
+  font-size: 110%;
   background-color: rgb(255, 255, 255);
-  border-radius: 5px;
-  padding-left: 1.5%;
-  padding-right: 1.5%;
-  padding-top: 0.5%;
-  padding-bottom: 0.5%;
+  border-radius: 1em;
+  width: 7vw;
+  height: 6vh;
+}
+
+.btns button:hover {
+  cursor: pointer;
 }
 
 button#next {
@@ -45,126 +73,89 @@ img {
 }
 
 /* 제목 */
-.title p {
+.title {
   position: absolute;
-  left: 43%;
-  right: 30%;
   top: 7%;
-  font-size: 250%;
+  /* left: 0%; */
+  /* width: 100vw; */
 }
+
+.title p {
+  /* background-color: aqua; */
+  position: absolute;
+  width: 100vw;
+  /* left: 20%; */
+  font-size: 250%;
+  text-align: center;
+  font-family: 'Cafe24Ssurround';
+} 
 
 /* 이름이 사용될 곳 보여주는 박스 */
 .welcome_planet {
   filter: brightness(100%); /* 예시 박스 밝기 높임 */
-  width: 50%;
-  height: 35%;
+  width: 50vw;
+  height: 40vh;
   position: absolute;
   left: 23%;
   top: 20%;
   background-color: rgb(56, 53, 137);
   background:rgb(12, 12, 66);
   border-radius:1em;  
-  padding: 1.5em;
+  padding: 1.5em; 
   outline: 1.5em solid rgb(255, 255, 255);
 }
 
-
-/* 예시제목 [토성에 오신 것을 환영합니다] */
-.welcome_planet p { 
-  font-size: 140%;
-  margin: auto; /* 줄 가운데 정렬 */
-}
-
-hr {
-  filter: brightness(100%);
-  border: 1px solid white;
-  margin: auto; /* 줄 가운데 정렬 */
-  width: 50%;
-  margin-top: 1%;
-}
-
-/* 예시 이미지 [토성] */
+/* 예시 이미지 */
 .welcome_planet img {
-  rotate: 290deg;
-  position: absolute;
-  left: 4%;
-  top: 10%;
-  width: 30%;
   height: 100%;
-}
-
-/* 유저 리스트 박스 */
-.square-box {
-  position: absolute;
-  top: 4%;
-  left: 10%;
-  width: 61%;
-  height: 77%;
-  padding: 5%;
-  word-wrap: break-word;
-}
-
-#userList {
-  background-color: #00ff0000;
-  filter: brightness(100%);
-  position: absolute;
-  left: 20%;
-  background:tan;
-  border-radius:0.8em;
-  padding:1em;
-  box-shadow:0 0 0 .6em khaki;
-  outline: 0.6em solid khaki;
-  margin: auto;
-}
-
-/* 제목 [사용자 이름] */
-.name p {
-  position: absolute;
-  left: 30%;
-  right: 30%;
-  top: 15%;
-  font-size: 180%;
+  padding: 0;
 }
 
 /* 사용자 이름 입력하는 박스 */
-.name {
-  margin-right: 10%;
-  padding: 30%;
-  padding-left: 30%;
-  padding-top: 0%;
+
+/* 제목 [사용자 이름] */
+.name_title p {
+  /* background-color: aqua; */
+  /* z-index: 100; */
   position: absolute;
-  top: 60%;
-  left: 25%;
-  right: 25%;
-  bottom: 400%;
+  width: 100vw;
+  /* left: 25%; */
+  top: 73%;
+  font-family: 'BMJUA';
+  font-size: 180%;
+  text-align: center;
 }
 
-
 /* 이름 입력란 */
-.input_name {
+.input_name #uname { 
+  background-color: aqua;
   position: absolute;
-  width: 10%;
-  height: 10%;
-  top: 25%;
-  left: 15%;
-  right: 30%;
+  width: 40vw;
+  height: 5vh;
+  top: 79%;
+  left: 30%;
   font-size: 140%;
   border-radius: 15px;
   outline: none;
-  padding-left: 20%;
-  padding-right: 20%;
   background-color: rgb(233, 233, 233);
   text-align: center;
+  font-family: 'Cafe24Ssurround';
 }
 
 /* 이름 동의 체크박스 */
 .agree p {
-  font-size: 100%;
   position: absolute;
-  top: 40%;
-  left: 18%;
-  right: 20%;
-  filter: brightness(70%);
+  width: 100vw;
+  top: 88%;
+  /* left: 18%; */
+  /* filter: brightness(70%); */
+  font-family: 'SUITE-Regular';
+  text-align: center;
+  /* align-items: center; */
+}
+
+.agree label {
+  color: white;
 }
 
 /* 행성이미지 */
