@@ -206,6 +206,14 @@ span.underline {
   height: auto;
 }
 
+.other_planet .bad_planet #blackhall {
+  position: absolute;
+  top: 10%;
+  left: -6%;
+  width: 70%;
+  height: auto;
+}
+
 /* 찰떡궁합 */
 .main#best {
   padding-top: 1.5em;
@@ -270,6 +278,11 @@ span.underline {
   top: 21%;
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
+}
+
+.bad_planet #blackhall img {
+  position: absolute;
+  width: 30vh;
 }
 
 .good_planet img:hover {
@@ -371,22 +384,6 @@ span.underline {
   background-color: #5500ff;
   color: white;
 }
-
-.home-button {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: none;
-  background-image: url('../img/planet-icon.png');
-  background-size: cover;
-  cursor: pointer;
-}
-
-.home-button:hover {
-  filter: brightness(120%);
-}
-
 
 /* 전체 행성 */
 .planet {
