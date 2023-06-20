@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <script src="./js/main.js"></script>
     <div class="planet">
         <div id="mercury">
             <img src="../images/planet/Mercury.png" alt="Mercury" />
@@ -45,7 +46,9 @@
         </div>
         <div class="other_planet">
             <div class="good_planet">
-                <img src="../images/planet/Venus.png" alt="Venus" />
+                <button type="button" id="venus" onclick="goToPage('Venus')">
+                    <img src="../images/planet/Venus.png" alt="금성">
+                </button>
                 <div class="main" id="best">
                     찰떡궁합
                 </div>
@@ -57,7 +60,9 @@
                 </div>
             </div>
             <div class="bad_planet">
-                <img src="../images/planet/Moon.png" alt="Moon" />
+                <button type="button" id="moon" onclick="goToPage('Moon')">
+                    <img src="../images/planet/Moon.png" alt="달">
+                </button>
                 <div class="main" id="worst">환장의 궁합</div>
                 <div class="title">
                     <span class="underline">달</span>
