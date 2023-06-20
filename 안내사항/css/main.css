@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: 'BMJUA';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+  font-family: 'KCC-Ganpan';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -121,7 +121,7 @@ img {
   width: 100vw;
   /* left: 25%; */
   top: 73%;
-  font-family: 'BMJUA';
+  font-family: 'KCC-Ganpan';
   font-size: 180%;
   text-align: center;
 }
