@@ -39,3 +39,14 @@ function goToPage(planet) {
       break;
   }
 }
+
+function clickBtn(btn) {
+  switch(btn) {
+    case "planets_btn":
+      location.href="../전체행성/index.html";
+      break;
+    case "restart_btn":
+      location.href="../첫화면/index.html";
+      break;
+  }
+}

@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <script src="./js/main.js"></script>
+    <script defer src="./js/main.js"></script>
     <div class="planet">
         <div id="mercury">
             <img src="../images/planet/Mercury.png" alt="Mercury" />
@@ -77,9 +77,13 @@
         </div>
     </div>
     <div class="btns">
-        <!-- <button id="reset_btn"></button> -->
-        <!-- <button id="planets_btn"></button> -->
-        <!-- <button class="home-button"></button> -->
+        <div class="planets_btn">
+            <button id="planets_btn" onclick="clickBtn('planets_btn')">전체 행성 보러 가기</button>
+        </div>
+        <div class="restart_btn">
+            <button id="restart_btn" onclick="clickBtn('restart_btn')">테스트 다시 하기</button>
+        </div>
+        <div class="blank"></div>
     </div>
 </body>
 
