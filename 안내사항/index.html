@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>안내사항</title>
-  <link rel="stylesheet" href="./css/main.css" />
-  <link rel="stylesheet" href="./js/main.js">
-</head>
-
-<body>
-  <div style="position: absolute; width: 100vw; height: 100vh;">
-    <img src="../images/dark_star1.png" style="position: absolute; top: 15%; left: 9%; width: 2vw; height: auto;"
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>안내사항</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  
+  <body>
+    <script defer src="./js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <div style="position: absolute; width: 100vw; height: 100vh;">
+      <img src="../images/dark_star1.png" style="position: absolute; top: 15%; left: 9%; width: 2vw; height: auto;"
       alt="이미지1">
-    <img src="../images/dark_star1.png" style="position: absolute; top: 25%; left: 19%; width: 1vw; height: auto;"
+      <img src="../images/dark_star1.png" style="position: absolute; top: 25%; left: 19%; width: 1vw; height: auto;"
       alt="이미지2">
-    <img src="../images/dark_star1.png" style="position: absolute; top: 30%; left: 80%; width: 2vw; height: auto;"
+      <img src="../images/dark_star1.png" style="position: absolute; top: 30%; left: 80%; width: 2vw; height: auto;"
       alt="이미지3">
-    <img src="../images/dark_star1.png" style="position: absolute; top: 10%; left: 66%; width: 1vw; height: auto;"
+      <img src="../images/dark_star1.png" style="position: absolute; top: 10%; left: 66%; width: 1vw; height: auto;"
       alt="이미지4">
-    <img src="../images/dark_star1.png" style="position: absolute; top: 4%; left: 88%; width: 1vw; height: auto;"
+      <img src="../images/dark_star1.png" style="position: absolute; top: 4%; left: 88%; width: 1vw; height: auto;"
       alt="이미지5">
-    <img src="../images/dark_star1.png" style="position: absolute; top: 44%; left: 88%; width: 1vw; height: auto;"
+      <img src="../images/dark_star1.png" style="position: absolute; top: 44%; left: 88%; width: 1vw; height: auto;"
       alt="이미지6">
-    <img src="../images/dark_star1.png" style="position: absolute; top: 35%; left: 5%; width: 1vw; height: auto;"
+      <img src="../images/dark_star1.png" style="position: absolute; top: 35%; left: 5%; width: 1vw; height: auto;"
       alt="이미지8">
-    <img src="../images/dark_star1.png" style="position: absolute; top: 7%; left: 30%; width: 1vw; height: auto;"
+      <img src="../images/dark_star1.png" style="position: absolute; top: 7%; left: 30%; width: 1vw; height: auto;"
       alt="이미지9">
   </div>
   <div class="planet">
@@ -54,29 +55,33 @@
         </div>
       </center>
     </div>
-    <div class="name">
+    <div class="name_title">
       <p>사용자 이름</p>
-      <input type="text" placeholder="이름입력" name="uname" id="uname" class="input_name" autofocus>
-      <div class="agree">
-        <p>
-          <input type="checkbox" name="agree">
-          사용자님의 이름을 사용하는 것에 동의하십니까?
-        </p>
-      </div>
     </div>
+    <div class="input_name">
+      <input type="text" placeholder="이름입력" name="uname" id="uname" autofocus>
+    </div>
+    <div class="agree">
+      <p>
+        <input id="myCheck" type="checkbox" name="agree">
+        <label for="myCheck">
+          사용자님의 이름을 사용하는 것에 동의하십니까?
+        </label>
+      </p>
     </div>
   </form>
+  <div class="btns">
   <button type="button" id="next">
     다음
   </button>
   <button id="reset" onclick="location.href='../첫화면/index.html'">
     처음으로
   </button>
+</div>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $("#next").click(function (e) {
+<script>
+  $(document).ready(function () {
+    $("#next").click(function (e) {
         e.preventDefault();
 
         var uname = $("#uname").val();
