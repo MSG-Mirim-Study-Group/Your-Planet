@@ -6,6 +6,89 @@
   <link href="https://fonts.googleapis.com/css?family=Akshar&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Akaya+Kanadaka&display=swap" rel="stylesheet" />
   <link href="./css/main.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+    function getPlanetData(planet) {
+      let namesList = '';
+      let namesArray = '';
+      let namesHTML = '';
+      $.ajax({
+        url: 'server_p.php', // PHP 스크립트의 파일 경로 또는 URL
+        type: 'GET',
+        dataType: 'json',
+        data: { planet: planet },
+        success: function (response) {
+          let userNames = response.user_names; // JSON 데이터에서 user_names 배열 가져오기
+          // user_names 배열을 순회하면서 이름을 리스트로 생성
+          for (var i = 0; i < userNames.length; i++) {
+            namesList += userNames[i] + ',';
+          }
+
+          namesArray = namesList.split(','); // `,`를 기준으로 분할하여 배열로 저장
+        
+          for (var i = 0; i < namesArray.length - 1; i++) {
+            var name = namesArray[i].trim(); // 요소 앞뒤 공백 제거
+
+            var names = '<div id="user">' + name + '</div>'; // 실행시킬 HTML 코드
+            namesHTML += names; // 생성된 div 요소를 namesHTML에 추가
+          }
+          console.log(planet)
+          switch (planet) {
+            case "Earth":
+              $('#Earth').html(namesHTML);
+              break;
+            case "Pluto":
+              $('#Pluto').html(namesHTML);
+              break;
+            case "Neptune":
+              $('#Neptune').html(namesHTML);
+              break;
+            case "Moon":
+              $('#Moon').html(namesHTML);
+              break;
+            case "Saturn":
+            $('#Saturn').html(namesHTML);
+              break;
+            case "Mercury":
+            $('#Mercury').html(namesHTML);
+              break;
+            case "Uranus":
+            $('#Uranus').html(namesHTML);
+              break;
+            case "Sun":
+            $('#Sun').html(namesHTML);
+              break;
+            case "Venus":
+            $('#Venus').html(namesHTML);
+              break;
+            case "Jupiter":
+            $('#Jupiter').html(namesHTML);
+              break;
+            case "Mars":
+            $('#Mars').html(namesHTML);
+              break;
+            case "BlackHole":
+              $('#BlackHole').html(namesHTML);
+              break;
+            }
+
+           // targetElement라는 ID를 가진 요소에 HTML 코드를 삽입
+          // $('#targetElement').html(namesHTML);
+         
+
+          
+        },
+        error: function () {
+          // 오류 처리
+          alert('데이터를 가져오는 중 오류가 발생했습니다.');
+        }
+      });
+      console.log(namesList)
+    }
+  
+    // getPlanetData('planetName');
+</script>
 
   <title>유저리스트</title>
 </head>
@@ -24,7 +107,6 @@
     <img src="../images/dark_star1.png" style="position: absolute; top: 25%; left: 96%;" alt="이미지4">
     <img src="../images/dark_star1.png" style="position: absolute; top: 05%; left: 05%;" alt="이미지5">
   </div>
-
   <div class="planet-image" id="SunScene">
     <div class="left">
       <div class="planetList">
@@ -43,11 +125,10 @@
       <button class="triangle" id="triangleRight" onclick="goToPage('Sun')"></button>
       <div class="square-box" id="userList">
         <div class="list">
-          <div id="user">해왕성</div>
-          <div id="user">이미녀</div>
-          <div id="user">김미남</div>
-          <div id="user">김미녀</div>
-          <div id="user">이가현</div>
+          <div id="Sun" style="color: rgb(253, 253, 253);"><h1>Loading...</h1></div>
+          <script>
+            getPlanetData('Sun');
+          </script>
         </div>
       </div>
       <button class="triangle" id="triangleLeft" onclick="goToPage('Sun')"></button>
@@ -73,11 +154,10 @@
       <div class="square-box" id="userList">
 
         <div class="list">
-          <div id="user">해왕성</div>
-          <div id="user">이미녀</div>
-          <div id="user">김미남</div>
-          <div id="user">김미녀</div>
-          <div id="user">이가현</div>
+          <div id="Mercury" style="color: rgb(253, 253, 253);"><h1>Loading...</h1></div>
+          <script>
+            getPlanetData('Mercury');
+          </script>
         </div>
       </div>
       <button class="triangle" id="triangleLeft" onclick="goToPage('Mercury')"></button>
@@ -100,14 +180,13 @@
     </div>
 
     <div class="right">
-      <button class="triangle" id="triangleRight" onclick="goToPage('Venus')"></button>
+      <button class="triangle" id="triangleRight" onclick="goToPage('Venus')" ;></button>
       <div class="square-box" id="userList">
         <div class="list">
-          <div id="user">해왕성</div>
-          <div id="user">이미녀</div>
-          <div id="user">김미남</div>
-          <div id="user">김미녀</div>
-          <div id="user">이가현</div>
+          <div id="Venus" style="color: rgb(253, 253, 253);"><h1>Loading...</h1></div>
+          <script>
+            getPlanetData('Venus');
+          </script>
         </div>
       </div>
       <button class="triangle" id="triangleLeft" onclick="goToPage('Venus')"></button>
@@ -135,17 +214,16 @@
       <div class="square-box" id="userList">
 
         <div class="list">
-          <div id="user">해왕성</div>
-          <div id="user">이미녀</div>
-          <div id="user">김미남</div>
-          <div id="user">김미녀</div>
-          <div id="user">이가현</div>
+          <div id="Earth" style="color: rgb(253, 253, 253);"><h1>Loading...</h1></div>
+          <script>
+            getPlanetData('Earth');
+          </script>
+          
         </div>
       </div>
       <button class="triangle" id="triangleLeft" onclick="goToPage('Earth')"></button>
     </div>
   </div>
-
 
   <div class="planet-image" id="MoonScene">
     <div class="left">
@@ -164,11 +242,10 @@
       <button class="triangle" id="triangleRight" onclick="goToPage('Moon')"></button>
       <div class="square-box" id="userList">
         <div class="list">
-          <div id="user">해왕성</div>
-          <div id="user">이미녀</div>
-          <div id="user">김미남</div>
-          <div id="user">김미녀</div>
-          <div id="user">이가현</div>
+          <div id="Moon" style="color: rgb(253, 253, 253);"><h1>Loading...</h1></div>
+          <script>
+            getPlanetData('Moon');
+          </script>
         </div>
       </div>
       <button class="triangle" id="triangleLeft" onclick="goToPage('Moon')"></button>
@@ -193,11 +270,11 @@
       <button class="triangle" id="triangleRight" onclick="goToPage('Mars')"></button>
       <div class="square-box" id="userList">
         <div class="list">
-          <div id="user">해왕성</div>
-          <div id="user">이미녀</div>
-          <div id="user">김미남</div>
-          <div id="user">김미녀</div>
-          <div id="user">이가현</div>
+          <div id="Mars" style="color: rgb(253, 253, 253);"><h1>Loading...</h1></div>
+          <script>
+            getPlanetData('Mars');
+          </script>
+          
         </div>
       </div>
       <button class="triangle" id="triangleLeft" onclick="goToPage('Mars')"></button>
@@ -222,11 +299,10 @@
       <button class="triangle" id="triangleRight" onclick="goToPage('Jupiter')"></button>
       <div class="square-box" id="userList">
         <div class="list">
-          <div id="user">해왕성</div>
-          <div id="user">이미녀</div>
-          <div id="user">김미남</div>
-          <div id="user">김미녀</div>
-          <div id="user">이가현</div>
+          <div id="Jupiter" style="color: rgb(253, 253, 253);"><h1>Loading...</h1></div>
+          <script>
+            getPlanetData('Jupiter');
+          </script>
         </div>
       </div>
       <button class="triangle" id="triangleLeft" onclick="goToPage('Jupiter')"></button>
@@ -251,11 +327,10 @@
       <button class="triangle" id="triangleRight" onclick="goToPage('Saturn')"></button>
       <div class="square-box" id="userList">
         <div class="list">
-          <div id="user">해왕성</div>
-          <div id="user">이미녀</div>
-          <div id="user">김미남</div>
-          <div id="user">김미녀</div>
-          <div id="user">이가현</div>
+          <div id="Saturn" style="color: rgb(253, 253, 253);"><h1>Loading...</h1></div>
+          <script>
+            getPlanetData('Saturn');
+          </script>
         </div>
       </div>
       <button class="triangle" id="triangleLeft" onclick="goToPage('Saturn')"></button>
@@ -280,11 +355,10 @@
       <button class="triangle" id="triangleRight" onclick="goToPage('Uranus')"></button>
       <div class="square-box" id="userList">
         <div class="list">
-          <div id="user">해왕성</div>
-          <div id="user">이미녀</div>
-          <div id="user">김미남</div>
-          <div id="user">김미녀</div>
-          <div id="user">이가현</div>
+          <div id="Uranus" style="color: rgb(253, 253, 253);"><h1>Loading...</h1></div>
+          <script>
+            getPlanetData('Uranus');
+          </script>
         </div>
       </div>
       <button class="triangle" id="triangleLeft" onclick="goToPage('Uranus')"></button>
@@ -309,11 +383,10 @@
       <button class="triangle" id="triangleRight" onclick="goToPage('Neptune')"></button>
       <div class="square-box" id="userList">
         <div class="list">
-          <div id="user">해왕성</div>
-          <div id="user">이미녀</div>
-          <div id="user">김미남</div>
-          <div id="user">김미녀</div>
-          <div id="user">이가현</div>
+          <div id="Neptune" style="color: rgb(253, 253, 253);"><h1>Loading...</h1></div>
+          <script>
+            getPlanetData('Neptune');
+          </script>
         </div>
       </div>
       <button class="triangle" id="triangleLeft" onclick="goToPage('Neptune')"></button>
@@ -339,11 +412,10 @@
       <button class="triangle" id="triangleRight" onclick="goToPage('BlackHall')"></button>
       <div class="square-box" id="userList">
         <div class="list">
-          <div id="user">해왕성</div>
-          <div id="user">이미녀</div>
-          <div id="user">김미남</div>
-          <div id="user">김미녀</div>
-          <div id="user">이가현</div>
+          <div id="BlackHall" style="color: rgb(253, 253, 253);"><h1>Loading...</h1 ></div>
+          <script>
+            getPlanetData('BlackHall');
+          </script>
         </div>
       </div>
       <button class="triangle" id="triangleLeft" onclick="goToPage('BlackHall')"></button>
@@ -369,19 +441,18 @@
 
       <div class="square-box" id="userList">
         <div class="list">
-          <div id="user">해왕성</div>
-          <div id="user">이미녀</div>
-          <div id="user">김미남</div>
-          <div id="user">김미녀</div>
-          <div id="user">이가현</div>
+          <div id="Pluto" style="color: rgb(253, 253, 253);"><h1>Loading...</h1></div>
+          <script>
+            getPlanetData('Pluto');
+          </script>
         </div>
+        
       </div>
       <button class="triangle" id="triangleLeft" onclick="goToPage('Pluto')"></button>
     </div>
   </div>
 
   <button type="button" class="back" onclick="goBack()">돌아가기</button>
-
 </body>
 
 </html>
