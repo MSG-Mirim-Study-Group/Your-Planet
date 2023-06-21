@@ -1,9 +1,9 @@
 <?php
 $host = "localhost";
-$id = "root";
-$password = "111111";
-$dbname = "your_planet";
+$id = "urplanet";
+$password = "sjdmlgodtjddms20@#";
+$dbname = "urplanet";
 
-$conn = mysqli_connect($host, $id, $password, $dbname, 3307);
+$conn = mysqli_connect($host, $id, $password, $dbname, 3306);
 
 ?>
