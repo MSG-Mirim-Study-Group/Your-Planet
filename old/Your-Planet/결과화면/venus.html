@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <script src="./js/main.js"></script>
+    <div class="planet">
+        <div id="mercury">
+            <img src="../images/planet/Mercury.png" alt="Mercury" />
+        </div>
+        <div id="saturn">
+            <img src="../images/planet/Saturn.png" alt="Saturn" />
+        </div>
+        <div id="uranus">
+            <img src="../images/planet/Uranus.png" alt="Uranus" />
+        </div>
+    </div>
+    <div class="container">
+        <div class="my_planet">
+            <div class="planet_title">
+                <span class="underline">금성</span>
+            </div>
+            <div class="planet_subtitle">
+                어디서나 ✨당당✨하게 걷기
+            </div>
+            <img src="../images/planet/Venus.png" id="venus" alt="Venus"/>
+            <div class="explain">
+                어디서나 시선이 집중되는 밝은 매력의 소유자예요.<br>
+                자신만의 매력이 뚜렷하기 때문에 다른 사람의 성격에 쉽게 물들지 않아요.<br>
+                하지만 너무 밝은 탓에 주변에서 나의 힘듦을 잘 눈치채지 못해,<br>
+                깊은 우울감에 빠질 수도 있어요.<br>
+                연예인처럼 언제나 밤하늘에서 가장 밝게 빛나는 금성같은 사람이에요!
+            </div>
+        </div>
+        <div class="same_planet">
+            <div class="percentage">
+                <span id="question">나와 같은 유형은?</span>
+                3.18%
+            </div>
+        </div>
+        <div class="other_planet">
+            <div class="good_planet">
+                <div class="main" id="best">
+                    찰떡궁합
+                </div>
+                <button type="button" id="saturn" onclick="goToPage('Saturn')">
+                    <img src="../images/planet/Saturn.png" alt="천왕성">
+                </button>
+                <div class="title">
+                    <span class="underline">천왕성</span>
+                </div>
+                <div class="sub_title">
+                    어딜가나 인기 절정! 하지만 혼자가 좋아
+                </div>
+            </div>
+            <div class="bad_planet">
+                <button type="button" id="pluto" onclick="goToPage('Pluto')">
+                    <img src="../images/planet/Pluto.png" alt="명왕성">
+                </button>
+                <div class="main" id="worst">환장의 궁합</div>
+                <div class="title">
+                    <span class="underline">명왕성</span>
+                </div>
+                <div class="sub_title">
+                    내 마음대로 살거야 말리지 마!
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="btns">
+        <div class="planets_btn">
+            <button id="planets_btn" onclick="clickBtn('planets_btn')">전체 행성 보러 가기</button>
+        </div>
+        <div class="restart_btn">
+            <button id="restart_btn" onclick="clickBtn('restart_btn')">테스트 다시 하기</button>
+        </div>
+        <div class="blank"></div>
+    </div>
+</body>
+
+</html>

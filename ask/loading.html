@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/loading.css">
+</head>
+
+<body>
+    <script>
+        setTimeout(function () {
+            location.href="../ask/mbti.html";
+        }, 3000); // 3초 있다가 바뀜
+    </script>
+
+    <div class="planet" style="position: absolute;">
+        <div id="mercury">
+            <img src="../images/planet/Mercury.png" alt="Mercury" />
+        </div>
+        <div id="saturn">
+            <img src="../images/planet/Saturn.png" alt="Saturn" />
+        </div>
+        <div id="uranus">
+            <img src="../images/planet/Uranus.png" alt="Uranus" />
+        </div>
+    </div>
+
+
+    <div class="section" id="scene3">
+        <div style="width: 100%; height: 100%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;">
+            <div class="group">
+                <div class="loading">
+                    <h4> 당신의 행성을 찾는중..</h4>
+                    <img src="../images/loading.png" id="loading">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

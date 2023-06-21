@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <script src="./js/main.js"></script>
+    <div class="planet">
+        <div id="mercury">
+            <img src="../images/planet/Mercury.png" alt="Mercury" />
+        </div>
+        <div id="saturn">
+            <img src="../images/planet/Saturn.png" alt="Saturn" />
+        </div>
+        <div id="uranus">
+            <img src="../images/planet/Uranus.png" alt="Uranus" />
+        </div>
+    </div>
+    <div class="container">
+        <div class="my_planet">
+            <div class="planet_title">
+                <span class="underline">해왕성</span>
+            </div>
+            <div class="planet_subtitle">
+                내가 무섭다고?
+            </div>
+            <img src="../images/planet/Neptune.png" id="neptune" alt="Nuptune"/>
+            <div class="explain">
+                혼자 있으며 공상하는 것을 좋아하는 사람이에요.<br>
+                때문에 자신만의 시간과 공간이 꼭 필요하지만 적당한 관심은 좋아해요.<br>
+                유달리 논리적인 성격이라 의도치 않게 남에게 상처를 줄 수 있으니 주의!<br>
+                딱딱하고 고요해보이지만 속에서는 온갖 폭풍이 휘몰아치고 있는,<br>
+                해왕성같은 사람이에요!
+            </div>
+        </div>
+        <div class="same_planet">
+            <div class="percentage">
+                <span id="question">나와 같은 유형은?</span>
+                3.18%
+            </div>
+        </div>
+        <div class="other_planet">
+            <div class="good_planet">
+                <button type="button" id="jupiter" onclick="goToPage('Jupiter')">
+                    <img src="../images/planet/Jupiter.png" alt="목성">
+                </button>
+                <div class="main" id="best">
+                    찰떡궁합
+                </div>
+                <div class="title">
+                    <span class="underline">목성</span>
+                </div>
+                <div class="sub_title">
+                    푸근하고.. 든든하고.. 머시따..!
+                </div>
+            </div>
+            <div class="bad_planet">
+                <button type="button" id="venus" onclick="goToPage('Venus')">
+                    <img src="../images/planet/Venus.png" alt="금성">
+                </button>
+                <div class="main" id="worst">환장의 궁합</div>
+                <div class="title">
+                    <span class="underline">금성</span>
+                </div>
+                <div class="sub_title">
+                    어디서나 ✨당당✨하게 걷기
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="btns">
+        <div class="planets_btn">
+            <button id="planets_btn" onclick="clickBtn('planets_btn')">전체 행성 보러 가기</button>
+        </div>
+        <div class="restart_btn">
+            <button id="restart_btn" onclick="clickBtn('restart_btn')">테스트 다시 하기</button>
+        </div>
+        <div class="blank"></div>
+    </div>
+</body>
+
+</html>

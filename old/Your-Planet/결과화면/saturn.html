@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <script src="./js/main.js"></script>
+    <div class="planet">
+        <div id="mercury">
+            <img src="../images/planet/Mercury.png" alt="Mercury" />
+        </div>
+        <div id="saturn">
+            <img src="../images/planet/Saturn.png" alt="Saturn" />
+        </div>
+        <div id="uranus">
+            <img src="../images/planet/Uranus.png" alt="Uranus" />
+        </div>
+    </div>
+    <div class="container">
+        <div class="my_planet">
+            <div class="planet_title">
+                <span class="underline">토성</span>
+            </div>
+            <div class="planet_subtitle">
+                얘들아~ 얘들아? 지금 뭐하니??
+            </div>
+            <img src="../images/planet/Saturn.png" id="saturn" alt="saturn"/>
+            <div class="explain">
+                모두가 안정되고 안전하길 바라는 엄마같은 사람이에요.<br>
+                이런 성격덕분에 주위에 따르는 사람들이 많고, 모두를 살뜰히 챙겨줘요.<br>
+                하지만 항상 모두에게 친절하다고 선을 넘었다가는 팩트로 맞을수도?<br>
+                약속이나 규칙은 꼭 지켜야 직성이 풀리기 때문에 자기자신에게 엄격해요.<br>
+                한 번쯤은 그런 부담감을 내려놓고 편하게 보살핌을 받아보는 것도 좋답니다.<br>
+                나에겐 깐깐하지만 모두에겐 한 없이 퍼주는 토성같은 사람이에요!
+            </div>
+        </div>
+        <div class="same_planet">
+            <div class="percentage">
+                <span id="question">나와 같은 유형은?</span>
+                3.18%
+            </div>
+        </div>
+        <div class="other_planet">
+            <div class="good_planet">
+                <button type="button" id="mercury" onclick="goToPage('Mercury')">
+                    <img src="../images/planet/Mercury.png" alt="수성">
+                </button>
+                <div class="main" id="best">
+                    찰떡궁합
+                </div>
+                <div class="title">
+                    <span class="underline">수성</span>
+                </div>
+                <div class="sub_title">
+                    지킬 앤 하이드
+                </div>
+            </div>
+            <div class="bad_planet">
+                <button type="button" id="sun" onclick="goToPage('Sun')">
+                    <img src="../images/planet/Sun.png" alt="태양">
+                </button>
+                <div class="main" id="worst">환장의 궁합</div>
+                <div class="title">
+                    <span class="underline">태양</span>
+                </div>
+                <div class="sub_title">
+                    내가 왕이 될 상인가
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="btns">
+        <div class="planets_btn">
+            <button id="planets_btn" onclick="clickBtn('planets_btn')">전체 행성 보러 가기</button>
+        </div>
+        <div class="restart_btn">
+            <button id="restart_btn" onclick="clickBtn('restart_btn')">테스트 다시 하기</button>
+        </div>
+        <div class="blank"></div>
+    </div>
+</body>
+
+</html>
