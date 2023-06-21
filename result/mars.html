@@ -11,6 +11,31 @@
 
 <body>
     <script src="./js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function getUserPercent(userPlanet) {
+            $.ajax({
+                url: 'server_pe.php',
+                type: 'GET',
+                dataType: 'json',
+                data: { planet: userPlanet },
+                success: function (result) {
+                    console.log(result);
+                    $('#planetresult').text(result.percentage + "%");
+                },
+                error: function (xhr, status, error) {
+                    console.log("에러 발생");
+                    console.log(xhr);
+                    console.log(status);
+                    console.log(error);
+                }
+            });
+        }
+
+        $(document).ready(function () {
+            getUserPercent('Mars');
+        });
+    </script>
     <div class="planet">
         <div id="mercury">
             <img src="../images/planet/Mercury.png" alt="Mercury" />
@@ -42,7 +67,7 @@
         <div class="same_planet">
             <div class="percentage">
                 <span id="question">나와 같은 유형은?</span>
-                3.18%
+                <div id="planetresult">1초만 기다려죠~</div>
             </div>
         </div>
         <div class="other_planet">
