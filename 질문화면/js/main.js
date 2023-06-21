@@ -25,3 +25,8 @@ function page_7() {
 function page_8() {
     location.href="/질문화면/index_8.html";
 }
+
+const clickedBtn = document.querySelector('button');
+clickedBtn.addEventListener('onclick', function () {
+    alert("와와");
+});
