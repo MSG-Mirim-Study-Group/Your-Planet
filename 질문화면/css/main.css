@@ -147,17 +147,20 @@ progress::-webkit-progress-value {
   align-items: center;
   flex-direction: column;
   margin-top: 2em;
-  font-size: 18px;
-  font-family: 'OTWelcomeRA';
 }
 
 #answer {
-  width: 50vw;
-  height: 30vh;
+  height: 33vh;
+}
+
+button:hover {
+  background-color: #5a28f2;
+  color: white;
 }
 
 .a1 {
   position: absolute;
+  width: 45vw;
   top: -15%;
   z-index: 4;
   background-color: rgb(255, 255, 255);
@@ -170,23 +173,16 @@ progress::-webkit-progress-value {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  font-family: 'OTWelcomeRA';
+  font-size: 119%;
   font-style: bold;
 }
 
-#a1 {
-  width: 40vw;
-  height: 1hw;
-}
-
-#a1::onclick {
-  background-color: #5a28f2;
-  color: beige;
-}
-
 .a2 {
+  position: absolute;
+  width: 45vw;
   z-index: 2;
   background-color: rgb(255, 255, 255);
-  position: absolute;
   top: 20%;
   border-radius: 3em;
   padding: 1.5em;
@@ -195,17 +191,15 @@ progress::-webkit-progress-value {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-}
-
-#a2 {
-  width: 40vw;
-  height: 1hw;
+  font-family: 'OTWelcomeRA';
+  font-size: 119%;
 }
 
 .a3 {
   z-index: 2;
-  background-color: rgb(255, 255, 255);
   position: absolute;
+  width: 45vw;
+  background-color: rgb(255, 255, 255);
   top: 55%;
   border-radius: 3em;
   padding: 1.5em;
@@ -214,11 +208,8 @@ progress::-webkit-progress-value {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-}
-
-#a3 {
-  width: 40vw;
-  height: 1hw;
+  font-family: 'OTWelcomeRA';
+  font-size: 119%;
 }
 
 .planet {
