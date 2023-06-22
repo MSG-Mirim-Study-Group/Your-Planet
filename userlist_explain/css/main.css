@@ -130,7 +130,7 @@ h4 {
 .back {
   z-index: 1;
   border: 0;
-  font-size: 2vw;
+  font-size: 1.5vw; 
   padding: 1%;
   background: #fff;
   color: #000;
@@ -156,8 +156,7 @@ h4 {
 }
 
 .planet {
-  left: 20%;
-  width: 28em;
+  width: 28vw;
   transform: rotate(90deg);
   background-color: transparent;
   overflow: hidden;
@@ -175,7 +174,7 @@ h4 {
 
 .name {
   font-style: normal;
-  font-size: 80px;
+  font-size: 4.7vw;
   color: #fff;
   padding: 5rem 0 0 0;
 }
@@ -189,7 +188,7 @@ h4 {
 }
 
 .talk {
-  font-size: 30px;
+  font-size: 1.7vw;
   color: #fff;
   padding: 0 0 5rem 0;
 }
@@ -258,8 +257,14 @@ h4 {
 }
 
 .title > h1 {
-  font-size: 4rem;
+  font-size: 3.5vw;
   padding: 0 0 2mm 0;
+}
+
+.title > h2 {
+  font-size: 1.5vw;
+  padding: 0 0 2mm 0;
+  
 }
 
 .list {
@@ -300,21 +305,24 @@ h4 {
 }
 
 .box>h3 {
-  font-size: 3mm;
+  font-size: 1vw;
   font-family: 'Dovemayo_gothic';
 }
 
 .box>h2 {
-  font-size: 5mm;
+  font-size: 1.3vw;
 }
 
 
 .what_planet {
   display: block;
   margin: 0 auto;
-  padding: 5mm 0 4mm;
-  width: 50%;
+  padding: 5mm 0;
+  width: 70%;
   transform: rotate(90deg);
 }
 
 
+#scene1 > h4{
+    font-size: 1vw;
+}

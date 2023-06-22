@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'OTWelcomeRA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 * {
     padding: 0;
     margin: 0;
@@ -9,6 +16,7 @@ body {
     background-color: rgb(32, 20, 83);
     height: 100vh;
     overflow: hidden;
+    font-family: 'OTWelcomeRA';
 }
 
 img {
@@ -25,9 +33,9 @@ img {
 .planet #mercury {
     opacity: 0.2;
     position: absolute;
-    width: 20%;
+    width: 20vw;
     height: auto;
-    top: 99%;
+    top: 99vh;
     left: 90%;
     rotate: 80deg;
     filter: drop-shadow(0px 0px 10px #ff714ec3);
@@ -36,28 +44,28 @@ img {
 .planet #saturn {
     opacity: 0.2;
     position: absolute;
-    width: 50%;
+    width: 50vw;
     height: auto;
     left: 18%;
-    top: 50%;
+    top: 50vh;
     rotate: 70deg;
     filter: drop-shadow(0px 0px 10px #b6925dc1);
 }
 
 .planet #uranus {
     position: absolute;
-    width: 20%;
+    width: 20vw;
     height: auto;
     left: 68%;
-    top: 10%;
+    top: 10vh;
     rotate: 10deg;
     opacity: 0.2;
     filter: drop-shadow(0px 0px 20px #6dacd4be);
 }
 
 .section {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 30vh;
     overflow-y: auto;
     /* 스크롤 바 자동 표시 */
     display: flex;
@@ -67,8 +75,8 @@ img {
 }
 
 #scene3 {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     /* 세로 방향으로 정렬될 수 있도록 변경 */
@@ -76,7 +84,7 @@ img {
     justify-content: center;
     text-align: center;
     text-justify: center;
-    font-size: 35px;
+    font-size: 2vw;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -86,24 +94,22 @@ img {
 .group {
     position:fixed;
     margin: 0 auto;
-    width: 40%;
-    height: 30%;
-
-    background-color: rgba(14, 6, 52, 0.63);
-    border: 3px solid #fff;
-    border-radius: 20px;
+    width: 40vw;
+    height: 30vh;
+    background-color: rgba(14, 6, 52, 0.43);
+    border: 0.3em solid #fff;
+    border-radius: 1em;
 }
 
 #loading {
     position: relative;
-    width: 150px;
+    width: 10vw;
     display: flex;
+    rotate: 300deg;
     animation: rotate 3s infinite linear; 
 }
 
 .loading {
-    height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -111,7 +117,7 @@ img {
     text-align: center;
 }
 
-h4{
+h3{
     display: flex;
     position: relative;
     align-items: center;
