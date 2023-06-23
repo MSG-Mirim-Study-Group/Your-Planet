@@ -2,8 +2,8 @@
 $host = "localhost";
 $id = "urplanet";
 $password = "sjdmlgodtjddms20@#";
-$dbname = "your_planet";
+$dbname = "urplanet";
 
-$conn = mysqli_connect($host, $id, $password, $dbname, 3306);
+$conn = mysqli_connect($host, $id, $password, $dbname);
 
 ?>

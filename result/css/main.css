@@ -23,23 +23,47 @@
 
 body {
   background-color: rgb(32, 20, 83);
-  overflow-x: hidden;
+  overflow: hidden;
   height: 100vh;
 }
 
 .container {
   position: absolute;
-  top: 10%;
-  left: 25%;
-  width: 50%;
-  height: 100%;
+  top: 10vh;
+  left: 25vw;
+  width: 48vw;
+  height: 90vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(0, 0, 0);
+}
+
+.container::-webkit-scrollbar {
+  width: 1vw;
+  height: 80vh;
+  border-radius: 3em;
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: thistle;
+  width: 1vh;
+  border-radius: 3em;
+}
+
+.container::-webkit-scrollbar-thumb {
+  color: rgb(167, 31, 31);
+  border-radius: 7em;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+  background-color: #00ff1a;
 }
 
 .my_planet {
   z-index: 2;
   width: 46vw;
-  height: 85vh;
-  top: 1%;
+  height: 94vh;
+  top: 1vh;
   background: rgb(255, 255, 255);
   border-radius: 1em;
   /* 가운데 */
@@ -48,18 +72,18 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
+} 
 
 .my_planet #saturn {
-  top: 18%;
-  width: 55%;
+  top: 12vh;
+  width: 65%;
   height: auto;
   rotate: 80deg;
 }
 
 .my_planet #blackhall {
-  top: 18%;
-  width: 55%;
+  top: 1vh;
+  width: 40vw;
   height: auto;
 }
 
@@ -90,8 +114,8 @@ span.underline {
 .my_planet .planet_title {
   font-family: 'Cafe24Ssurround';
   position: absolute;
-  padding-top: 23%;
-  font-size: 350%;
+  padding-top: 23vh;
+  font-size: 3vw;
   font-style: bold;
 }
 
@@ -99,8 +123,8 @@ span.underline {
 .my_planet .planet_subtitle {
   font-family: 'Dovemayo_gothic';
   position: absolute;
-  padding-top: 12%;
-  font-size: 150%;
+  top: 7vh;
+  font-size: 1.6vw;
 }
 
 /* 나의 행성 이미지 */
@@ -109,7 +133,7 @@ span.underline {
   width: 18vw;
   height: auto;
   position: absolute;
-  top: 25%;
+  top: 25vh;
   rotate: 10deg;
   filter: brightness(110%);
 }
@@ -120,7 +144,7 @@ span.underline {
   position: absolute;
   width: 38vw;
   height: auto;
-  top: 68%;
+  top: 64vh;
   padding: 2em;
   transform: translateX(-50%, -50%);
   background: rgb(250, 246, 239);
@@ -133,7 +157,7 @@ span.underline {
   flex-direction: column;
   /* 컨텐츠를 세로로 정렬하기 위해 추가 */
   align-items: center;
-  font-size: 130%;
+  font-size: 1.3vw;
   font-family: 'Dovemayo_gothic';
 }
 
@@ -143,7 +167,7 @@ span.underline {
   background: rgb(207, 207, 207);
   border-radius: 1em;
   padding: 1em;
-  margin-top: 50%;
+  margin-top: 50vh;
   text-align: center;
 }
 
@@ -154,7 +178,7 @@ span.underline {
   position: absolute;
   width: 46vw;
   height: auto;
-  top: 93%;
+  top: 100vh;
   background: rgb(255, 255, 255);
   border-radius: 1em;
   text-align: center;
@@ -169,7 +193,7 @@ span.underline {
 
 /* 위의 질문 */
 .percentage span#question {
-  font-size: 50%;
+  font-size: 1.2vw;
   font-family: 'Dovemayo_gothic';
   padding-bottom: 0.4em;
 }
@@ -182,7 +206,7 @@ span.underline {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 250%;
+  font-size: 2vw;
   font-family: 'Cafe24Ssurround';
   padding: 0.5em;
 }
@@ -193,7 +217,7 @@ span.underline {
   position: absolute;
   width: 46vw;
   height: 30vh;
-  top: 114%;
+  top: 118vh;
   border-radius: 1em;
   text-align: center;
 }
@@ -202,7 +226,7 @@ span.underline {
 .other_planet .good_planet #blackhall {
   top: 10%;
   left: 15%;
-  width: 70%;
+  width: 70vw;
   height: auto;
 }
 
@@ -210,22 +234,22 @@ span.underline {
   position: absolute;
   top: 10%;
   left: -6%;
-  width: 70%;
+  width: 70vw;
   height: auto;
 }
 
 /* 찰떡궁합 */
-.main#best {
-  padding-top: 1.5em;
+#best {  
+  /* padding-top: 1.5em; */
   font-family: 'Cafe24Ssurround';
-  font-size: 110%;
+  font-size: 1.2vw;
 }
 
 /* 환장의 궁합 */
-.main#worst {
-  padding-top: 1.5em;
+#worst {
+  /* padding-top: 1.5em; */
   font-family: 'Cafe24Ssurround';
-  font-size: 110%;
+  font-size: 1.2vw;
   border-radius: 1em;
 }
 
@@ -260,29 +284,60 @@ span.underline {
 
 /* 나와 잘 맞는 행성 이미지 */
 .good_planet img {
+  z-index: 10;
   position: absolute;
   width: 50%;
   height: auto;
   left: 25%;
-  top: 21%;
+  top: 10vh;
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
 }
 
 /* 나와 잘 맞지 않는 행성 이미지 */
-.bad_planet img {
+.bad_planet img  {
+  z-index: 10;
   position: absolute;
   width: 50%;
   height: auto;
   left: 25%;
-  top: 21%;
+  top: 10vh;
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
 }
 
+.good_planet .main {
+  z-index: 1;
+  position: absolute;
+  top: 5vh;
+  left: 3.4vw;
+  width: 15vw;
+}
+.bad_planet .main {
+  z-index: 1;
+  position: absolute;
+  top: 5vh;
+  left: 3.4vw;
+  width: 15vw;
+}
+
+.good_planet #blackhall img{
+  position: absolute;
+  left: 3.5vw;
+  top: 3vh;
+  width: 32vh;
+}
+.good_planet #saturn img {
+  rotate: 70deg;
+  left: 2vw;
+  top: 4vh;
+  width: 18vw;
+}
 .bad_planet #blackhall img {
   position: absolute;
-  width: 30vh;
+  left: 3.5vw;
+  top: -2vh;
+  width: 32vh;
 }
 
 .good_planet img:hover {
@@ -296,38 +351,41 @@ span.underline {
 /* 위의 행성 이름 */
 .good_planet .title {
   position: absolute;
-  width: 100%;
-  height: 60%;
-  top: 72%;
-  font-size: 150%;
+  width: 22vw;
+  height: 60vh;
+  top: 32vh;
+  font-size: 1.5vw;
   font-family: 'Cafe24Ssurround';
 }
 
 /* 위의 행성 이름 */
 .bad_planet .title {
   position: absolute;
-  width: 100%;
-  height: 60%;
-  top: 72%;
-  font-size: 150%;
+  width: 22vw;
+  height: 60vh;
+  top: 32vh;
+  font-size: 1.5vw;
   font-family: 'Cafe24Ssurround';
 }
 
 /* 위의 행성 소제목 */
 .good_planet .sub_title {
   position: absolute;
-  width: 100%;
+  width: 22vw;
   height: auto;
-  top: 83%;
+  top: 38vh;
+  font-size: 1vw;
   font-family: 'Dovemayo_gothic';
 }
 
 /* 위의 행성 소제목 */
 .bad_planet .sub_title {
   position: absolute;
-  width: 100%;
+  width: 22vw;
+  /* width: 100%; */
+  font-size: 1vw;
   height: auto;
-  top: 83%;
+  top: 38vh;
   font-family: 'Dovemayo_gothic';
 }
 
@@ -335,14 +393,14 @@ span.underline {
 .btns {
   position: absolute;
   padding: 0;
-  top: 177%;
-  left: 36%;
-  width: 24vw;
+  top: 181vh;
+  left: 10vw;
+  width: 25vw;
   height: 7vh;
 }
 
 .btns div {
-  border: 1px solid rgb(255, 255, 255, 0);
+  border: 0.1em solid rgb(255, 255, 255, 0);
   border-radius: 5em; 
   margin-bottom: 10%;
 }
@@ -355,7 +413,7 @@ span.underline {
   border-radius: 5em;
   border: none;
   font-family: 'Cafe24Ssurround';
-  font-size: 100%;
+  font-size: 1vw;
   transition: transform 0.4s ease-in-out;
   cursor: pointer;
 }
@@ -368,7 +426,7 @@ span.underline {
   border-radius: 5em;
   border: none;
   font-family: 'Cafe24Ssurround';
-  font-size: 100%;
+  font-size: 1vw;
   transition: transform 0.4s ease-out;
   cursor: pointer;
 }
@@ -381,7 +439,7 @@ span.underline {
 
 .btns .restart_btn button:hover {
   transform: scale(1.2);
-  background-color: #5500ff;
+  background-color: #5500ff;  
   color: white;
 }
 
@@ -390,8 +448,8 @@ span.underline {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: rgb(32, 20, 83);
 }
 
@@ -399,10 +457,10 @@ span.underline {
   z-index: 1;
   opacity: 0.2;
   position: absolute;
-  width: 20%;
+  width: 20vw;
   height: auto;
-  top: 99%;
-  left: 90%;
+  top: 99vh;
+  left: 90vw;
   rotate: 80deg;
   filter: drop-shadow(0px 0px 10px #ff714ec3);
 }
@@ -411,10 +469,10 @@ span.underline {
   z-index: 1;
   opacity: 0.2;
   position: absolute;
-  width: 50%;
+  width: 50vw;
   height: auto;
-  left: 18%;
-  top: 50%;
+  left: 18vw;
+  top: 50vh;
   rotate: 70deg;
   filter: drop-shadow(0px 0px 10px #b6925dc1);
 }
@@ -422,10 +480,10 @@ span.underline {
 .planet #uranus {
   z-index: 1;
   position: absolute;
-  width: 20%;
+  width: 20vw;
   height: auto;
-  left: 68%;
-  top: 10%;
+  left: 68vw;
+  top: 10vh;
   rotate: 10deg;
   opacity: 0.2;
   filter: drop-shadow(0px 0px 20px #6dacd4be);

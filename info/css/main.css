@@ -40,11 +40,11 @@ body {
 
 .btns button {
   font-family: 'Cafe24Ssurround';
-  font-size: 110%;
+  font-size: 1.3vw;
   background-color: rgb(255, 255, 255);
-  border-radius: 1em;
-  width: 7vw;
-  height: 6vh;
+  border-radius: 2em;
+  width: 9vw;
+  height: 5vh;
 }
 
 .btns button:hover {
@@ -53,17 +53,17 @@ body {
 
 button#next {
   position: absolute;
-  left: 86%;
-  top: 87%;
-  size: 10%;
+  left: 83%;
+  top: 89%;
+  /* size: 10%; */
 }
 
 button#reset {
   z-index: 1;   /* 지구 이미지의 버튼 가림 방지 */
   position: absolute;
   left: 8%;
-  top: 87%;
-  size: 20%;
+  top: 89%;
+  /* size: 20%; */
 }
 
 img {
@@ -85,7 +85,7 @@ img {
   position: absolute;
   width: 100vw;
   /* left: 20%; */
-  font-size: 250%;
+  font-size: 3vw;
   text-align: center;
   font-family: 'Cafe24Ssurround';
 } 
@@ -120,9 +120,9 @@ img {
   position: absolute;
   width: 100vw;
   /* left: 25%; */
-  top: 73%;
+  top: 72vh;
   font-family: 'KCC-Ganpan';
-  font-size: 180%;
+  font-size: 1.7vw;
   text-align: center;
 }
 
@@ -131,10 +131,10 @@ img {
   background-color: aqua;
   position: absolute;
   width: 40vw;
-  height: 5vh;
-  top: 79%;
+  height: 6vh;
+  top: 78vh;
   left: 30%;
-  font-size: 140%;
+  font-size: 1.3vw;
   border-radius: 15px;
   outline: none;
   background-color: rgb(233, 233, 233);
@@ -146,7 +146,7 @@ img {
 .agree p {
   position: absolute;
   width: 100vw;
-  top: 88%;
+  top: 86vh;
   /* left: 18%; */
   /* filter: brightness(70%); */
   font-family: 'SUITE-Regular';
@@ -154,7 +154,13 @@ img {
   /* align-items: center; */
 }
 
+input[type="checkbox"] {
+  width: 1vw;
+  height: 1vw;
+}
+
 .agree label {
+  font-size: 1.2vw;
   color: white;
 }
 

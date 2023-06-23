@@ -59,7 +59,7 @@
       <p>사용자 이름</p>
     </div>
     <div class="input_name">
-      <input type="text" placeholder="이름입력" name="uname" id="uname" autofocus>
+      <input type="text" placeholder="이름입력" onkeydown="preventEnterKey(event);" name="uname" id="uname" autofocus>
     </div>
     <div class="agree">
       <p>
@@ -99,6 +99,7 @@
           return;
         }
 
+        
         // 모든 조건이 충족되었을 때
         // 서버로 데이터를 전송하고 페이지 이동
         $.ajax({
