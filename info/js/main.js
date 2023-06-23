@@ -26,11 +26,3 @@ document.addEventListener('DOMContentLoaded', function() {
 label.addEventListener('click', function() {
     checkbox.checked = !checkbox.checked;
 });
-
-
-// 엔터키 실행 안 됨
-function preventEnterKey(event) {
-    if (event.keyCode === 13) {
-      event.preventDefault(); // 기본 동작 취소
-    }
-}

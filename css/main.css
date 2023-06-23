@@ -56,6 +56,17 @@ body {
     font-size: 60%;
 }
 
+#click_info {
+    z-index: 100;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 4vh;
+    left: 25vw;
+    width: 15vw;
+    color: white;
+    rotate: 35deg;
+}
+
 #btn_start {
     font-family: 'Cafe24Ssurround';
     z-index: 2;
@@ -75,6 +86,10 @@ body {
 #btn_start:hover {
     color: beige;
     background-color: rgb(221, 220, 220);
+}
+
+#click_info:hover {
+    font-size: 0.1%;
 }
 
 .planet {

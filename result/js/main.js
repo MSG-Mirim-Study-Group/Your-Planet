@@ -31,8 +31,8 @@ function goToPage(planet) {
     case "Neptune":
       location.href="../result/neptune.html";
       break;
-    case "BlackHall":
-      location.href="../result/blackhall.html";
+    case "BlackHole":
+      location.href="../result/blackhole.html";
       break;
     case "Pluto":
       location.href="../result/pluto.html";
