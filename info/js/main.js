@@ -27,8 +27,10 @@ label.addEventListener('click', function() {
     checkbox.checked = !checkbox.checked;
 });
 
-// const input_name = document.getElementById('uname');
-// if ( input_name ) {
-//     // location.href="../ask/ndex_1.html";
-//     alert("다음버튼을 눌러주세요.");
-// }
+
+// 엔터키 실행 안 됨
+function preventEnterKey(event) {
+    if (event.keyCode === 13) {
+      event.preventDefault(); // 기본 동작 취소
+    }
+}
