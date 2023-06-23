@@ -48,7 +48,20 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  /* 결과창 아래에서 위로 애니메이션 */
+  animation: slide-up 1s ease-out;
 } 
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 .my_planet #saturn {
   top: 12vh;
