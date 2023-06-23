@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css?family=Akshar&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Akaya+Kanadaka&display=swap" rel="stylesheet" />
-  <link href="./css/main.css" rel="stylesheet" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+  
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Akshar&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Akaya+Kanadaka&display=swap" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>너의행성은</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/logo.png">
   <script>
     function getPlanetData(planet) {
       let namesList = '';
@@ -72,12 +73,6 @@
               $('#BlackHole').html(namesHTML);
               break;
             }
-
-           // targetElement라는 ID를 가진 요소에 HTML 코드를 삽입
-          // $('#targetElement').html(namesHTML);
-         
-
-          
         },
         error: function () {
           // 오류 처리
@@ -86,11 +81,7 @@
       });
       console.log(namesList)
     }
-  
-    // getPlanetData('planetName');
 </script>
-
-  <title>유저리스트</title>
 </head>
 
 <body>
@@ -290,7 +281,7 @@
           목성
         </div>
         <div class="talk">
-          푸근하고 든든한
+          푸근하고.. 든든하고.. 머시따..!
         </div>
       </div>
     </div>
@@ -412,9 +403,9 @@
       <button class="triangle" id="triangleRight" onclick="goToPage('BlackHall')"></button>
       <div class="square-box" id="userList">
         <div class="list">
-          <div id="BlackHall" style="color: rgb(253, 253, 253);"><h1>관련 친구 데려오는 중...</h1 ></div>
+          <div id="BlackHole" style="color: rgb(253, 253, 253);"><h1>관련 친구 데려오는 중...</h1 ></div>
           <script>
-            getPlanetData('BlackHall');
+            getPlanetData('BlackHole');
           </script>
         </div>
       </div>

@@ -54,6 +54,18 @@ body {
     top: -7%;
     rotate: -9deg;
     font-size: 60%;
+    opacity: 0;
+}
+
+#click_info {
+    z-index: 100;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 4vh;
+    left: 25vw;
+    width: 15vw;
+    color: white;
+    rotate: 35deg;
 }
 
 #btn_start {
@@ -75,6 +87,14 @@ body {
 #btn_start:hover {
     color: beige;
     background-color: rgb(221, 220, 220);
+}
+
+.button button #click_info {
+    opacity: 1;
+}
+
+.button:hover button #click_info {
+    opacity: 0;
 }
 
 .planet {
@@ -112,6 +132,10 @@ img {
     z-index : 100;
     font-size: 4vw;
     filter: drop-shadow(0px 0px 50px #87b570ba);
+}
+
+.button:hover p {
+    opacity: 1;
 }
 
 #mercury {  

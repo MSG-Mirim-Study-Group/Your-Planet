@@ -5,8 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>안내사항</title>
+    <title>너의행성은</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../images/logo.png">
   </head>
   
   <body>
@@ -47,11 +48,11 @@
   <div class="title">
     <p>안내사항</p>
   </div>
-  <form method="post" action="server.php" name="user_name" id="user_name">
+  <form method="post" action="server.php" onsubmit="return false" name="user_name" id="user_name">
     <div class="container">
       <center>
         <div class="welcome_planet">
-          <img src="../images/sample.PNG">
+          <img src="../images/sample.png">
         </div>
       </center>
     </div>
@@ -59,7 +60,7 @@
       <p>사용자 이름</p>
     </div>
     <div class="input_name">
-      <input type="text" placeholder="이름입력" onkeydown="preventEnterKey(event);" name="uname" id="uname" autofocus>
+      <input type="text" placeholder="이름입력" name="uname" id="uname" autofocus>
     </div>
     <div class="agree">
       <p>
