@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css?family=Akshar&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Akaya+Kanadaka&display=swap" rel="stylesheet" />
-  <link href="./css/main.css" rel="stylesheet" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+  
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Akshar&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Akaya+Kanadaka&display=swap" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>너의행성은</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/logo.png">
   <script>
     function getPlanetData(planet) {
       let namesList = '';
@@ -72,12 +73,6 @@
               $('#BlackHole').html(namesHTML);
               break;
             }
-
-           // targetElement라는 ID를 가진 요소에 HTML 코드를 삽입
-          // $('#targetElement').html(namesHTML);
-         
-
-          
         },
         error: function () {
           // 오류 처리
@@ -86,11 +81,7 @@
       });
       console.log(namesList)
     }
-  
-    // getPlanetData('planetName');
 </script>
-
-  <title>유저리스트</title>
 </head>
 
 <body>
