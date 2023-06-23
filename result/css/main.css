@@ -23,16 +23,40 @@
 
 body {
   background-color: rgb(32, 20, 83);
-  overflow-x: hidden;
+  overflow: hidden;
   height: 100vh;
 }
 
 .container {
   position: absolute;
-  top: 10%;
-  left: 25%;
-  width: 50vw;
-  height: 100vh;
+  top: 10vh;
+  left: 25vw;
+  width: 48vw;
+  height: 90vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(0, 0, 0);
+}
+
+.container::-webkit-scrollbar {
+  width: 1vw;
+  height: 80vh;
+  border-radius: 3em;
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: thistle;
+  width: 1vh;
+  border-radius: 3em;
+}
+
+.container::-webkit-scrollbar-thumb {
+  color: rgb(167, 31, 31);
+  border-radius: 7em;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+  background-color: #00ff1a;
 }
 
 .my_planet {
@@ -370,7 +394,7 @@ span.underline {
   position: absolute;
   padding: 0;
   top: 181vh;
-  left: 35.5vw;
+  left: 10vw;
   width: 25vw;
   height: 7vh;
 }
