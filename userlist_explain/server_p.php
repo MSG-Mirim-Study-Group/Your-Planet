@@ -1,11 +1,12 @@
 <?php
-include('./connect.php');
+include('../db/connect.php');
+mysqli_set_charset($conn, "utf8"); 
 
 $planet = isset($_GET['planet']) ? $_GET['planet'] : null; // 'planet' 매개변수가 전달되지 않은 경우에 대한 처리
 
 if ($planet) {
   // 'planet' 값을 사용하여 쿼리 실행
-  $query = "SELECT user_name FROM user WHERE user_planet = '$planet'";
+  $query = "SELECT user_name FROM users WHERE user_planet = '$planet'";
   $result = mysqli_query($conn, $query);
 
   if (!$result) {

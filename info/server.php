@@ -1,9 +1,9 @@
 <?php
-
-include('./connect.php');
+include('../db/connect.php');
+mysqli_set_charset($conn, "utf8"); 
 
 $_uname = $_POST['uname'];
-$query = "INSERT INTO user (user_name) VALUES (?)";
+$query = "INSERT INTO users (user_name) VALUES (?)";
 $stmt = mysqli_prepare($conn, $query);
 mysqli_stmt_bind_param($stmt, 's', $_uname);
 $result = mysqli_stmt_execute($stmt);

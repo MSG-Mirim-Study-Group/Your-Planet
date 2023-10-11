@@ -1,9 +1,9 @@
 <?php
-
-include('./connect.php');
+include('../db/connect.php');
+mysqli_set_charset($conn, "utf8"); 
 
 $planet = $_POST['planet'];
-$query = "UPDATE user SET user_planet = ? WHERE user_planet is null";
+$query = "UPDATE users SET user_planet = ? WHERE user_planet is null";
 
 
 $stmt = mysqli_prepare($conn, $query);
