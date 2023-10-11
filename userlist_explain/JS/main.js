@@ -10,18 +10,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function goToUserPage(planet) {
   localStorage.setItem("selectedPlanet", planet);
-  location.href = "/userlist_explain/index_User.html";
+  location.href = "../userlist_explain/index_User.html";
 }
 
 function goToPage(planet) {
   localStorage.setItem("selectedPlanet", planet);
-  location.href = "/userlist_explain/";
+  location.href = "../userlist_explain/index.html";
 }
 
 function goBack() {
-  var previousPage = sessionStorage.getItem('previousPage');
+  var previousPage = sessionStorage.getItem("previousPage");
   if (previousPage) {
-	  //window.history.back();
+    //window.history.back();
     window.location.href = previousPage;
   }
 }
