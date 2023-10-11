@@ -41,12 +41,12 @@ function goToPage(planet) {
 }
 
 function clickBtn(btn) {
-  switch(btn) {
+  switch (btn) {
     case "planets_btn":
-      location.href="../all_planet/index.html";
+      location.href = "../all_planet/index.html";
       break;
     case "restart_btn":
-      location.href="/";
+      location.href = '../info/index.html';
       break;
   }
 }

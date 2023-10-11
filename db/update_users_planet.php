@@ -1,5 +1,7 @@
 <?php
-include('../db/connect.php');
+
+// ask
+include('./connect.php');
 mysqli_set_charset($conn, "utf8"); 
 
 $planet = $_POST['planet'];

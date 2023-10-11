@@ -1,5 +1,6 @@
 <?php
-include('../db/connect.php');
+// userlist_explain
+include('./connect.php');
 mysqli_set_charset($conn, "utf8"); 
 
 $planet = isset($_GET['planet']) ? $_GET['planet'] : null; // 'planet' 매개변수가 전달되지 않은 경우에 대한 처리

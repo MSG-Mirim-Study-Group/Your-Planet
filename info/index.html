@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>너의행성은</title>
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="../css/info.css" />
     <link rel="shortcut icon" type="image/x-icon" href="../images/logo.png">
   </head>
   
   <body>
-    <script defer src="./js/main.js"></script>
+    <script defer src="../js/info.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <div style="position: absolute; width: 100vw; height: 100vh;">
       <img src="../images/dark_star1.png" style="position: absolute; top: 15%; left: 9%; width: 2vw; height: auto;"
@@ -104,7 +104,7 @@
         // 모든 조건이 충족되었을 때
         // 서버로 데이터를 전송하고 페이지 이동
         $.ajax({
-          url: "server.php",
+          url: "../db/add_user.php",
           type: "POST",
           data: { uname: uname },
           success: function (response) {

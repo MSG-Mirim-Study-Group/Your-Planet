@@ -3,7 +3,7 @@ function go_next() {
 }
 
 function handleKeyPress(event) {
-    if (event.keyCode === 13) { // Enter 키의 keyCode는 13입니다.
+    if (event.keyCode === 13) { // Enter 키의 keyCode는 13
         window.location.href = "다음페이지의URL";
     }
 }

@@ -1,5 +1,6 @@
 <?php
-include('../db/connect.php');
+// info
+include('./connect.php');
 mysqli_set_charset($conn, "utf8"); 
 
 $_uname = $_POST['uname'];

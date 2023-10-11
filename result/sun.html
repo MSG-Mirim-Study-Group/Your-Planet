@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>너의행성은</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/result.css">
     <link rel="shortcut icon" type="image/x-icon" href="../images/planet/Sun.png">
 </head>
 
 <body>
-    <script src="./js/main.js"></script>
+    <script defer src="../js/result.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         function getUserPercent(userPlanet) {
             $.ajax({
-                url: 'server_pe.php',
+                url: '../db/get_percentage_by_planet.php',
                 type: 'GET',
                 dataType: 'json',
                 data: { planet: userPlanet },
@@ -104,7 +104,7 @@
             <button id="planets_btn" onclick="clickBtn('planets_btn')">전체 행성 보러 가기</button>
         </div>
         <div class="restart_btn">
-            <button id="restart_btn" onclick="clickBtn('restart_btn')">테스트 다시 하기</button>
+            <button id="restart_btn" onclick="location.href = '../info/index.html';">테스트 다시 하기</button>
         </div>
         <div class="blank"></div>
     </div>
