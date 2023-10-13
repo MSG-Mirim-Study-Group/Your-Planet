@@ -1,0 +1,4 @@
+mariadb_data
+.env
+ubuntu
+docker-compose.yml
