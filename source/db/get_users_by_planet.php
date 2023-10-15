@@ -1,6 +1,6 @@
 <?php
 // userlist_explain
-include('./connect.php');
+include('../db/connect.php');
 mysqli_set_charset($conn, "utf8"); 
 
 $planet = isset($_GET['planet']) ? $_GET['planet'] : null;
@@ -20,26 +20,34 @@ if ($planet) {
       $result = mysqli_stmt_get_result($stmt);
       
       if (!$result) {
-          die("Query failed: " . mysqli_error($conn));
-      }
-      
-      $response = array();
-      while ($row = mysqli_fetch_assoc($result)) {
-          $response['user_names'][] = $row['user_name'];
-      }
+          $response = array('message' => "Query failed: " . mysqli_error($conn));
+          header('Content-Type: application/json');
+          echo json_encode($response);
+      } else {
+        $response = array('user_names' => array());
+        while ($row = mysqli_fetch_assoc($result)) {
+            $response['user_names'][] = $row['user_name'];
+        }
 
-      mysqli_free_result($result);
-      mysqli_stmt_close($stmt);
+        mysqli_free_result($result);
+        mysqli_stmt_close($stmt);
 
+        header('Content-Type: application/json');
+        echo json_encode($response);
+      }
+    } else {
+      $response = array('message' => "Query execution failed: " . mysqli_error($conn));
       header('Content-Type: application/json');
       echo json_encode($response);
-    } else {
-      die("Query execution failed: " . mysqli_error($conn));
     }
   } else {
-    die("Prepare statement failed: " . mysqli_error($conn));
+    $response = array('message' => "Prepare statement failed: " . mysqli_error($conn));
+    header('Content-Type: application/json');
+    echo json_encode($response);
   }
 } else {
-  echo "Missing 'planet' parameter";
+  $response = array('message' => "Missing 'planet' parameter");
+  header('Content-Type: application/json');
+  echo json_encode($response);
 }
 ?>
